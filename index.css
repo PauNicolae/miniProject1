@@ -2,16 +2,29 @@
 
 @media screen and (max-width: 480px){
 
-  .html-gif{
-    width: 400px;
-    height: 400px;
-    margin-bottom: 0;
-    padding-bottom: 0;
+  .searchTab{
+    border-radius: 5px;
+    border-color: #2f2f41;
+    width: 35%;
   }
 
-  .card-container{
-  
+.navbar-toggler-icon{
+  color: white;
+}
+
+  .html-gif{
+    max-width: 70vw;
+    height: auto;
+
+    /* width: 400px;
+    height: 400px;
+    margin-bottom: 0;
+    padding-bottom: 0; */
   }
+
+  /* .card-container{
+  
+  } */
 
   .card h1{
     display: flex;
@@ -48,8 +61,11 @@
 }
 
 .html-editor-gif{
+  max-width: 70vw;
+  height: auto;
+/* 
   height: 350px;
-  width: 400px
+  width: 400px */
 }
 
 .btn-html-editor-gif{
@@ -90,7 +106,6 @@ body{
 
 #magnifyingGlass{
   color: #cccc;
-  shadow:none;
 }
 
 #magnifyingGlass:hover{
@@ -128,6 +143,7 @@ body{
 
 .nav-item{
   margin-left: 10px;
+  color: white;
 }
 
 /* .navbar ul li a.changeTextColor{
@@ -148,8 +164,17 @@ body{
 .nav-link:hover::after{
   text-decoration: none;
   color: white;
- 
+
 }
+
+.navbar-toggler{
+  color: white;
+}
+
+.dropdown-menu{
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
 
 .btn-html{
   color: white;
@@ -165,19 +190,20 @@ body{
   background-color:  #df4759;
   padding-left: 1em;
   padding-right: 1rem;
-  padding-top: .3em;
-  padding-bottom: .3em;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
   border: none;
   border-radius: 5px;
   color: white;
   margin-top: 1.8px;
   margin-left: 10px;
+  width: 100%;
 }
 
 .btn-signIn:hover{
   background-color: white;
   color: orange;
-  filter: brightness(85%);
+  /* filter: brightness(85%); */
 }
 
 
@@ -248,8 +274,54 @@ body{
    margin-top: 150px;
 }
 
-#htmlButtons{
-  width: 30%;
+
+.btn-links{
+  background-color:  #df4759;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 1.8px;
+  margin-left: 10px;
+  width: 100%;
+  padding: .60rem 3.5rem;
+}
+
+.btn-linksVideoTutorial{
+  background-color:  #df4759;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 1.8px;
+  margin-left: 10px;
+  width: 100%;
+  padding: .60rem 2.9rem;
+}
+
+.btn-linksReferences{
+  background-color:  #df4759;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 1.8px;
+  margin-left: 10px;
+  width: 100%;
+  padding: .60rem 3.4rem;
+}
+
+
+.btn-links:hover{
+  color: orange;
+  background-color: white;
+}
+
+.btn-linksReferences:hover{
+color: orange;
+background-color: white;
+}
+
+.btn-linksVideoTutorial:hover{
+  color: orange;
+ background-color: white;
 }
 
 .code-editor-section{
@@ -280,6 +352,17 @@ body{
   background-color: white;
   color: orange;
   filter: brightness(85%);
+}
+
+.btn-tryIt{
+  background-color:  #df4759;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 1.8px;
+  margin-left: 10px;
+  width: 100%;
+  padding: .60rem 5rem;
 }
 /* .card-web{
   padding-top: 250px;

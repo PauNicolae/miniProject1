@@ -12,6 +12,16 @@
   color: white;
 }
 
+
+.navbar-nav{
+  background-color:  rgba(0, 0, 0, 0.8);
+}
+
+#btn-signIn{
+  margin: 0;
+}
+
+
   .html-gif{
     max-width: 70vw;
     height: auto;
@@ -76,14 +86,266 @@
   border: none;
 }
 
+ }
+
+ @media screen and (min-width: 481px) and (max-width:767px){
+  .searchTab{
+    border-radius: 5px;
+    border-color: #2f2f41;
+    width: 35%;
+  }
+
+.navbar-toggler-icon{
+  color: white;
+}
 
 
+.navbar-nav{
+  background-color:  rgba(0, 0, 0, 0.8);
+}
+
+#btn-signIn{
+  margin: 0;
+}
 
 
+#hero-banner{
+  width: 100%;
+  height: 75vh;
+}
+
+  .html-gif{
+    max-width: 70vw;
+    height: auto;
+
+    /* width: 400px;
+    height: 400px;
+    margin-bottom: 0;
+    padding-bottom: 0; */
+  }
+
+  /* .card-container{
+  
+  } */
+
+  .card h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .card p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #content1{
+  background-color: #1c1c1c;
+  width: 100%;
+  height: 105vh;
+}
+
+#code-editor-section{
+height: 75vh;
+width: 100%;
+}
+
+
+.html-editor-gif{
+  max-width: 70vw;
+  height: auto;
+/* 
+  height: 350px;
+  width: 400px */
+}
+
+.btn-html-editor-gif{
+  background-color:  #df4759;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+ }
+
+ @media screen and (min-width: 768px) and (max-width:991px){
+  .searchTab{
+    border-radius: 5px;
+    border-color: #2f2f41;
+    width: 35%;
+  }
+
+.navbar-toggler-icon{
+  color: white;
+}
+
+
+.navbar-nav{
+  background-color:  rgba(0, 0, 0, 0.8);
+}
+
+#btn-signIn{
+  margin: 0;
+}
+
+
+#hero-banner{
+  width: 100%;
+  height: 75vh;
+}
+
+
+  .html-gif{
+    width: 450px;
+    height: 480px;
+    margin: 0;
+    /* margin-bottom: 0;
+    padding-bottom: 0; */
+  }
+
+  /* .card-container{
+  
+  } */
+  .card{
+    margin-left: 120px;
+  }
+
+ #content1{
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 75vh;
+}
+
+#code-editor-section{
+  height: 75vh;
+  width: 100%;
+}
+
+.html-editor-gif{
+  max-width: 70vw;
+  height: auto;
+/* 
+  height: 350px;
+  width: 400px */
+}
+
+.btn-html-editor-gif{
+  background-color:  #df4759;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+ }
+
+ @media screen and (min-width: 992px) and (max-width:1279px){
+
+  #hero-banner{
+    width: 100%;
+    height: 75vh;
+  }
+
+  #content1{
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 75vh;
+}
+
+#code-editor-section{
+  height: 75vh;
+  width: 100%;
+}
  }
 
 
 
+
+ @media screen and (min-width: 1800px) and (max-width:1920px){
+
+  #hero-banner{
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    opacity: 0.;
+    width: 100%;
+    height: 100vh;
+}
+
+  .welcome-message{
+    padding-top: 200px;
+  }
+
+  #content1{
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+#code-editor-section{
+  height: 100vh;
+  width: 100%;
+}
+
+ }
+
+
+ @media screen and (min-width: 2880px) and (max-width:3071px){
+
+  #hero-banner{
+    background-size: 2880px;
+    background-repeat: no-repeat;
+    opacity: 0.;
+    width: 100%;
+    height: 100vh;
+}
+
+  .welcome-message{
+    padding-top: 200px;
+  }
+
+  #content1{
+    width: 100%;
+    height: 75vh;
+    padding-top: 150px;
+}
+
+#code-editor-section{
+  height: 75vh;
+  width: 100%;
+}
+
+ }
+
+ @media screen and (min-width: 3072px){
+  #hero-banner{
+    background-size: 3072px;
+    background-repeat: no-repeat;
+    opacity: 0.;
+    width: 100%;
+    height: 100vh;
+}
+
+  .welcome-message{
+    padding-top: 200px;
+  }
+
+  #content1{
+    width: 100%;
+    height: 75vh;
+    padding-top: 150px;
+}
+
+#code-editor-section{
+  height: 75vh;
+  width: 100%;
+}
+
+ }
+/* end of media query */
 
 
 body{
@@ -176,28 +438,19 @@ body{
 }
 
 
-.btn-html{
-  color: white;
-  text-decoration: none;
-}
 
-.btn-html:hover{
-  color: orange;
-  border: #1c1c1c;
-}
 
 .btn-signIn{
   background-color:  #df4759;
   padding-left: 1em;
   padding-right: 1rem;
-  padding-top: .4rem;
-  padding-bottom: .4rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
   border: none;
   border-radius: 5px;
   color: white;
   margin-top: 1.8px;
   margin-left: 10px;
-  width: 100%;
 }
 
 .btn-signIn:hover{
@@ -211,7 +464,8 @@ body{
 /* hero page */
 .hero-banner{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./photos/laptopunsplash.jpg');
-    background-size: 1600px;
+    background-size: 1800px;
+    background-repeat: no-repeat;
     opacity: 0.;
     width: 100%;
     height: 100vh;

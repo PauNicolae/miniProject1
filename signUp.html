@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="signIn.css" />
+      <link rel="stylesheet" href="signUp.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -21,13 +21,13 @@
 <link rel="shortcut icon" href="./photos/favicon (2).ico" type="image/x-icon">
 
 
-      <title>Sign in</title>
+      <title>Sign up</title>
    </head>
-   <body class="bg-dark">
+   <body id="body">
       <header>
 
          <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top shadow-none">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-none" id="navbar">
         <div class="container">
             <!-- <img src="./photos/favicon (2).ico" height="30px"/> -->
             <a href="index.html" class="navbar-brand text-danger"><h4 class="mt-2">cheater</h4></a>
@@ -91,46 +91,47 @@
             </div>
       </div>
     </nav>
-  
 
-
-    <section>
+    <section class="signIn-box">
         <div class="container mt-3">
-            <div class="row">
-              <div class="col-md-6 offset-md-3">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-xs col-sm col-md col-lg-6 col-xl-6" id="box">
                 <div class="signup-form">
-                  <form action="" class="form border p-4 bg-light shadow">
-                    <h1>Sign Up</h1>
-                    <h4 class="mb-3">Create Your Account</h4>
-                    
+                  <form action="" class=" mt-5  p-4 shadow">
+                    <h1 class="form-title text-center">Sign up</h1>
+                  
                     <div class="row">
-                    <div class="mb-3 col-md-6">
-                      <label>First Name <span class="text-danger">*</span></label>
-                      <input type="text" name="fname" class="form-control" placeholder="Enter First Name">
-                    </div>
-        
-                    <div class="mb-3 col-md-6">
-                      <label>Last Name<span class="text-danger">*</span></label>
-                      <input type="text" name="lname" class="form-control" placeholder="Enter Last Name">
+                    <div class="mb-3 col-md-12">
+                      <label class="text-light">Email<span class="text-danger">*</span></label>
+                      <input type="password" name="password" class="form-control" id="form-control">
                     </div>
         
                     <div class="mb-3 col-md-12">
-                      <label>Password Name<span class="text-danger">*</span></label>
-                      <input type="password" name="password" class="form-control" placeholder="Enter Password">
-                    </div>
-        
-                    <div class="mb-3 col-md-12">
-                      <label>Confirm Password<span class="text-danger">*</span></label>
-                      <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password">
+                      <label class="text-light">Password<span class="text-danger">*</span></label>
+                      <input type="password" name="confirmpassword" class="form-control"
+                      id="form-control">
                     </div>
                   
-                  <div class="mb-3 col-md-12">
-                    <button id="btn" class="btn btn-dark float-end">Signup Now</button>
+                  <div class="mt-1 mb-3 col-md">
+                    <button id="btn-signIn-page" class="btn float-end">Sign up</button>
                   </div>
-    
+                  <div>
+                  <p class="text-center text-light mt-3">Already have an account? <a href="signIn.html" class="signUp">Sign in</a></p>
+                        </div>
+                  
+                        <div class="div-fa-brands">
+                            <i class="fa-brands fa-github " id="fa-brands"></i>
+                            <i class="fa-brands fa-google " id="fa-brands"></i>
+                            <i class="fa-brands fa-facebook-f" id="fa-brands"></i>
+                        </div>
+                      
+                        <div>
+                            <p class="terms">
+                                By clicking the "Sign up for free" button, you are creating an account, and agree to Cheater <a href="#" class="a-terms">Terms of Service</a> and <a href="#" class="a-terms">Privacy Policy.</a>
+                            </p>
+                        </div>
                   </form>
-                  <p class="m-5 text-center text-secondary">If you have an account, Please <a href="login.html" class="login"> Login</a></p>
-                </div>
+                 
                 </div>
               </div>
             </div>

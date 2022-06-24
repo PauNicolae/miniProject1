@@ -1,210 +1,202 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100&family=Poppins:wght@100;200;300&display=swap');
 
-
-*{
-  margin: 0;
-  padding: 0;
+* {
+   margin: 0;
+   padding: 0;
 }
 
-  #body{
-    background-color:  #232222;
-  }
-  
-  #navbar{
-    background-color:  rgba(0, 0, 0, 0.1);
-  }
+#body {
+   background-color: #232222;
+}
 
+#navbar {
+   background-color: rgba(0, 0, 0, 0.1);
+}
 
- /* navbar */
-  .navbar-brand h4{
-    font-family: 'Alfa Slab One', cursive;;
-  }
-  
-  .searchTab{
-    border-radius: 5px;
-    border-color: #2f2f41;
-  }
-  
-  .icon{
-    margin-left: 10px;
-  }
-  
-  #magnifyingGlass{
-    color: #ccc;
-    font-size: 14px;
-  }
-  
-  #magnifyingGlass:hover{
-    color: orange;
-  }
-  
-  .navbar{
+/* navbar */
+.navbar-brand h4 {
+   font-family: 'Alfa Slab One', cursive;
+}
+
+.searchTab {
+   border-radius: 5px;
+   border-color: #2f2f41;
+}
+
+.icon {
+   margin-left: 10px;
+}
+
+#magnifyingGlass {
+   color: #ccc;
+   font-size: 14px;
+}
+
+#magnifyingGlass:hover {
+   color: orange;
+}
+
+.navbar {
    background-color: transparent;
-  }
-  
-  .navbar ul li a{
-    color: white;
-  }
-  
-  .navbar ul li a:hover{
-    color: orange;
-  }
-  
-  .navbar ul li a:hover::before{
-    color: orange;
-  }
-  
-  .navbar ul li a:hover::active{
-    color: orange;
-  }
-  
-  .navbar ul li a:hover::after{
-    color: orange;
-    text-decoration: none;
-  }
-  
-  .changeColor{
-    background-color:  rgba(0, 0, 0, 0.5);
-  }
-  
-  .nav-item{
-    margin-left: 10px;
-    color: white;
-  }
-  
-  .nav-link{
-    text-decoration: none;
-    color: white;
-   
-  }
-  
-  .nav-link:hover::active{
-    text-decoration: none;
-    color: white;
-  }
-  
-  .nav-link:hover::after{
-    text-decoration: none;
-    color: white;
-  
-  }
-  
-  .navbar-toggler{
-    color: white;
-  }
-  
-  .dropdown-menu{
-    background-color:  rgba(0, 0, 0, 0.5);
-  }
-  
-  
-  
-  .btn-signIn{
-    background-color:  #df4759;
-    padding-left: 1.5em;
-    padding-right: 1.5rem;
-    padding-top: .6rem;
-    padding-bottom: .6rem;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    margin-top: 1.8px;
-    margin-left: 10px;
-  }
-  
-  .btn-signIn:hover{
-    /* background-color: white;
-    color: orange; */
-    filter: brightness(85%);
-  }
-  
+}
 
-  .signIn-box{
-    margin-top: 200px;
-    margin-bottom: 200px;
-    
-    /* display: flex;
+.navbar ul li a {
+   color: white;
+}
+
+.navbar ul li a:hover {
+   color: orange;
+}
+
+.navbar ul li a:hover::before {
+   color: orange;
+}
+
+.navbar ul li a:hover::active {
+   color: orange;
+}
+
+.navbar ul li a:hover::after {
+   color: orange;
+   text-decoration: none;
+}
+
+.changeColor {
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-item {
+   margin-left: 10px;
+   color: white;
+}
+
+.nav-link {
+   text-decoration: none;
+   color: white;
+}
+
+.nav-link:hover::active {
+   text-decoration: none;
+   color: white;
+}
+
+.nav-link:hover::after {
+   text-decoration: none;
+   color: white;
+}
+
+.navbar-toggler {
+   color: white;
+}
+
+.dropdown-menu {
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-signIn {
+   background-color: #df4759;
+   padding-left: 1.5em;
+   padding-right: 1.5rem;
+   padding-top: 0.6rem;
+   padding-bottom: 0.6rem;
+   border: none;
+   border-radius: 20px;
+   color: white;
+   margin-top: 1.8px;
+   margin-left: 10px;
+}
+
+.btn-signIn:hover {
+   /* background-color: white;
+    color: orange; */
+   filter: brightness(85%);
+}
+
+.signIn-box {
+   margin-top: 200px;
+   margin-bottom: 200px;
+
+   /* display: flex;
     justify-content: center;
     align-content: center; */
-  }
-  
-  .form-title{
-    color: white;
-    display: flex;
-    justify-content: center;
-    
-  }
+}
 
-  .signIn-form{
-    background-color:  #1c1c1c;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    border-radius: 20px;
-    margin: auto;
-    width: 30rem;
-  }
+.form-title {
+   color: white;
+   display: flex;
+   justify-content: center;
+}
 
-  .signUp{
-    color: orange;
-  }
+.signIn-form {
+   background-color: #1c1c1c;
+   max-width: 100%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   border-radius: 20px;
+   margin: auto;
+   width: 30rem;
+}
 
-  .signUp:hover{
-    color: orange;
-    filter: brightness(85%);
-  }
+.signUp {
+   color: orange;
+}
 
-  #btn-signIn-page{
-    background-color:  #df4759;
-    padding-left: 1em;
-    padding-right: 1rem;
-    padding-top: .6rem;
-    padding-bottom: .6rem;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    margin-top: 1.8px;
-    margin-left: 10px;
-    text-transform:initial;
-    width: 100%;
-    font-size: 16px;
-  }
-  
-  #btn-signIn-page:hover{
-    /* background-color: white;
+.signUp:hover {
+   color: orange;
+   filter: brightness(85%);
+}
+
+#btn-signIn-page {
+   background-color: #df4759;
+   padding-left: 1em;
+   padding-right: 1rem;
+   padding-top: 0.6rem;
+   padding-bottom: 0.6rem;
+   border: none;
+   border-radius: 20px;
+   color: white;
+   margin-top: 1.8px;
+   margin-left: 10px;
+   text-transform: initial;
+   width: 100%;
+   font-size: 16px;
+}
+
+#btn-signIn-page:hover {
+   /* background-color: white;
     color: orange; */
-    filter: brightness(85%);
-  }
+   filter: brightness(85%);
+}
 
 /* form type */
-  #form-control{
-    background-color:  rgba(0, 0, 0, 0.1);
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-  }
+#form-control {
+   background-color: rgba(0, 0, 0, 0.1);
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
 
-  #forgotPassword{
-    /* color: #00aefe; */
-    color: orange;
-  }
+#forgotPassword {
+   /* color: #00aefe; */
+   color: orange;
+}
 
-  #forgotPassword:hover{
-    color: orange;
-    filter: brightness(85%)
-  }
+#forgotPassword:hover {
+   color: orange;
+   filter: brightness(85%);
+}
 
-  #fa-brands{
-    color: white;
-    font-size: 30px;
-  }
+#fa-brands {
+   color: white;
+   font-size: 30px;
+}
 
-  #fa-brands:hover{
-    color: orange;
-  }
+#fa-brands:hover {
+   color: orange;
+}
 
-  .div-fa-brands{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
+.div-fa-brands {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}

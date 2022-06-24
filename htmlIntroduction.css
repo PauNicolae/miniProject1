@@ -132,6 +132,7 @@
    z-index: 600;
    background-color: transparent;
    grid-area: sidebar;
+   
 }
 
 .sec1 {
@@ -144,9 +145,17 @@
    padding-top: 9rem;
    padding-left: 2rem;
    padding-bottom: 3rem;
+
 }
 
-
+.sidebar-sticky {
+   position: relative;
+   top: 0;
+   height: calc(100vh - 48px);
+   padding-top: 0.5rem;
+   overflow-x: hidden;
+   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+ }
 
 #list-group-item {
    background-color: transparent;
@@ -175,8 +184,6 @@
 }
 
 .btn-links:hover {
-   /* color: orange;
-    background-color: white; */
    filter: brightness(85%);
 }
 

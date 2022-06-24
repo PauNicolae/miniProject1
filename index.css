@@ -739,25 +739,6 @@ filter: brightness(85%);
   align-items: center;
   align-content: center;
 }
-/* 
-.btn-html-editor-gif{
-  background-color:  #df4759;
-  padding-left: 1em;
-  padding-right: 1rem;
-  padding-top: .3em;
-  padding-bottom: .3em;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  margin-top: 1.8px;
-  margin-left: 10px;
-} */
-
-/* .btn-html-editor-gif:hover{
-  background-color: white;
-  color: orange;
-  filter: brightness(85%);
-} */
 
 .btn-tryIt{
   background-color:  #df4759;

@@ -137,7 +137,7 @@
 
   .signUp-form{
     background-color:  #1c1c1c;
-    /* max-width: 70%; */
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;

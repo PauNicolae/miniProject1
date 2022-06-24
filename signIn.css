@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100&family=Poppins:wght@100;200;300&display=swap');
 
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
   #body{
     background-color:  #232222;
   }
@@ -8,6 +14,8 @@
     background-color:  rgba(0, 0, 0, 0.1);
   }
 
+
+ /* navbar */
   .navbar-brand h4{
     font-family: 'Alfa Slab One', cursive;;
   }
@@ -22,7 +30,8 @@
   }
   
   #magnifyingGlass{
-    color: #cccc;
+    color: #ccc;
+    font-size: 14px;
   }
   
   #magnifyingGlass:hover{
@@ -109,13 +118,6 @@
     filter: brightness(85%);
   }
   
-  
-  .container{
-     display: flex;
-    justify-content: center;
-    align-content: center;
-    
-  }
 
   .signIn-box{
     margin-top: 200px;
@@ -133,14 +135,15 @@
     
   }
 
-  .signup-form{
+  .signIn-form{
     background-color:  #1c1c1c;
-    max-width: 70%;
+    /* max-width: 70%; */
     display: flex;
     justify-content: center;
     align-content: center;
     border-radius: 20px;
     margin: auto;
+    width: 30rem;
   }
 
   .signUp{
@@ -182,6 +185,7 @@
   }
 
   #forgotPassword{
+    /* color: #00aefe; */
     color: orange;
   }
 

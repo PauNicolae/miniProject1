@@ -148,14 +148,22 @@
    padding-left: 2rem;
    padding-right: 2rem;
    padding-bottom: 3rem;
-
 }
 
-.sidebar-sticky {
+/* div.scroll {
+   width: auto;
+   height: 50vh;
+   overflow-x: hidden;
+   overflow-y: auto;
+   text-align: center;
+   padding: 20px;
+ } */
+
+.sticky {
    position: relative;
    top: 30px;
    height: calc(100vh - 48px);
-   padding-top: 0.5rem;
+   padding-top: 1rem;
    overflow-x: hidden;
    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
  }
@@ -360,7 +368,7 @@ aside{
 
  }
 
- 
+
    @media screen and (max-width: 480px){
       .grid-container {
          display: grid;

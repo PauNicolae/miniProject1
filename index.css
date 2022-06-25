@@ -430,7 +430,7 @@ width: 100%;
 }
 
  }
-/* end of media query */
+/* end of media query  */
 
 
 
@@ -444,7 +444,7 @@ width: 100%;
 
 /* navbar */
 .navbar-brand h4{
-  font-family: 'Alfa Slab One', cursive;;
+  font-family: 'Alfa Slab One', cursive;
 }
 
 .searchTab{

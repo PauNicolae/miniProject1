@@ -200,3 +200,90 @@
    justify-content: center;
    gap: 10px;
 }
+
+
+
+/* media query */
+@media screen and (max-width: 480px){
+   .searchTab {
+      border-radius: 5px;
+      border-color: #2f2f41;
+      width: 35%;
+   }
+
+   .navbar-toggler-icon {
+      color: white;
+   }
+
+   .navbar-nav {
+      background-color: rgba(0, 0, 0, 0.8);
+   }
+
+   #btn-signIn {
+      margin: 0;
+   } 
+}
+
+@media screen and (min-width: 481px) and (max-width:575px){
+   .searchTab {
+      border-radius: 5px;
+      border-color: #2f2f41;
+      width: 35%;
+   }
+
+   .navbar-toggler-icon {
+      color: white;
+   }
+
+   .navbar-nav {
+      background-color: rgba(0, 0, 0, 0.8);
+   }
+
+   #btn-signIn {
+      margin: 0;
+   } 
+}
+
+
+@media screen and (min-width: 576px) and (max-width:767px){
+   .searchTab {
+      border-radius: 5px;
+      border-color: #2f2f41;
+      width: 35%;
+   }
+
+   .navbar-toggler-icon {
+      color: white;
+   }
+
+   .navbar-nav {
+      background-color: rgba(0, 0, 0, 0.8);
+   }
+
+   #btn-signIn {
+      margin: 0;
+   } 
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+   .searchTab {
+      border-radius: 5px;
+      border-color: #2f2f41;
+      width: 35%;
+   }
+
+   .navbar-toggler-icon {
+      color: white;
+   }
+
+   .navbar-nav {
+      background-color: rgba(0, 0, 0, 0.8);
+   }
+
+   #btn-signIn {
+      margin: 0;
+   } 
+}

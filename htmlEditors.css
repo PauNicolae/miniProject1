@@ -158,15 +158,15 @@
    text-align: center;
    padding: 20px;
  } */
-
+/* 
 .sticky {
-   position: relative;
+   position: -webkit-sticky;
    top: 30px;
-   height: calc(100vh - 48px);
+  max-height: 100vh;
    padding-top: 1rem;
    overflow-x: hidden;
-   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
- }
+   overflow-y: auto; 
+ } */
 
  /* .sidebar .active {
    border-radius: 5px;

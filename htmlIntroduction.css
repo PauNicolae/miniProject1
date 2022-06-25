@@ -141,22 +141,29 @@
    color: white;
    /* margin-top: 7rem; */
    margin-left: 4rem;
+   margin-right: 2rem;
    background-color: rgba(0, 0, 0, 0.1);
    /* padding: 2rem; */
    padding-top: 9rem;
    padding-left: 2rem;
+   padding-right: 2rem;
    padding-bottom: 3rem;
 
 }
 
 .sidebar-sticky {
    position: relative;
-   top: 0;
+   top: 30px;
    height: calc(100vh - 48px);
    padding-top: 0.5rem;
    overflow-x: hidden;
    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
  }
+
+ /* .sidebar .active {
+   border-radius: 5px;
+   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+ } */
 
 #list-group-item {
    background-color: transparent;
@@ -173,7 +180,12 @@
    max-width: 100%;
 }
 
-
+.box1{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+}
 
 #aHtmlButtons {
    text-decoration: none;
@@ -197,6 +209,12 @@
 
 aside{
     grid-area: aside;
+    margin-top: 7.5rem;
+}
+
+.advertisement{
+   font-size: 12px;
+   color:#ccc
 }
 
 
@@ -241,82 +259,108 @@ aside{
    #btn-signIn {
       margin: 0;
    }
+
+   aside{
+      grid-area: aside;
+     display: none;
+  }
+  .advertisement{
+   display: none;
+}
+
 }
 
 @media screen and (min-width: 576px) and (max-width:767px){
    
 
-      .grid-container {
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         grid-template-areas:
-            'sec1 sec1'
-            'sec1 sec1'
-            'sec1 sec1'
-            'sec1 sec1';
-      }
-      
-      .sec1 {
-         grid-area: sec1;
-         margin: auto;
-      }
+   .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+         'sec1 sec1'
+         'sec1 sec1'
+         'sec1 sec1'
+         'sec1 sec1';
+   }
    
-      .searchTab {
-         border-radius: 5px;
-         border-color: #2f2f41;
-         width: 35%;
-      }
-   
-      .navbar-toggler-icon {
-         color: white;
-      }
-   
-      .navbar-nav {
-         background-color: rgba(0, 0, 0, 0.8);
-      }
-   
-      #btn-signIn {
-         margin: 0;
-      }
+   .sec1 {
+      grid-area: sec1;
+      margin: auto;
    }
 
-
-   @media screen and (min-width: 481px) and (max-width:575px){
-      
-      .grid-container {
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         grid-template-areas:
-            'sec1 sec1'
-            'sec1 sec1'
-            'sec1 sec1'
-            'sec1 sec1';
-      }
-      
-      .sec1 {
-         grid-area: sec1;
-         margin: auto;
-      }
-   
-      .searchTab {
-         border-radius: 5px;
-         border-color: #2f2f41;
-         width: 35%;
-      }
-   
-      .navbar-toggler-icon {
-         color: white;
-      }
-   
-      .navbar-nav {
-         background-color: rgba(0, 0, 0, 0.8);
-      }
-   
-      #btn-signIn {
-         margin: 0;
-      }
+   .searchTab {
+      border-radius: 5px;
+      border-color: #2f2f41;
+      width: 35%;
    }
 
+   .navbar-toggler-icon {
+      color: white;
+   }
+
+   .navbar-nav {
+      background-color: rgba(0, 0, 0, 0.8);
+   }
+
+   #btn-signIn {
+      margin: 0;
+   }
+
+   aside{
+      grid-area: aside;
+     display: none;
+  }
+  .advertisement{
+   display: none;
+}
+
+}
+ @media screen and (min-width: 481px) and (max-width:575px){
+      
+   .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+         'sec1 sec1'
+         'sec1 sec1'
+         'sec1 sec1'
+         'sec1 sec1';
+   }
+   
+   .sec1 {
+      grid-area: sec1;
+      margin: auto;
+   }
+
+   .searchTab {
+      border-radius: 5px;
+      border-color: #2f2f41;
+      width: 35%;
+   }
+
+   .navbar-toggler-icon {
+      color: white;
+   }
+
+   .navbar-nav {
+      background-color: rgba(0, 0, 0, 0.8);
+   }
+
+   #btn-signIn {
+      margin: 0;
+   }
+
+   aside{
+      grid-area: aside;
+     display: none;
+  }
+  .advertisement{
+   display: none;
+}
+
+ }
+
+ 
    @media screen and (max-width: 480px){
       .grid-container {
          display: grid;
@@ -350,4 +394,13 @@ aside{
       #btn-signIn {
          margin: 0;
       } 
+
+      aside{
+         grid-area: aside;
+        display: none;
+     }
+     .advertisement{
+      display: none;
+   }
+
    }

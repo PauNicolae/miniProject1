@@ -628,6 +628,11 @@ padding-bottom: 9rem;
     position: relative;
     overflow: hidden;
     z-index: 9;
+    border-radius: 20px;
+}
+#btn{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .hero-banner .btn:before {

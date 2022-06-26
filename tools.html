@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="signUp.css" />
+      <link rel="stylesheet" href="tools.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +24,7 @@
          type="image/x-icon"
       />
 
-      <title>Sign up</title>
+      <title>HTML Tools</title>
    </head>
    <body id="body">
       <!-- Navbar -->
@@ -170,8 +170,7 @@
                            >HTML vs. XHTML</a
                         >
                      </div>
-                 
-                 </li>
+                  </li>
                   <li class="nav-item dropdown">
                      <a
                         href="#"
@@ -180,7 +179,9 @@
                         >References</a
                      >
                      <div class="dropdown-menu bg-dark">
-                        <a href="htmlTagList.html" class="dropdown-item">HTML Tag List</a>
+                        <a href="htmlTagList.html" class="dropdown-item"
+                           >HTML Tag List</a
+                        >
                         <a href="#" class="dropdown-item">HTML Attributes</a>
                         <a href="#" class="dropdown-item"
                            >HTML Global Attributes</a
@@ -231,82 +232,60 @@
             </div>
          </div>
       </nav>
+      <!-- end of nav -->
 
-      <section class="signIn-box">
-         <div class="container mt-3">
-            <div class="row justify-content-center align-items-center">
-               <div class="col-xs col-sm col-md col-lg-6 col-xl-6">
-                  <div class="signUp-form">
-                     <form action="" class="mt-5 p-4">
-                        <h1 class="form-title text-center">Sign up</h1>
+      <section class="tools">
+         <div class="container" id="box">
+            <h1 class="text-center text-light mb-5">Tools</h1>
+            <div class="row">
+                 
+                <div class="col-xs-6 col-sm col-md col-lg col-xl col-xxl">
+                    <div class="card">
+                       <a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello"><span
+                        class="iconify"
+                        data-icon="fa6-solid:laptop-code"
+                     ></span></a>
+                       <p class="text">Code Editor</p>
+                    </div>
+                 </div>
 
-                        <div class="row">
-                           <div class="mb-3 col-md-12">
-                              <label class="text-light"
-                                 >Email<span class="text-danger">*</span></label
-                              >
-                              <input
-                                 type="password"
-                                 name="password"
-                                 class="form-control"
-                                 id="form-control"
-                              />
-                           </div>
-
-                           <div class="mb-3 col-md-12">
-                              <label class="text-light"
-                                 >Password<span class="text-danger"
-                                    >*</span
-                                 ></label
-                              >
-                              <input
-                                 type="password"
-                                 name="confirmpassword"
-                                 class="form-control"
-                                 id="form-control"
-                              />
-                           </div>
-
-                           <div class="mt-1 mb-3 col-md">
-                              <button
-                                 id="btn-signIn-page"
-                                 class="btn float-end"
-                              >
-                                 Sign up
-                              </button>
-                           </div>
-                           <div>
-                              <p class="text-center text-light mt-3">
-                                 Already have an account?
-                                 <a href="signIn.html" class="signUp"
-                                    >Sign in</a
-                                 >
-                              </p>
-                           </div>
-
-                           <div class="div-fa-brands">
-                              <i class="fa-brands fa-github" id="fa-brands"></i>
-                              <i class="fa-brands fa-google" id="fa-brands"></i>
-                              <i
-                                 class="fa-brands fa-facebook-f"
-                                 id="fa-brands"
-                              ></i>
-                           </div>
-                           <div>
-                              <p class="terms">
-                                 By clicking the "Sign up for free" button, you
-                                 are creating an account, and agree to Cheater
-                                 <a href="#" class="a-terms"
-                                    >Terms of Service</a
-                                 >
-                                 and
-                                 <a href="#" class="a-terms">Privacy Policy.</a>
-                              </p>
-                           </div>
-                        </div>
-                     </form>
+               <div class="col-xs-6 col-sm col-md col-lg col-xl col-xxl">
+                  <div class="card">
+                    <a href="https://www.tutorialspoint.com/online_image_optimizer.htm"><span class="iconify" data-icon="fluent:mobile-optimized-24-filled"></span></a>
+                     <p class="text">Image Optimizer</p>
                   </div>
                </div>
+
+               <div class="col-xs-6 col-sm col-md col-lg col-xl col-xxl">
+                  <div class="card">
+                    <a href="https://www.tutorialspoint.com/whiteboard.htm"><span class="iconify" data-icon="fa6-solid:chalkboard"></span></span></a>
+                     <p class="text">White Board</p>
+                  </div>
+               </div>
+
+               <div class="col-xs-6 col-sm col-md col-lg col-xl col-xxl">
+                  <div class="card">
+                     <a href="https://www.tutorialspoint.com/online_document_viewer.php"><span class="iconify" data-icon="fe:document"></span></a>
+                     <p class="text">Document Viewer</p>
+                  </div>
+               </div>
+
+               <div class="col-xs-6 col-sm col-md col-lg col-xl col-xxl">
+                <div class="card">
+                   <a href="https://www.w3docs.com/keyboard"><span class="iconify" data-icon="fa6-regular:keyboard"></span></span></a>
+                   <p class="text">Keyboard Test</p>
+                </div>
+             </div>
+
+
+             <div class="col-xs-6 col-sm col-md col-lg- col-xl- col-xxl">
+             <div class="card">
+                <a href="https://www.tutorialspoint.com/online_image_editor.htm"><span class="iconify" data-icon="bi:image"></span></a>
+                <p class="text">Image Editor</p>
+             </div>
+          </div>
+
+
             </div>
          </div>
       </section>
@@ -457,7 +436,7 @@
          src="https://kit.fontawesome.com/656d817613.js"
          crossorigin="anonymous"
       ></script>
-
+      <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
       <script src="script.js"></script>
    </body>
 </html>

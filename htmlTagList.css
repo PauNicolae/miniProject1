@@ -89,9 +89,12 @@
    color: white;
 }
 
-.dropdown-menu {
-   background-color: rgba(0, 0, 0, 0.5);
-}
+#dropdown-menu {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: lightblue;
+    max-height: 38.5rem;
+    overflow-y: scroll;
+  }
 
 .btn-signIn {
    background-color: #df4759;
@@ -150,6 +153,10 @@
    padding-bottom: 3rem;
 }
 
+
+tr{
+    height:3rem;
+}
 /* div.scroll {
    width: auto;
    height: 50vh;

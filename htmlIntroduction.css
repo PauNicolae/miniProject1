@@ -152,6 +152,7 @@
    padding-left: 2rem;
    padding-right: 2rem;
    padding-bottom: 3rem;
+   
 }
 
 /* div.scroll {
@@ -167,7 +168,7 @@
    position: relative;
    height: 100vh;
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     padding-top: 20px;
  } */

@@ -1,5 +1,321 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100&family=Poppins:wght@100;200;300&display=swap');
 
+
+/* start */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar-brand h4{
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.searchTab{
+  border-radius: 5px;
+  border-color: #2f2f41;
+}
+
+.icon{
+  margin-left: 10px;
+}
+
+#magnifyingGlass{
+  color: #ccc;
+  font-size: 14px;
+}
+
+#magnifyingGlass:hover{
+  color: orange;
+}
+
+.navbar{
+ background-color: transparent;
+}
+
+.navbar ul li a{
+  color: white;
+}
+
+.navbar ul li a:hover{
+  color: orange;
+}
+
+.navbar ul li a:hover::before{
+  color: orange;
+}
+
+.navbar ul li a:hover::active{
+  color: orange;
+}
+
+.navbar ul li a:hover::after{
+  color: orange;
+  text-decoration: none;
+}
+
+.changeColor{
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+.nav-item{
+  margin-left: 10px;
+  color: white;
+}
+
+/* .navbar ul li a.changeTextColor{
+  color: rgb(105, 95, 95);
+} */
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+ 
+}
+
+.nav-link:hover::active{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover::after{
+  text-decoration: none;
+  color: white;
+
+}
+
+.navbar-toggler{
+  color: white;
+}
+
+#dropdown-menu {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: lightblue;
+  max-height: 38.5rem;
+  overflow-y: scroll;
+}
+
+
+
+
+.btn-signIn{
+  background-color:  #df4759;
+  padding-left: 1.5em;
+  padding-right: 1.5rem;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  margin-top: 1.8px;
+  margin-left: 10px;
+}
+
+.btn-signIn:hover{
+  /* background-color: white;
+  color: orange; */
+  filter: brightness(85%);
+}
+
+
+
+/* hero page */
+.hero-banner{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./photos/laptopunsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.hero-banner h1 {
+  font-size:4.25rem;
+}
+
+
+#title-p{
+  font-size: 1.5rem;
+}
+
+.hero-banner .btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 20px;
+}
+#btn{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.hero-banner .btn:before {
+    content: "";
+    background: #d32439;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.hero-banner .btn:hover:before {
+    width: 100%;
+}
+/* end-hero banner */
+
+
+
+/* list-section */
+.list-section{
+  background-color: #101312;
+  
+}
+
+#card-list{
+  background-color: #101312;
+  color: #E0DFE6;
+  padding-top: 9rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+.iconify{
+  font-size: 3rem;
+  color: white;
+}
+
+
+/* html gif*/
+.content1{
+    background-color: #161616;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 7rem;
+}
+
+
+.card p{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.card h1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.btn-links{
+  background-color: #df4759;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  margin-top: 1.8px;
+  margin-left: 10px;
+  width: 100%;
+  padding: .9rem 3.5rem;
+}
+
+.btn-linksVideoTutorial{
+  background-color:  #df4759;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  margin-top: 1.8px;
+  margin-left: 10px;
+  width: 100%;
+  padding: .9rem 2.9rem;
+}
+
+.btn-linksReferences{
+  background-color:  #df4759;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  margin-top: 1.8px;
+  margin-left: 10px;
+  width: 100%;
+  padding: .9rem 3.4rem;
+}
+
+#aHtmlButtons{
+  text-decoration: none;
+  color: white;
+}
+.btn-links:hover{
+  /* color: orange;
+  background-color: white; */
+  filter: brightness(85%);
+}
+
+.btn-linksReferences:hover{
+/* color: orange;
+background-color: white; */
+filter: brightness(85%);
+}
+
+.btn-linksVideoTutorial:hover{
+  /* color: orange;
+ background-color: white; */
+ filter: brightness(85%);
+}
+
+
+
+/* code-editor-section */
+
+.code-editor-section{
+  background-color: #232222;
+  color: white;
+  /* height: 90vh; */
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.btn-tryIt{
+  background-color:  #df4759;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  margin-top: 1.8px;
+  margin-left: 10px;
+  width: 100%;
+  padding: .9rem 5rem;
+}
+.btn-tryIt:hover{
+  /* color: orange;
+  background-color: white; */
+  filter: brightness(85%);
+}
+
+
+
+/* media query */
 @media screen and (max-width: 480px){
 
  .searchTab{
@@ -424,7 +740,7 @@ padding-bottom: 9rem;
 
 #code-editor-section{
   padding-top: 10rem;
-  padding-bottom: 8rem
+  padding-bottom: 8rem;
   width: 100%;
 }
 
@@ -486,313 +802,3 @@ padding-bottom: 9rem;
 
  }
 /* end of media query  */
-
-
-
-
-
-/* start */
-*{
-  margin: 0;
-  padding: 0;
-}
-
-/* navbar */
-.navbar-brand h4{
-  font-family: 'Alfa Slab One', cursive;
-}
-
-.searchTab{
-  border-radius: 5px;
-  border-color: #2f2f41;
-}
-
-.icon{
-  margin-left: 10px;
-}
-
-#magnifyingGlass{
-  color: #ccc;
-  font-size: 14px;
-}
-
-#magnifyingGlass:hover{
-  color: orange;
-}
-
-.navbar{
- background-color: transparent;
-}
-
-.navbar ul li a{
-  color: white;
-}
-
-.navbar ul li a:hover{
-  color: orange;
-}
-
-.navbar ul li a:hover::before{
-  color: orange;
-}
-
-.navbar ul li a:hover::active{
-  color: orange;
-}
-
-.navbar ul li a:hover::after{
-  color: orange;
-  text-decoration: none;
-}
-
-.changeColor{
-  background-color:  rgba(0, 0, 0, 0.5);
-}
-
-.nav-item{
-  margin-left: 10px;
-  color: white;
-}
-
-/* .navbar ul li a.changeTextColor{
-  color: rgb(105, 95, 95);
-} */
-
-.nav-link{
-  text-decoration: none;
-  color: white;
- 
-}
-
-.nav-link:hover::active{
-  text-decoration: none;
-  color: white;
-}
-
-.nav-link:hover::after{
-  text-decoration: none;
-  color: white;
-
-}
-
-.navbar-toggler{
-  color: white;
-}
-
-#dropdown-menu {
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  background-color: lightblue;
-  max-height: 38.5rem;
-  overflow-y: scroll;
-}
-
-
-
-
-.btn-signIn{
-  background-color:  #df4759;
-  padding-left: 1.5em;
-  padding-right: 1.5rem;
-  padding-top: .6rem;
-  padding-bottom: .6rem;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  margin-top: 1.8px;
-  margin-left: 10px;
-}
-
-.btn-signIn:hover{
-  /* background-color: white;
-  color: orange; */
-  filter: brightness(85%);
-}
-
-
-
-/* hero page */
-.hero-banner{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./photos/laptopunsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.;
-    width: 100%;
-    height: 100vh;
-}
-
-
-.hero-banner h1 {
-  font-size: 3.75rem;
-}
-.hero-banner .btn {
-    position: relative;
-    overflow: hidden;
-    z-index: 9;
-    border-radius: 20px;
-}
-#btn{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.hero-banner .btn:before {
-    content: "";
-    background: #d32439;
-    width: 4px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -ms-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-}
-.hero-banner .btn:hover:before {
-    width: 100%;
-}
-/* end-hero banner */
-
-
-
-/* list-section */
-.list-section{
-  background-color: #101312;
-  
-}
-
-#card-list{
-  background-color: #101312;
-  color: #E0DFE6;
-  padding-top: 9rem;
-  padding-bottom: 10rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-
-.iconify{
-  font-size: 3rem;
-  color: white;
-}
-
-
-/* html gif*/
-.content1{
-    background-color: #161616;
-    width: 100%;
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin: auto;
-    padding-bottom: 7rem;
-}
-
-
-.card p{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
-.card h1{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
-
-.btn-links{
-  background-color: #df4759;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  margin-top: 1.8px;
-  margin-left: 10px;
-  width: 100%;
-  padding: .9rem 3.5rem;
-}
-
-.btn-linksVideoTutorial{
-  background-color:  #df4759;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  margin-top: 1.8px;
-  margin-left: 10px;
-  width: 100%;
-  padding: .9rem 2.9rem;
-}
-
-.btn-linksReferences{
-  background-color:  #df4759;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  margin-top: 1.8px;
-  margin-left: 10px;
-  width: 100%;
-  padding: .9rem 3.4rem;
-}
-
-#aHtmlButtons{
-  text-decoration: none;
-  color: white;
-}
-.btn-links:hover{
-  /* color: orange;
-  background-color: white; */
-  filter: brightness(85%);
-}
-
-.btn-linksReferences:hover{
-/* color: orange;
-background-color: white; */
-filter: brightness(85%);
-}
-
-.btn-linksVideoTutorial:hover{
-  /* color: orange;
- background-color: white; */
- filter: brightness(85%);
-}
-
-
-
-/* code-editor-section */
-
-.code-editor-section{
-  background-color: #232222;
-  color: white;
-  /* height: 90vh; */
-  width:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.btn-tryIt{
-  background-color:  #df4759;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  margin-top: 1.8px;
-  margin-left: 10px;
-  width: 100%;
-  padding: .9rem 5rem;
-}
-.btn-tryIt:hover{
-  /* color: orange;
-  background-color: white; */
-  filter: brightness(85%);
-}

@@ -121,36 +121,44 @@
 }
 
 #box {
-   background-color: #1c1c1c;
-   padding: 3rem 3rem;
+   /* padding: 3rem 3rem; */
    border-radius: 20px;
    margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
 }
 
-.iconify {
-   font-size: 6rem;
-   color: white;
-}
+
 
 
 div.card {
-   background-color: transparent;
+   background-color: #1c1c1c;
    box-shadow: none;
    border: none;
+   /* padding: 5rem; */
    display: flex;
+   justify-content: center;
    align-items: center;
+   text-align: center;
+   width: 17.5rem;
+   height: 20rem;
    color: white;
-   margin-top: .8rem;
-   -webkit-transform: scale(1);
+   border-radius: 20px;
+   margin: .25rem;
+   /* margin-top: .8rem; */
+ 
+   /* -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	transition: .3s ease-in-out; */
 }
 
-div.card:hover{
+/* div.card:hover{
     -webkit-transform: scale(1.3);
 	transform: scale(1.3);
-}
+} */
 
 
 
@@ -173,6 +181,8 @@ div.card:hover{
     #btn-signIn {
        margin: 0;
     } 
+
+   
   }
   
   @media screen and (min-width: 481px) and (max-width:575px){
@@ -237,5 +247,27 @@ div.card:hover{
     #btn-signIn {
        margin: 0;
     } 
+  }
+
+  @media screen and (min-width: 992px) and (max-width:1279px){
+   
+   div.card{
+      width: 14rem;
+      height: 18rem;
+   }
+
+   #img{
+      height: 130px;
+   }
+
+  }
+
+  @media screen and (min-width: 1280px) and (max-width:1799px){
+
+
+   div.card{
+      width: 16.5rem;
+   }
+
   }
 

@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="htmlParagraphs.css" />
+      <link rel="stylesheet" href="htmlColors.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +24,7 @@
          type="image/x-icon"
       />
 
-      <title>HTML Introduction</title>
+      <title>HTML Colors</title>
    </head>
    <body id="body">
       <!-- Navbar -->
@@ -133,21 +133,11 @@
                         <a href="htmlTagList.html" class="dropdown-item"
                            >HTML Tag List</a
                         >
-                        <a href="htmlAttributes.html" class="dropdown-item"
-                           >HTML Attributes</a
-                        >
-                        <a href="htmlColors.html" class="dropdown-item"
-                           >HTML Colors</a
-                        >
-                        <a href="htmlAudioVideo.html" class="dropdown-item"
-                           >HTML Audio/Video</a
-                        >
-                        <a href="htmlUrlEncode.html" class="dropdown-item"
-                           >HTML URL Encode</a
-                        >
-                        <a href="htmlLinks.html" class="dropdown-item"
-                           >HTML Links</a
-                        >
+                        <a href="#" class="dropdown-item">HTML Attributes</a>
+                        <a href="#" class="dropdown-item">HTML Colors</a>
+                        <a href="#" class="dropdown-item">HTML Audio/Video</a>
+                        <a href="#" class="dropdown-item">HTML URL Encode</a>
+                        <a href="#" class="dropdown-item">HTML Links</a>
                      </div>
                   </li>
                   <li class="nav-item">
@@ -315,197 +305,188 @@
                   <section class="sec1">
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
-                           <h2>HTML Paragraphs</h2>
+                           <h2>HTML Colors</h2>
                            <p>
-                              HTML paragraph or HTML p tag is used to define a
-                              paragraph in a webpage. Let's take a simple
-                              example to see how it work. It is a notable point
-                              that a browser itself add an empty line before and
-                              after a paragraph. An HTML &lt;p&gt; tag indicates
-                              starting of new paragraph.
+                              HTML colors are specified with predefined color
+                              names, or with RGB, HEX, HSL, RGBA, or HSLA
+                              values.
                            </p>
 
-                           <p class="text-warning">
-                              Note: If we are using various &lt;p&gt; tags in
-                              one HTML file then browser automatically adds a
-                              single blank line between the two paragraphs.
-                           </p>
-
-                           <p>See this example:</p>
-                           <p class="bg-dark">
-                              &lt;p&gt;This is first paragraph.&lt;/p&gt;
-                              <br />
-                              &lt;p&gt;This is second paragraph.&lt;/p&gt;
-                              <br />
-                              &lt;p&gt;This is third paragraph.&lt;/p&gt;
-                           </p>
-                           <div class="tryItButton">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph1"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try it!</a
-                              >
-                           </div>
-                           <br />
-                           <h3 class="mt-4">Space inside HTML Paragraph</h3>
+                           <h3>Color Names</h3>
                            <p>
-                              If you put a lot of spaces inside the HTML p tag,
-                              browser removes extra spaces and extra line while
-                              displaying the page. The browser counts number of
-                              spaces and lines as a single one.
+                              In HTML, a color can be specified by using a color
+                              name:
                            </p>
-                           <p class="bg-dark">
-                              &lt;p&gt;
-                              <br />
-                              I am
-                              <br />
-                              going to provide
-                              <br />
-                              you a tutorial on HTML
-                              <br />
-                              and hope that it will
-                              <br />
-                              be very beneficial for you. &lt;/p&gt;
-                              <br />
-                              &lt;p&gt;
-                              <br />
-                              look, I put here a lot of spaces
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              but
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I
-                              know, Browser will ignore it.&lt;/p&gt;
-                              <br />
-                              &lt;p&gt;
-                              <br />
-                              You cannot determine the display of HTML
-                              &lt;/p&gt;
-                              <br />
-                              &lt;p&gt; because resized windows may create
-                              different result.
-                              <br />
-                              &lt;/p&gt;
-                           </p>
-                           <br />
-                           <div class="tryItButton">
+                           <h1 style="background-color: Tomato">Tomato</h1>
+                           <h1 style="background-color: Orange">Orange</h1>
+                           <h1 style="background-color: DodgerBlue">
+                              DodgerBlue
+                           </h1>
+                           <h1 style="background-color: MediumSeaGreen">
+                              MediumSeaGreen
+                           </h1>
+                           <h1 style="background-color: Gray">Gray</h1>
+                           <h1 style="background-color: SlateBlue">
+                              SlateBlue
+                           </h1>
+                           <h1 style="background-color: Violet">Violet</h1>
+                           <h1 style="background-color: LightGray">
+                              LightGray
+                           </h1>
+
+                           <div class="tryItButton mt-4">
                               <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph2"
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_names"
                                  class="btn-tryIt"
                                  id="aHtmlButtons"
-                                 >Try it!</a
+                                 >Try It!</a
                               >
                            </div>
-                           <br />
                            <p class="mt-4">
-                              As you can see, all the extra lines and
-                              unnecessary spaces are removed by the browser.
+                              HTML supports
+                              <a
+                                 href="https://www.w3schools.com/colors/colors_names.asp"
+                              >
+                                 140 standard color names.</a
+                              >
                            </p>
-                           <hr />
-                           <h3>
-                              How to Use &lt;br&gt; and &lt;hr&gt; tag with
-                              paragraph?
-                           </h3>
+                           <h3>Background Color</h3>
                            <p>
-                              An HTML &lt;br&gt; tag is used for line break and
-                              it can be used with paragraph elements. Following
-                              is the example to show how to use &lt;br&gt; with
-                              &lt;p&gt; element.
+                              You can set the background color for HTML
+                              elements:
                            </p>
-                           <br />
+                           <h1 style="background-color: DodgerBlue">
+                              Hello World
+                           </h1>
+                           <p style="background-color: Tomato">
+                              Lorem ipsum, dolor sit amet consectetur
+                              adipisicing elit. Est a mollitia neque saepe enim?
+                              Impedit debitis reiciendis numquam eum labore!
+                           </p>
                            <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;!DOCTYPE html&gt;
+                              &lt;h1
+                              style="background-color:DodgerBlue;"&gt;Hello
+                              World&lt;/h1&gt;
                               <br />
-                              &lt;html&gt;
-                              <br />
-                              &lt;head&gt;
-                              <br />
-                              &lt;/head&gt;
-                              <br />
-                              &lt;body&gt;
-                              <br />
-                              &lt;h2&lt;Use of line break with pragraph
-                              tag&lt;/h2&gt;
-                              <br />
-                              &lt;p&gt;&lt;br&gt;Papa and mama, and baby and
-                              Dot,
-                              <br />
-                              &lt;br&gt;Willie and me?the whole of the lot
-                              <br />
-                              &lt;br&gt;Of us all went over in Bimberlie's
-                              sleigh,
-                              <br />
-                              &lt;br&gt;To grandmama's house on Christmas day.
-                              <br />
-                              &lt;/p&gt;
-                              <br />
-                              &lt;/body&gt;
-                              <br />
-                              &lt;/html&gt;
+                              &lt;p style="background-color:Tomato;"&gt;Lorem
+                              ipsum...&lt;/p&gt;
                            </p>
                            <div class="tryItButton">
                               <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph3"
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_background"
                                  class="btn-tryIt"
                                  id="aHtmlButtons"
-                                 >Try it!</a
+                                 >Try It!</a
                               >
                            </div>
-                           <div class="box1 mt-5">
-                              <img
-                                 src="./photos/htmlParagraph/html-paragraph.png"
-                                 class="imgParagraph1"
-                                 alt=""
-                              />
-                           </div>
-                           <br />
-                           <p>
-                              An HTML &lt;hr&gt; tag is used to apply a
-                              horizontal line between two statements or two
-                              paragraphs. Following is the example which is
-                              showing use of &lt;hr&gt; tag with paragraph.
+                           <h3 class="mt-5">Text Color</h3>
+                           <p>You can set the color of text:</p>
+                           <h1 style="color: Tomato">Hello World</h1>
+                           <p style="color: DodgerBlue">
+                              Lorem ipsum dolor sit amet, consectetuer
+                              adipiscing elit, sed diam nonummy nibh euismod
+                              tincidunt ut laoreet dolore magna aliquam erat
+                              volutpat.
                            </p>
-                           <br />
+                           <p style="color: MediumSeaGreen">
+                              Ut wisi enim ad minim veniam, quis nostrud exerci
+                              tation ullamcorper suscipit lobortis nisl ut
+                              aliquip ex ea commodo consequat.
+                           </p>
                            <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;!DOCTYPE html&gt;
-                              <br />
-                              &lt;html&gt;
-                              <br />
-                              &lt;head&gt;
-                              <br />
-                              &lt;/head&gt;
-                              <br />
-                              &lt;body&gt;
-                              <br />
-                              &lt;h2&gt;Example to show a horizontal line with
-                              paragraphs&lt;/h2&gt;
-                              <br />
-                              &lt;p&gt; An HTML hr tag draw a horizontal line
-                              and separate two paragraphs with that
-                              line.&lt;hr&gt; it will start a new paragraph.
-                              &lt;/p&gt;
-                              <br />
-                              &lt;/body&gt;
-                              <br />
-                              &lt;/html&gt;
+                              &lt;h1 style="color:Tomato;">Hello
+                              World&lt;/h1&gt; &lt;p
+                              style="color:DodgerBlue;"&gt;Lorem
+                              ipsum...&lt;/p&gt; &lt;p
+                              style="color:MediumSeaGreen;"&gt;Ut wisi
+                              enim...&lt;/p&gt;
                            </p>
                            <div class="tryItButton">
                               <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph4"
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_text"
                                  class="btn-tryIt"
                                  id="aHtmlButtons"
-                                 >Try it!</a
+                                 >Try It!</a
                               >
                            </div>
-                           <p class="mt-4"><strong>Output:</strong></p>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlParagraph/html-paragraph2.png"
-                                 alt=""
-                                 class="imgParagraph2"
-                              />
+                           <h3 class="mt-5">Border Color</h3>
+                           <p>You can set the color of borders:</p>
+                           <h1 style="border: 2px solid Tomato">Hello World</h1>
+                           <h1 style="border: 2px solid DodgerBlue">
+                              Hello World
+                           </h1>
+                           <h1 style="border: 2px solid Violet">Hello World</h1>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              &lt;h1 style="border:2px solid Tomato;"&gt;Hello
+                              World&lt;/h1&gt; &lt;h1 style="border:2px solid
+                              DodgerBlue;"&gt;Hello World&lt;/h1&gt; &lt;h1
+                              style="border:2px solid Violet;"&gt;Hello
+                              World&lt;/h1&gt;
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_border"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
                            </div>
+
+                           <h3 class="mt-5">Color Values</h3>
+                           <p>
+                              In HTML, colors can also be specified using RGB
+                              values, HEX values, HSL values, RGBA values, and
+                              HSLA values.
+                           </p>
+                           <p>
+                              The following three &lt;div&gt; elements have
+                              their background color set with RGB, HEX, and HSL
+                              values:
+                           </p>
+                           <h1 style="background-color: rgb(255, 99, 71)">
+                              rgb(255, 99, 71)
+                           </h1>
+                           <h1 style="background-color: #ff6347">#ff6347</h1>
+                           <h1 style="background-color: hsl(9, 100%, 64%)">
+                              hsl(9, 100%, 64%)
+                           </h1>
+                           <p>
+                              The following two &lt;div&gt; elements have their
+                              background color set with RGBA and HSLA values,
+                              which adds an Alpha channel to the color (here we
+                              have 50% transparency):
+                           </p>
+                           <h1 style="background-color: rgba(255, 99, 71, 0.5)">
+                              rgba(255, 99, 71, 0.5)
+                           </h1>
+                           <h1
+                              style="background-color: hsla(9, 100%, 64%, 0.5)"
+                           >
+                              hsla(9, 100%, 64%, 0.5)
+                           </h1>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              &lt;h1 style="background-color:rgb(255, 99,
+                              71);"&gt;...&lt;/h1&gt; &lt;h1
+                              style="background-color:#ff6347;"&gt;...&lt;/h1&gt;
+                              &lt;h1 style="background-color:hsl(9, 100%,
+                              64%);"&gt;...&lt;/h1&gt; &lt;h1
+                              style="background-color:rgba(255, 99, 71,
+                              0.5);"&gt;...&lt;/h1&gt; &lt;h1
+                              style="background-color:hsla(9, 100%, 64%,
+                              0.5);"&gt;...&lt;/h1&gt;
+                           </p>
+                           <div class="tryItButton">
+                            <a
+                               href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_values"
+                               class="btn-tryIt"
+                               id="aHtmlButtons"
+                               >Try It!</a
+                            >
+                         </div>
                         </div>
                      </div>
                   </section>

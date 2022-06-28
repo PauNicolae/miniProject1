@@ -315,197 +315,253 @@
                   <section class="sec1">
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
-                           <h2>HTML Paragraphs</h2>
+                           <h2>HTML Styles</h2>
                            <p>
-                              HTML paragraph or HTML p tag is used to define a
-                              paragraph in a webpage. Let's take a simple
-                              example to see how it work. It is a notable point
-                              that a browser itself add an empty line before and
-                              after a paragraph. An HTML &lt;p&gt; tag indicates
-                              starting of new paragraph.
+                              HTML is quite limited when it comes to the
+                              presentation of a web page. It was originally
+                              designed as a simple way of presenting
+                              information. CSS (Cascading Style Sheets) was
+                              introduced in December 1996 by the World Wide Web
+                              Consortium (W3C) to provide a better way to style
+                              HTML elements.
                            </p>
 
+                           <p>
+                              With CSS, it becomes very easy to specify the
+                              things like, size and typeface for the fonts,
+                              colors for the text and backgrounds, alignment of
+                              the text and images, amount of space between the
+                              elements, border and outlines for the elements,
+                              and lots of other styling properties.
+                           </p>
+
+                           <h3>Adding Styles to HTML Elements</h3>
+                           <p>
+                              Style information can either be attached as a
+                              separate document or embedded in the HTML document
+                              itself. These are the three methods of
+                              implementing styling information to an HTML
+                              document.
+                           </p>
+                           <p>
+                              <li>
+                                 Inline styles — Using the style attribute in
+                                 the HTML start tag.
+                              </li>
+                              <li>
+                                 Embedded style — Using the &lt;style&gt;
+                                 element in the head section of the document.
+                              </li>
+                              <li>
+                                 External style sheet — Using the
+                                 <link /> element, pointing to an external CSS
+                                 files.
+                              </li>
+                           </p>
                            <p class="text-warning">
-                              Note: If we are using various &lt;p&gt; tags in
-                              one HTML file then browser automatically adds a
-                              single blank line between the two paragraphs.
+                              Note: The inline styles have the highest priority,
+                              and the external style sheets have the lowest. It
+                              means if you specify styles for your paragraphs in
+                              both embedded and external style sheets, the
+                              conflicting style rules in the embedded style
+                              sheet would override the external style sheet.
                            </p>
-
-                           <p>See this example:</p>
+                           <h3>Inline Styles</h3>
+                           <br />
+                           <p>
+                              Inline styles are used to apply the unique style
+                              rules to an element, by putting the CSS rules
+                              directly into the start tag. It can be attached to
+                              an element using the style attribute.
+                           </p>
+                           <p>
+                              The style attribute includes a series of CSS
+                              property and value pairs. Each property: value
+                              pair is separated by a semicolon (;), just as you
+                              would write into an embedded or external style
+                              sheet. But it needs to be all in one line i.e. no
+                              line break after the semicolon.
+                           </p>
+                           <br />
+                           <p>
+                              The following example demonstrates how to set the
+                              color and font-size of the text:
+                           </p>
+                           <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;p&gt;This is first paragraph.&lt;/p&gt;
-                              <br />
-                              &lt;p&gt;This is second paragraph.&lt;/p&gt;
-                              <br />
-                              &lt;p&gt;This is third paragraph.&lt;/p&gt;
+                              &lt;h1 style="color:red; font-size:30px;"&gt; This
+                              is a heading&lt;/h1&gt;
+                           
+                           <br />
+                           
+                              &lt;p style="color:green; font-size:18px;"&gt;
+                              This is a paragraph.&lt;/p&gt;
+                           
+                           <br />
+                           
+                              &lt;div style="color:green; font-size:18px;"&gt;
+                              This is some text.&lt;/div&gt;
                            </p>
                            <div class="tryItButton">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph1"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try it!</a
-                              >
-                           </div>
-                           <br />
-                           <h3 class="mt-4">Space inside HTML Paragraph</h3>
+                            <a
+                               href="https://www.tutorialrepublic.com/codelab.php?topic=html&file=inline-styles"
+                               class="btn-tryIt"
+                               id="aHtmlButtons"
+                               >Try it!</a
+                            >
+                         </div>
+                           <p class="mt-5">
+                              Using the inline styles are generally considered
+                              as a bad practice. Because style rules are
+                              embedded directly inside the html tag, it causes
+                              the presentation to become mixed with the content
+                              of the document, which makes updating or
+                              maintaining a website very difficult.
+                           </p>
+                           <p class="text-warning">
+                              Note: It's become impossible to style
+                              pseudo-elements and pseudo-classes with inline
+                              styles. You should, therefore, avoid the use of
+                              style attributes in your markup. Using external
+                              style sheet is the preferred way to add style
+                              information to an HTML document.
+                           </p>
+                           <h3>Embedded Style Sheets</h3>
                            <p>
-                              If you put a lot of spaces inside the HTML p tag,
-                              browser removes extra spaces and extra line while
-                              displaying the page. The browser counts number of
-                              spaces and lines as a single one.
+                              Embedded or internal style sheets only affect the
+                              document they are embedded in.
                            </p>
-                           <p class="bg-dark">
-                              &lt;p&gt;
-                              <br />
-                              I am
-                              <br />
-                              going to provide
-                              <br />
-                              you a tutorial on HTML
-                              <br />
-                              and hope that it will
-                              <br />
-                              be very beneficial for you. &lt;/p&gt;
-                              <br />
-                              &lt;p&gt;
-                              <br />
-                              look, I put here a lot of spaces
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              but
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I
-                              know, Browser will ignore it.&lt;/p&gt;
-                              <br />
-                              &lt;p&gt;
-                              <br />
-                              You cannot determine the display of HTML
-                              &lt;/p&gt;
-                              <br />
-                              &lt;p&gt; because resized windows may create
-                              different result.
-                              <br />
-                              &lt;/p&gt;
-                           </p>
-                           <br />
-                           <div class="tryItButton">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph2"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try it!</a
-                              >
-                           </div>
-                           <br />
-                           <p class="mt-4">
-                              As you can see, all the extra lines and
-                              unnecessary spaces are removed by the browser.
-                           </p>
-                           <hr />
-                           <h3>
-                              How to Use &lt;br&gt; and &lt;hr&gt; tag with
-                              paragraph?
-                           </h3>
                            <p>
-                              An HTML &lt;br&gt; tag is used for line break and
-                              it can be used with paragraph elements. Following
-                              is the example to show how to use &lt;br&gt; with
-                              &lt;p&gt; element.
+                              Embedded style sheets are defined in the
+                              &lt;head&gt; section of an HTML document using the
+                              &lt;style&gt; tag. You can define any number of
+                              &lt;style&gt; elements inside the &lt;head&gt;
+                              section.
                            </p>
                            <br />
                            <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;!DOCTYPE html&gt;
-                              <br />
-                              &lt;html&gt;
-                              <br />
                               &lt;head&gt;
                               <br />
-                              &lt;/head&gt;
+                              &lt;style&gt;
                               <br />
-                              &lt;body&gt;
+                              body { background-color: YellowGreen; }
                               <br />
-                              &lt;h2&lt;Use of line break with pragraph
-                              tag&lt;/h2&gt;
+                              h1 { color: blue; }
                               <br />
-                              &lt;p&gt;&lt;br&gt;Papa and mama, and baby and
-                              Dot,
-                              <br />
-                              &lt;br&gt;Willie and me?the whole of the lot
-                              <br />
-                              &lt;br&gt;Of us all went over in Bimberlie's
-                              sleigh,
-                              <br />
-                              &lt;br&gt;To grandmama's house on Christmas day.
-                              <br />
-                              &lt;/p&gt;
-                              <br />
-                              &lt;/body&gt;
-                              <br />
-                              &lt;/html&gt;
+                              p { color: red; } &lt;/style&gt; &lt;/head&gt;
                            </p>
                            <div class="tryItButton">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph3"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try it!</a
-                              >
-                           </div>
-                           <div class="box1 mt-5">
-                              <img
-                                 src="./photos/htmlParagraph/html-paragraph.png"
-                                 class="imgParagraph1"
-                                 alt=""
-                              />
-                           </div>
-                           <br />
+                            <a
+                               href="https://www.tutorialrepublic.com/codelab.php?topic=html&file=embedded-style-sheet"
+                               class="btn-tryIt"
+                               id="aHtmlButtons"
+                               >Try it!</a
+                            >
+                         </div>
+                           <h3 class="mt-5">External Style Sheets</h3>
                            <p>
-                              An HTML &lt;hr&gt; tag is used to apply a
-                              horizontal line between two statements or two
-                              paragraphs. Following is the example which is
-                              showing use of &lt;hr&gt; tag with paragraph.
+                              An external style sheet is ideal when the style is
+                              applied to many pages.
                            </p>
-                           <br />
+                           <p>
+                              An external style sheet holds all the style rules
+                              in a separate document that you can link from any
+                              HTML document on your site. External style sheets
+                              are the most flexible because with an external
+                              style sheet, you can change the look of an entire
+                              website by updating just one file.
+                           </p>
+                           <p>
+                              You can attach external style sheets in two ways —
+                              linking and importing:
+                           </p>
+                           <h3>Linking External Style Sheets</h3>
+                           <p>
+                              An external style sheet can be linked to an HTML
+                              document using the &lt;link&gt; tag.
+                           </p>
                            <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;!DOCTYPE html&gt;
-                              <br />
-                              &lt;html&gt;
-                              <br />
                               &lt;head&gt;
                               <br />
+                              &lt;link rel="stylesheet" href="css/style.css"&gt;
+                              <br />
                               &lt;/head&gt;
-                              <br />
-                              &lt;body&gt;
-                              <br />
-                              &lt;h2&gt;Example to show a horizontal line with
-                              paragraphs&lt;/h2&gt;
-                              <br />
-                              &lt;p&gt; An HTML hr tag draw a horizontal line
-                              and separate two paragraphs with that
-                              line.&lt;hr&gt; it will start a new paragraph.
-                              &lt;/p&gt;
-                              <br />
-                              &lt;/body&gt;
-                              <br />
-                              &lt;/html&gt;
                            </p>
                            <div class="tryItButton">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph4"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try it!</a
-                              >
-                           </div>
-                           <p class="mt-4"><strong>Output:</strong></p>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlParagraph/html-paragraph2.png"
-                                 alt=""
-                                 class="imgParagraph2"
-                              />
-                           </div>
+                            <a
+                               href="https://www.tutorialrepublic.com/codelab.php?topic=html&file=linking-external-style-sheet"
+                               class="btn-tryIt"
+                               id="aHtmlButtons"
+                               >Try it!</a
+                            >
+                         </div>
+                           <h3 class="mt-5">Importing External Style Sheets</h3>
+                           <p>
+                              The @import rule is another way of loading an
+                              external style sheet. The @import statement
+                              instructs the browser to load an external style
+                              sheet and use its styles.
+                           </p>
+                           <p>
+                              You can use it in two ways. The simplest way is to
+                              use it within the &lt;style&gt; element in your
+                              &lt;head&gt; section. Note that, other CSS rules
+                              may still be included in the &lt;style&gt;
+                              element.
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              &lt;style&gt;
+                              <br />
+                              @import url("css/style.css");
+                              <br />
+                              p {
+                              <br />
+                              color: blue;
+                              <br />
+                              font-size: 16px;
+                              <br />
+                              }
+                              <br />
+                              &lt;/style&gt;
+                           </p>
+                           <div class="tryItButton">
+                            <a
+                               href="https://www.tutorialrepublic.com/codelab.php?topic=html&file=importing-external-style-sheet"
+                               class="btn-tryIt"
+                               id="aHtmlButtons"
+                               >Try it!</a
+                            >
+                         </div>
+                           <p class="mt-5">
+                              Similarly, you can use the @import rule to import
+                              a style sheet within another style sheet.
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              @import url("css/layout.css");
+                              <br />
+                              @import url("css/color.css");
+                              <br />
+                              body {
+                              <br />
+                              color: blue;
+                              <br />
+                              font-size: 14px;
+                              <br />
+                              }
+                           </p>
+                           <div class="tryItButton">
+                            <a
+                               href="https://www.tutorialrepublic.com/codelab.php?topic=html&file=css-import-rule"
+                               class="btn-tryIt"
+                               id="aHtmlButtons"
+                               >Try it!</a
+                            >
+                         </div>
+                         <p class="mt-5 text-warning">Note: All @import rules must occur at the start of the style sheet. Any style rule defined in the style sheet itself override conflicting rule in the imported style sheets. The @import rule may cause performance issues, you should generally avoid importing style sheets.</p>
                         </div>
                      </div>
                   </section>

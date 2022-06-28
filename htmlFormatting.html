@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="htmlParagraphs.css" />
+      <link rel="stylesheet" href="htmlFormatting.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +24,7 @@
          type="image/x-icon"
       />
 
-      <title>HTML Introduction</title>
+      <title>HTML Formatting</title>
    </head>
    <body id="body">
       <!-- Navbar -->
@@ -133,21 +133,11 @@
                         <a href="htmlTagList.html" class="dropdown-item"
                            >HTML Tag List</a
                         >
-                        <a href="htmlAttributes.html" class="dropdown-item"
-                           >HTML Attributes</a
-                        >
-                        <a href="htmlColors.html" class="dropdown-item"
-                           >HTML Colors</a
-                        >
-                        <a href="htmlAudioVideo.html" class="dropdown-item"
-                           >HTML Audio/Video</a
-                        >
-                        <a href="htmlUrlEncode.html" class="dropdown-item"
-                           >HTML URL Encode</a
-                        >
-                        <a href="htmlLinks.html" class="dropdown-item"
-                           >HTML Links</a
-                        >
+                        <a href="#" class="dropdown-item">HTML Attributes</a>
+                        <a href="#" class="dropdown-item">HTML Colors</a>
+                        <a href="#" class="dropdown-item">HTML Audio/Video</a>
+                        <a href="#" class="dropdown-item">HTML URL Encode</a>
+                        <a href="#" class="dropdown-item">HTML Links</a>
                      </div>
                   </li>
                   <li class="nav-item">
@@ -315,197 +305,221 @@
                   <section class="sec1">
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
-                           <h2>HTML Paragraphs</h2>
+                           <h2>HTML Text Formatting</h2>
                            <p>
-                              HTML paragraph or HTML p tag is used to define a
-                              paragraph in a webpage. Let's take a simple
-                              example to see how it work. It is a notable point
-                              that a browser itself add an empty line before and
-                              after a paragraph. An HTML &lt;p&gt; tag indicates
-                              starting of new paragraph.
+                              HTML contains several elements for defining text
+                              with a special meaning.
                            </p>
-
-                           <p class="text-warning">
-                              Note: If we are using various &lt;p&gt; tags in
-                              one HTML file then browser automatically adds a
-                              single blank line between the two paragraphs.
+                           <h3>HTML Formatting Elements</h3>
+                           <p>
+                              Formatting elements were designed to display
+                              special types of text:
                            </p>
-
-                           <p>See this example:</p>
+                           <p>
+                              <li>&lt;b&gt;- Bold text</li>
+                              <li>&lt;strong&gt;-Important text</li>
+                              <li>&lt;i&gt;-Italic text</li>
+                              <li>&lt;em&gt;-Emphasized text</li>
+                              <li>&lt;mark&gt;-Marked text</li>
+                              <li>&lt;small&gt;-Smaller text</li>
+                              <li>&lt;del&gt;-Deleted text</li>
+                              <li>&lt;ins&gt;-Inserted text</li>
+                              <li>&lt;sub&gt;-Subscript text</li>
+                              <li>&lt;sup&gt;-Superscript text</li>
+                           </p>
+                           <br />
+                           <h3>HTML &lt;b&gt; and &lt;strong&gt; Elements</h3>
+                           <p>
+                              The HTML &lt;b&gt; element defines bold text,
+                              without any extra importance.
+                           </p>
+                           <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;p&gt;This is first paragraph.&lt;/p&gt;
-                              <br />
-                              &lt;p&gt;This is second paragraph.&lt;/p&gt;
-                              <br />
-                              &lt;p&gt;This is third paragraph.&lt;/p&gt;
+                              &lt;b&gt;This text is bold&lt;/b&gt;
                            </p>
                            <div class="tryItButton">
                               <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph1"
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_b"
                                  class="btn-tryIt"
                                  id="aHtmlButtons"
                                  >Try it!</a
                               >
                            </div>
-                           <br />
-                           <h3 class="mt-4">Space inside HTML Paragraph</h3>
-                           <p>
-                              If you put a lot of spaces inside the HTML p tag,
-                              browser removes extra spaces and extra line while
-                              displaying the page. The browser counts number of
-                              spaces and lines as a single one.
+
+                           <p class="mt-5">
+                              The HTML &lt;strong&gt; element defines text with
+                              strong importance. The content inside is typically
+                              displayed in bold.
                            </p>
+                           <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;p&gt;
-                              <br />
-                              I am
-                              <br />
-                              going to provide
-                              <br />
-                              you a tutorial on HTML
-                              <br />
-                              and hope that it will
-                              <br />
-                              be very beneficial for you. &lt;/p&gt;
-                              <br />
-                              &lt;p&gt;
-                              <br />
-                              look, I put here a lot of spaces
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              but
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I
-                              know, Browser will ignore it.&lt;/p&gt;
-                              <br />
-                              &lt;p&gt;
-                              <br />
-                              You cannot determine the display of HTML
-                              &lt;/p&gt;
-                              <br />
-                              &lt;p&gt; because resized windows may create
-                              different result.
-                              <br />
-                              &lt;/p&gt;
+                              &lt;strong&gt;This text is
+                              important!&lt;/strong&gt;
                            </p>
-                           <br />
                            <div class="tryItButton">
                               <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph2"
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_strong"
                                  class="btn-tryIt"
                                  id="aHtmlButtons"
                                  >Try it!</a
                               >
                            </div>
-                           <br />
-                           <p class="mt-4">
-                              As you can see, all the extra lines and
-                              unnecessary spaces are removed by the browser.
-                           </p>
-                           <hr />
-                           <h3>
-                              How to Use &lt;br&gt; and &lt;hr&gt; tag with
-                              paragraph?
+                           <h3 class="mt-5">
+                              HTML &lt;i&gt; and &lt;em&gt; Elements
                            </h3>
                            <p>
-                              An HTML &lt;br&gt; tag is used for line break and
-                              it can be used with paragraph elements. Following
-                              is the example to show how to use &lt;br&gt; with
-                              &lt;p&gt; element.
+                              The HTML &lt;i&gt; element defines a part of text
+                              in an alternate voice or mood. The content inside
+                              is typically displayed in italic.
                            </p>
-                           <br />
+                           <p class="text-info">
+                              Tip: The &lt;i&gt; tag is often used to indicate a
+                              technical term, a phrase from another language, a
+                              thought, a ship name, etc.
+                           </p>
                            <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;!DOCTYPE html&gt;
-                              <br />
-                              &lt;html&gt;
-                              <br />
-                              &lt;head&gt;
-                              <br />
-                              &lt;/head&gt;
-                              <br />
-                              &lt;body&gt;
-                              <br />
-                              &lt;h2&lt;Use of line break with pragraph
-                              tag&lt;/h2&gt;
-                              <br />
-                              &lt;p&gt;&lt;br&gt;Papa and mama, and baby and
-                              Dot,
-                              <br />
-                              &lt;br&gt;Willie and me?the whole of the lot
-                              <br />
-                              &lt;br&gt;Of us all went over in Bimberlie's
-                              sleigh,
-                              <br />
-                              &lt;br&gt;To grandmama's house on Christmas day.
-                              <br />
-                              &lt;/p&gt;
-                              <br />
-                              &lt;/body&gt;
-                              <br />
-                              &lt;/html&gt;
+                              &lt;i&gt;This text is italic&lt;/i&gt;
                            </p>
                            <div class="tryItButton">
                               <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph3"
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i"
                                  class="btn-tryIt"
                                  id="aHtmlButtons"
                                  >Try it!</a
                               >
                            </div>
-                           <div class="box1 mt-5">
-                              <img
-                                 src="./photos/htmlParagraph/html-paragraph.png"
-                                 class="imgParagraph1"
-                                 alt=""
-                              />
+                           <p class="mt-5">
+                              The HTML &lt;em&gt; element defines emphasized
+                              text. The content inside is typically displayed in
+                              italic.
+                           </p>
+                           <p class="text-info">
+                              Tip: A screen reader will pronounce the words in
+                              &lt;em&gt; with an emphasis, using verbal stress.
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              &lt;em&gt;This text is emphasized&lt;/em&gt;
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_em"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try it!</a
+                              >
                            </div>
-                           <br />
+                           <h3 class="mt-5">HTML &lt;small&gt; Element</h3>
                            <p>
-                              An HTML &lt;hr&gt; tag is used to apply a
-                              horizontal line between two statements or two
-                              paragraphs. Following is the example which is
-                              showing use of &lt;hr&gt; tag with paragraph.
+                              The HTML &lt;small&gt; element defines smaller
+                              text:
                            </p>
-                           <br />
                            <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;!DOCTYPE html&gt;
-                              <br />
-                              &lt;html&gt;
-                              <br />
-                              &lt;head&gt;
-                              <br />
-                              &lt;/head&gt;
-                              <br />
-                              &lt;body&gt;
-                              <br />
-                              &lt;h2&gt;Example to show a horizontal line with
-                              paragraphs&lt;/h2&gt;
-                              <br />
-                              &lt;p&gt; An HTML hr tag draw a horizontal line
-                              and separate two paragraphs with that
-                              line.&lt;hr&gt; it will start a new paragraph.
-                              &lt;/p&gt;
-                              <br />
-                              &lt;/body&gt;
-                              <br />
-                              &lt;/html&gt;
+                              &lt;small&gt;This is some smaller
+                              text.&lt;/small&gt;
                            </p>
                            <div class="tryItButton">
                               <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlparagraph4"
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_small"
                                  class="btn-tryIt"
                                  id="aHtmlButtons"
                                  >Try it!</a
                               >
                            </div>
-                           <p class="mt-4"><strong>Output:</strong></p>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlParagraph/html-paragraph2.png"
-                                 alt=""
-                                 class="imgParagraph2"
-                              />
+                           <h3 class="mt-5">HTML &lt;mark&gt; Element</h3>
+                           <p>
+                              The HTML &lt;mark&gt; element defines text that
+                              should be marked or highlighted:
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt;
+                              today.
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_mark"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try it!</a
+                              >
                            </div>
+                           <h3 class="mt-5">HTML &lt;del&gt; Element</h3>
+                           <p>
+                              The HTML &lt;del&gt; element defines text that has
+                              been deleted from a document. Browsers will
+                              usually strike a line through deleted text:
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              My favorite color is &lt;del&gt;blue&lt;/del&gt;
+                              red.
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_del"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try it!</a
+                              >
+                           </div>
+                           <h3 class="mt-5">HTML &lt;ins&gt; Element</h3>
+                           <p>
+                              The HTML &lt;ins&gt; element defines a text that
+                              has been inserted into a document. Browsers will
+                              usually underline inserted text:
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              My favorite color is &lt;del&gt;blue&lt;/del&gt;
+                              &lt;ins&gt;red&lt;/ins&gt;.
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_del_ins"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try it!</a
+                              >
+                           </div>
+                           <h3 class="mt-5">HTML &lt;sub&gt; Element</h3>
+                           <p>
+                              The HTML &lt;sub&gt; element defines subscript
+                              text. Subscript text appears half a character
+                              below the normal line, and is sometimes rendered
+                              in a smaller font. Subscript text can be used for
+                              chemical formulas, like H<sub>2</sub>O:
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              This is &lt;sub&gt;subscripted&lt;/sub&gt; text.
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sub"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try it!</a
+                              >
+                           </div>
+                           <h3 class="mt-5">HTML &lt;sup&gt; Element</h3>
+                                     <p>
+                                        The HTML &lt;sup&gt; element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW<sup>[1]<sup>:
+                                        </p>
+                                       <p><strong>Example:</strong></p>
+                                    <p class="bg-dark">
+                                        This is &lt;sup&gt;superscripted&lt;/sup&gt; text.
+                                    </p>
+                                    <div class="tryItButton">
+                                        <a
+                                           href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sup"
+                                           class="btn-tryIt"
+                                           id="aHtmlButtons"
+                                           >Try it!</a
+                                        >
+                                     </div>
                         </div>
                      </div>
                   </section>

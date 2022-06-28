@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="htmlEditors.css" />
+      <link rel="stylesheet" href="htmlBuildingBlocks.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +24,7 @@
          type="image/x-icon"
       />
 
-      <title>HTML Editors</title>
+      <title>HTML Introduction</title>
    </head>
    <body id="body">
       <!-- Navbar -->
@@ -121,7 +121,7 @@
                            >HTML URL Encode</a
                         >
                      </div>
-                 </li>
+                  </li>
                   <li class="nav-item dropdown">
                      <a
                         href="#"
@@ -130,12 +130,24 @@
                         >References</a
                      >
                      <div class="dropdown-menu bg-dark">
-                        <a href="htmlTagList.html" class="dropdown-item">HTML Tag List</a>
-                        <a href="#" class="dropdown-item">HTML Attributes</a>
-                        <a href="#" class="dropdown-item">HTML Colors</a>
-                        <a href="#" class="dropdown-item">HTML Audio/Video</a>
-                        <a href="#" class="dropdown-item">HTML URL Encode</a>
-                        <a href="#" class="dropdown-item">HTML Links</a>
+                        <a href="htmlTagList.html" class="dropdown-item"
+                           >HTML Tag List</a
+                        >
+                        <a href="htmlAttributes.html" class="dropdown-item"
+                           >HTML Attributes</a
+                        >
+                        <a href="htmlColors.html" class="dropdown-item"
+                           >HTML Colors</a
+                        >
+                        <a href="htmlAudioVideo.html" class="dropdown-item"
+                           >HTML Audio/Video</a
+                        >
+                        <a href="htmlUrlEncode.html" class="dropdown-item"
+                           >HTML URL Encode</a
+                        >
+                        <a href="htmlLinks.html" class="dropdown-item"
+                           >HTML Links</a
+                        >
                      </div>
                   </li>
                   <li class="nav-item">
@@ -295,7 +307,7 @@
                               class="list-group-item list-group-item-action py-2 ripple"
                               id="list-group-item"
                               ><span>HTML URL Encode</span></a
-                           >      
+                           >
                         </div>
                      </div>
                   </nav>
@@ -303,146 +315,85 @@
                   <section class="sec1">
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
-                           <h2>HTML Editors</h2>
+                           <h2>Building blocks of HTML</h2>
                            <p>
-                              A simple text editor is all you need to learn
-                              HTML.
-                           </p>
-                           <br />
-                           <h3>Learn HTML Using Notepad or TextEdit</h3>
-                           <p>
-                              Web pages can be created and modified by using
-                              professional HTML editors.
-                              <br />
-                              However, for learning HTML we recommend a simple
-                              text editor like Notepad (PC) or TextEdit (Mac).
-                              <br />
-                              We believe in that using a simple text editor is a
-                              good way to learn HTML.
-                              <br />
-                              Follow the steps below to create your first web
-                              page with Notepad or TextEdit.
-                           </p>
-                           <br />
-                           <h3>Step 1: Open Notepad (PC)</h3>
-                           <p>
-                              Windows 8 or later:
-                              <br />
-                              Open the Start Screen (the window symbol at the
-                              bottom left on your screen). Type Notepad.
-                              <br />
-                              Windows 7 or earlier:
-                              <br />
-                              Open Start > Programs > Accessories > Notepad
-                           </p>
-                           <br />
-                           <h3>Step 1: Open TextEdit (Mac)</h3>
-                           <p>
-                              Open Finder > Applications > TextEdit
-                              <br />
-                              Also change some preferences to get the
-                              application to save files correctly. In
-                              Preferences > Format > choose "Plain Text"
-                              <br />
-                              Then under "Open and Save", check the box that
-                              says "Display HTML files as HTML code instead of
-                              formatted text".
-                              <br />
-                              Then open a new document to place the code.
-                           </p>
-                           <br />
-                           <h3>Step 2: Write Some HTML</h3>
-                           <p>
-                              Write or copy the following HTML code into
-                              Notepad:
-                           </p>
-                           <table class="border">
-                              <p>
-                                 &lt;!DOCTYPE html&gt;
-                                 <br />
-                                 &lt;html&gt;
-                                 <br />
-                                 &lt;body&gt;
-                                 <br />
-                                 &lt;h1&gt;My First Heading&lt;/h1&gt;
-                                 <br />
-                                 &lt;p&gt;My first paragraph&lt;/p&gt;
-                                 <br />
-                                 &lt;/body&gt;
-                                 <br />
-                                 &lt;/html&gt;
-                              </p>
-                           </table>
-
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlEditor/img_notepad.png"
-                                 alt=""
-                                 class="notepad mb-5"
-                              />
-                           </div>
-                           <h3>Step 3: Save the HTML Page</h3>
-                           <p>
-                              Save the file on your computer. Select File > Save
-                              as in the Notepad menu.
-                              <br />
-                              Name the file "index.htm" and set the encoding to
-                              UTF-8 (which is the preferred encoding for HTML
-                              files).
-                           </p>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlEditor/img_saveas.png"
-                                 alt=""
-                                 class="imgSaveAs mb-3"
-                              />
-                           </div>
-                           <p class="text-warning">
-                              Tip: You can use either .htm or .html as file
-                              extension. There is no difference, it is up to
-                              you.
-                           </p>
-                           <br />
-                           <h3>Step 4: View the HTML Page in Your Browser</h3>
-                           <p>
-                              Open the saved HTML file in your favorite browser
-                              (double click on the file, or right-click - and
-                              choose "Open with").
-                              <br />
-                              The result will look much like this:
-                           </p>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlEditor/img_chrome.png"
-                                 alt=""
-                                 class="imgChrome"
-                              />
-                           </div>
-                           <h3 class="mt-5">
-                              Easy Learning with HTML "Try it Yourself"
-                           </h3>
-                           <p>
-                              With our "Try it Yourself" editor, you can edit
-                              the HTML code and view the result:
+                              An HTML document consist of its basic building
+                              blocks which are:
                            </p>
 
+                           <p>
+                              <strong>Tags:</strong> An HTML tag surrounds the
+                              content and apply meaning to it. It is written
+                              between < and > brackets.
+                           </p>
+
+                           <p>
+                              <strong>Attribute:</strong> An attribute in HTML
+                              provides extra information about the element, and
+                              it is applied within the start tag. An HTML
+                              attribute contains two fields: name & value.
+                           </p>
+
+                           <br />
+                           <h3>Syntax</h3>
+                           <p class="bg-dark">
+                              <strong>&lt;tag</strong> name
+                              attribute_name="attr_value"&gt;content<strong
+                                 >&lt;/tag</strong
+                              >
+                              name&gt;
+                           </p>
+
+                           <p>
+                              <strong>Elements:</strong> An HTML element is an
+                              individual component of an HTML file. In an HTML
+                              file, everything written within tags are termed as
+                              HTML elements.
+                           </p>
+                           <br>
                            <div class="box1">
-                              <a
-                                 href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello"
-                                 ><img
-                                    src="./gif/gifHtmlEditor.gif"
-                                    alt=""
-                                    height="400px"
-                                    class="html-editor-gif mb-5"
-                              /></a>
+                              <img
+                                 src="./photos/htmlBuildingBlocks/html-building-blocks.png"
+                                 alt=""
+                                 class="imgHtmlBuildingBlock"
+                              />
                            </div>
                            <br />
+                           <h3 class="mt-5">Example:</h3>
+                           <p class="bg-dark">
+                              &lt;!DOCTYPE html&gt;
+                              <br />
+                              &lt;html&gt;
+                              <br />
+                              &lt;head&gt;
+                              <br />
+                              &lt;title&gt; The basic building blocks of
+                              HTML&lt;/title&gt;
+                              <br />
+                              &lt;/head&gt;
+                              <br />
+                              &lt;body&gt;
+                              <br />
+                              &lt;h2&gt;The building blocks&lt;/h2&gt;
+                              <br />
+                              &lt;p&gt;This is a paragraph tag&lt;/p&gt;
+                              <br />
+                              &lt;p style="color:red"&gt;The style is attribute
+                              of paragraph tag&lt;/p&gt;
+                              <br />
+                              &lt;span&gt;The element contains tag, attribute
+                              and content&lt;/span&gt;
+                              <br />
+                              &lt;/body&gt;
+                              <br />
+                              &lt;/html&gt;
+                           </p>
                            <div class="tryItButton">
                               <a
-                                 href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello"
+                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlBuildingblocks"
                                  class="btn-tryIt"
                                  id="aHtmlButtons"
-                                 >Try it!</a
+                                 >Try It!</a
                               >
                            </div>
                         </div>
@@ -451,18 +402,20 @@
 
                   <aside>
                      <p class="advertisement text-center mb-0">ADVERTISEMENT</p>
-                     <a href=""><img
-                        src="./photos/htmlHome/National Hamburger Day Black White Instagram Story.png"
-                        alt=""
-                        width="200px"
-                        height="400px"
+                     <a href=""
+                        ><img
+                           src="./photos/htmlHome/National Hamburger Day Black White Instagram Story.png"
+                           alt=""
+                           width="200px"
+                           height="400px"
                      /></a>
-                     <a href=""><img
-                        src="./photos/htmlHome/Blue Modern Online Course (Instagram Story).png"
-                        width="200px"
-                        height="400px"
-                        class="mt-5"
-                        alt=""
+                     <a href=""
+                        ><img
+                           src="./photos/htmlHome/Blue Modern Online Course (Instagram Story).png"
+                           width="200px"
+                           height="400px"
+                           class="mt-5"
+                           alt=""
                      /></a>
                   </aside>
                </div>

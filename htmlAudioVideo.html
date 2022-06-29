@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="all.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
+         rel="stylesheet"
+      />
+      <link
+         rel="shortcut icon"
+         href="./photos/favicon (2).ico"
+         type="image/x-icon"
+      />
+
+      <title>HTML Audio/Video</title>
+
+      <style>
+
+td, th {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  padding: 8px;
+}
+
+        tr:nth-child(even) {
+  background-color: #2d2d2d;
+}
+      </style>
+   </head>
+   <body id="body">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top shadow-none" id="navbar">
+         <div class="container">
+            <a href="index.html" class="navbar-brand text-danger"
+               ><h4 class="mt-2">cheater</h4></a
+            >
+
+            <input
+               type="text"
+               placeholder="Search.."
+               class="searchTab border-light"
+            />
+            <button
+               class="btn border-none shadow-none"
+               type="button"
+               id="magnifyingGlass"
+            >
+               <i class="fa fa-search"></i>
+            </button>
+
+            <button
+               class="navbar-toggler text-light"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navmenu"
+            >
+               <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item dropdown">
+                     <a
+                        href="#"
+                        class="nav-link dropdown-toggle text-light"
+                        data-bs-toggle="dropdown"
+                        >Tutorials</a
+                     >
+                     <div class="dropdown-menu bg-dark" id="dropdown-menu">
+                        <a href="htmlIntroduction.html" class="dropdown-item"
+                           >HTML Introduction</a
+                        >
+                        <a href="htmlEditors.html" class="dropdown-item"
+                           >HTML Editors</a
+                        >
+                        <a href="htmlBuildingBlocks.html" class="dropdown-item"
+                           >HTML Building Blocks</a
+                        >
+                        <a href="htmlElements.html" class="dropdown-item"
+                           >HTML Elements</a
+                        >
+                        <a href="htmlHeadings.html" class="dropdown-item"
+                           >HTML Headings</a
+                        >
+                        <a href="htmlParagraphs.html" class="dropdown-item"
+                           >HTML Paragraphs</a
+                        >
+                        <a href="htmlStyles.html" class="dropdown-item"
+                           >HTML Styles</a
+                        >
+                        <a href="htmlFormatting.html" class="dropdown-item"
+                           >HTML Formatting</a
+                        >
+                        <a href="htmlComments.html" class="dropdown-item"
+                           >HTML Comments</a
+                        >
+                        <a href="htmlColors.html" class="dropdown-item"
+                           >HTML Colors</a
+                        >
+                        <a href="htmlLinks.html" class="dropdown-item"
+                           >HTML Links</a
+                        >
+                        <a href="htmlImages.html" class="dropdown-item"
+                           >HTML Images</a
+                        >
+                        <a href="htmlTables.html" class="dropdown-item"
+                           >HTML Tables</a
+                        >
+                        <a href="htmlList.html" class="dropdown-item"
+                           >HTML List</a
+                        >
+                        <a href="htmlFilePaths.html" class="dropdown-item"
+                           >HTML File Paths</a
+                        >
+                        <a href="htmlComputercode.html" class="dropdown-item"
+                           >HTML Computercode</a
+                        >
+                        <a href="htmlCharset.html" class="dropdown-item"
+                           >HTML Charset</a
+                        >
+                        <a href="htmlEncode.html" class="dropdown-item"
+                           >HTML URL Encode</a
+                        >
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a
+                        href="#"
+                        class="nav-link dropdown-toggle text-light"
+                        data-bs-toggle="dropdown"
+                        >References</a
+                     >
+                     <div class="dropdown-menu bg-dark">
+                        <a href="htmlTagList.html" class="dropdown-item"
+                           >HTML Tag List</a
+                        >
+                        <a href="htmlAttributes.html" class="dropdown-item">HTML Attributes</a>
+                        <a href="htmlColors.html" class="dropdown-item">HTML Colors</a>
+                        <a href="htmlAudioVideo.html" class="dropdown-item">HTML Audio/Video</a>
+                        <a href="htmlUrlEncode.html" class="dropdown-item">HTML URL Encode</a>
+                        <a href="htmlLinks.html" class="dropdown-item">HTML Links</a>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a
+                        href="tools.html
+                    "
+                        class="nav-link"
+                        >Tools</a
+                     >
+                  </li>
+                  <li class="nav-item">
+                     <a
+                        href="aboutUs.html
+                    "
+                        class="nav-link"
+                        >About us</a
+                     >
+                  </li>
+                  <li class="nav-item">
+                     <a href="signIn.html" id="signIn-a"
+                        ><button id="btn-signIn" class="btn-signIn">
+                           Sign in
+                        </button></a
+                     >
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <div class="container">
+         <div class="row">
+            <div class="col-xs col-sm col-lg col-xl">
+               <!-- grid-container -->
+               <div class="grid-container">
+                  <!-- The sidebar -->
+                  <nav
+                     id="sidebarMenu"
+                     class="collapse d-lg-block sidebar collapse"
+                  >
+                     <div class="sticky">
+                        <h4 class="text-center text-light mt-2 pt-5">
+                            HTML REFERENCES
+                         </h4>
+                         <div class="list-group list-group-flush mx-3 mt-4">
+                            <a
+                               href="htmlTagList.html"
+                               class="list-group-item list-group-item-action py-2 ripple"
+                               id="list-group-item"
+                               aria-current="true"
+                            >
+                               <span>HTML Tag List</span>
+                            </a>
+                            <a
+                               href="htmlAttributes.html"
+                               class="list-group-item list-group-item-action py-2 ripple"
+                               id="list-group-item"
+                            >
+                               <span>HTML Attributes</span>
+                            </a>
+                            <a
+                               href="htmlColors.html"
+                               class="list-group-item list-group-item-action py-2 ripple"
+                               id="list-group-item"
+                               ><span>HTML Colors</span></a
+                            >
+                            <a
+                               href="htmlAudioVideo.html"
+                               class="list-group-item list-group-item-action py-2 ripple"
+                               id="list-group-item"
+                               ><span>HTML Audio/Video</span></a
+                            >
+                            <a
+                               href="htmlUrlEncode.html"
+                               class="list-group-item list-group-item-action py-2 ripple"
+                               id="list-group-item"
+                               ><span>HTML Url Encode</span></a
+                            >
+                            <a
+                               href="htmlLinks.html"
+                               class="list-group-item list-group-item-action py-2 ripple"
+                               id="list-group-item"
+                            >
+                               <span>HTML Links</span>
+                            </a>
+ 
+                            <h4 class="text-center text-light mt-2 pt-5">
+                               HTML TUTORIAL
+                            </h4>
+                            <div class="list-group list-group-flush mx-3 mt-4">
+                               <a
+                                  href="htmlIntroduction.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  aria-current="true"
+                               >
+                                  <span>HTML Introduction</span>
+                               </a>
+                               <a
+                                  href="htmlEditors.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                               >
+                                  <span>HTML Editors</span>
+                               </a>
+                               <a
+                                  href="htmlBuildingBlocks.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML Building Blocks</span></a
+                               >
+                               <a
+                                  href="htmlElements.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML Elements</span></a
+                               >
+                               <a
+                                  href="htmlHeadings.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                               >
+                                  <span>HTML Headings</span>
+                               </a>
+                               <a
+                                  href="htmlParagraphs.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML Paragraphs</span></a
+                               >
+                               <a
+                                  href="htmlStyles.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML Styles</span></a
+                               >
+                               <a
+                                  href="htmlFormatting.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML Formatting</span></a
+                               >
+                               <a
+                                  href="htmlComments.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML Comments</span></a
+                               >
+                               <a
+                                  href="htmlColors.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML Colors</span></a
+                               >
+                               <a
+                                  href="htmlLinks.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                               >
+                                  <span>HTML Links</span>
+                               </a>
+                               <a
+                                  href="htmlImages.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML Images</span></a
+                               >
+                               <a
+                                  href="htmlTables.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                               >
+                                  <span>HTML Tables</span>
+                               </a>
+                               <a
+                                  href="htmlList.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML List</span></a
+                               >
+                               <a
+                                  href="htmlFilePaths.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML File Paths</span></a
+                               >
+                               <a
+                                  href="htmlComputerCode.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                               >
+                                  <span>HTML Computercode</span>
+                               </a>
+                               <a
+                                  href="htmlCharset.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML Charset</span></a
+                               >
+                               <a
+                                  href="htmlUrlEncode.html"
+                                  class="list-group-item list-group-item-action py-2 ripple"
+                                  id="list-group-item"
+                                  ><span>HTML URL Encode</span></a
+                               >
+                         
+                        </div>
+                     </div>
+                  </nav>
+
+                  <section class="sec1">
+                     <div class="container">
+                        <div class="col-xs col-sm col-lg col-xl">
+                           <h2>HTML Audio/Video</h2>
+                           <h3 class="mt-5">HTML Audio and Video DOM Reference</h3>
+                           <p>The HTML5 DOM has methods, properties, and events for the &lt;audio&gt; and &lt;video&gt; elements.
+                        </p>
+                            <h3 class="mt-5">HTML Audio/Video Methods</h3>
+                          <table style="width: 100%">
+                            <tbody>
+                                <tr>
+                                    <th><strong>Method</strong></th>
+                                    <th><strong>Description</strong></th>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>addTextTrack()</td>
+                                    <td>Adds a new text track to the audio/video</td>
+                                </tr>
+                                <tr>
+                                    <td>canPlayType()</td>
+                                    <td>Checks if the browser can play the specified audio/video type</td>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>load()</td>
+                                    <td>Re-loads the audio/video element</td>
+                                </tr>
+                                <tr>
+                                    <td>play()</td>
+                                    <td>Starts playing the audio/video</td>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>pause()</td>
+                                    <td>Pauses the currently playing audio/video</td>
+                                </tr>
+                            </tbody>
+                          </table>
+                          <h3 class="mt-5">HTML Audio/Video Properties</h3>
+                          <table style="width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <th><strong>Property</strong></th>
+                                    <th><strong>Description</strong></th>
+                                </tr>
+                                <tr>
+                                    <td>audioTracks</td>
+                                    <td>Returns an AudioTrackList object representing available audio tracks</td>
+                                </tr>
+                                <tr>
+                                <td>autoplay</td>
+                                <td>Sets or returns whether the audio/video should start playing as soon as it is loaded</td>
+                                    </tr>
+                                    <tr>
+                                        <td>buffered</td>
+                                        <td>Returns a TimeRanges object representing the buffered parts of the audio/video</td>
+                                    </tr>
+                                    <tr>
+                                        <td>controller</td>
+                                        <td>Returns the MediaController object representing the current media controller of the audio/video</td>
+                                    </tr>
+                                    <tr>
+                                        <td>controls</td>
+                                        <td>Sets or returns whether the audio/video should display controls (like play/pause etc.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>crossOrigin</td>
+                                        <td>Sets or returns the CORS settings of the audio/video</td>
+                                    </tr>
+                                    <tr>
+                                        <td>currentSrc</td>
+                                        <td>Returns the URL of the current audio/video</td>
+                                    </tr>
+                                    <tr>
+                                        <td>currentTime</td>
+                                        <td>Sets or returns the current playback position in the audio/video (in seconds)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>defaultMuted</td>
+                                        <td>Sets or returns whether the audio/video should be muted by default</td>
+                                    </tr>
+                                    <tr>
+                                        <td>defaultPlaybackRate</td>
+                                        <td>Sets or returns the default speed of the audio/video playback</td>
+                                    </tr>
+                                    <tr>
+                                        <td>duration</td>
+                                        <td>Returns the length of the current audio/video (in seconds)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ended</td>
+                                        <td>Returns whether the playback of the audio/video has ended or not</td>
+                                    </tr>
+                                    <tr>
+                                        <td>error</td>
+                                        <td>Returns a MediaError object representing the error state of the audio/video</td>
+                                    </tr>
+                                    <tr>
+                                        <td>loop</td>
+                                        <td>Sets or returns whether the audio/video should start over again when finished</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mediaGroup</td>
+                                        <td>Sets or returns the group the audio/video belongs to (used to link multiple audio/video elements)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>muted</td>
+                                        <td>Sets or returns whether the audio/video is muted or not</td>
+                                    </tr>
+                                    <tr>
+                                        <td>networkState</td>
+                                        <td>Returns the current network state of the audio/video</td>
+                                    </tr>
+                                    <tr>
+                                        <td>paused</td>
+                                        <td>Returns whether the audio/video is paused or not</td>
+                                    </tr>
+                                    <tr>
+                                        <td>playbackRate</td>
+                                        <td>Sets or returns the speed of the audio/video playback</td>
+                                    </tr>
+                                    <tr>
+                                        <td>played</td>
+                                        <td>Returns a TimeRanges object representing the played parts of the audio/video</td>
+                                    </tr>
+                                    <tr>
+                                        <td>preload</td>
+                                        <td>Sets or returns whether the audio/video should be loaded when the page loads</td>
+                                    </tr>
+                                    <tr>
+                                        <td>readyState</td>
+                                        <td>Returns the current ready state of the audio/video</td>
+                                    </tr>
+                                    <tr>
+                                        <td>seekable</td>
+                                        <td>Returns a TimeRanges object representing the seekable parts of the audio/video</td>
+                                    </tr>
+                                    <tr>
+                                        <td>seeking</td>
+                                        <td>Returns whether the user is currently seeking in the audio/video</td>
+                                    </tr>
+                                    <tr>
+                                        <td>src</td>
+                                        <td>Sets or returns the current source of the audio/video element</td>
+                                    </tr>
+                                    <tr>
+                                        <td>startDate</td>
+                                        <td>Returns a Date object representing the current time offset</td>
+                                    </tr>
+                                    <tr>
+                                        <td>textTracks</td>
+                                        <td>Returns a TextTrackList object representing the available text tracks</td>
+                                    </tr>
+                                    <tr>
+                                        <td>videoTracks</td>
+                                        <td>Returns a VideoTrackList object representing the available video tracks</td>
+                                    </tr>
+                                    <tr>
+                                        <td>volume</td>
+                                        <td>Sets or returns the volume of the audio/video</td>
+                                    </tr>
+                            </tbody>
+                          </table>
+
+
+
+                        </div>
+                     </div>
+                  </section>
+
+                  <aside>
+                     <p class="advertisement text-center mb-0">ADVERTISEMENT</p>
+                     <a href=""
+                        ><img
+                           src="./photos/htmlHome/National Hamburger Day Black White Instagram Story.png"
+                           alt=""
+                           width="200px"
+                           height="400px"
+                     /></a>
+                     <a href=""
+                        ><img
+                           src="./photos/htmlHome/Blue Modern Online Course (Instagram Story).png"
+                           width="200px"
+                           height="400px"
+                           class="mt-5"
+                           alt=""
+                     /></a>
+                  </aside>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end of container -->
+
+      <!-- Footer -->
+      <footer
+         class="text-center text-lg-start text-white"
+         style="background-color: #141414"
+      >
+         <div class="container p-4 pb-0">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+                  <h5 class="text-uppercase">cheater</h5>
+
+                  <p>
+                     is optimized for learning, testing, and training. Examples
+                     might be simplified to improve reading and basic
+                     understanding. Tutorials, references, and examples are
+                     constantly reviewed to avoid errors, but we cannot warrant
+                     full correctness of all content. While using this site, you
+                     agree to have read and accepted our terms of use, cookie
+                     and privacy policy.
+                  </p>
+               </div>
+
+               <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+                  <h5 class="text-uppercase text-center">Tutorials</h5>
+
+                  <ul class="list-unstyled mb-0 text-center">
+                     <li>
+                        <a href="#!" class="text-white">Link 1</a>
+                     </li>
+                     <li>
+                        <a href="#!" class="text-white">Link 2</a>
+                     </li>
+                     <li>
+                        <a href="#!" class="text-white">Link 3</a>
+                     </li>
+                     <li>
+                        <a href="#!" class="text-white">Link 4</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+                  <h5 class="text-uppercase text-center">References</h5>
+
+                  <ul class="list-unstyled mb-0 text-center">
+                     <li>
+                        <a href="#!" class="text-white">Link 1</a>
+                     </li>
+                     <li>
+                        <a href="#!" class="text-white">Link 2</a>
+                     </li>
+                     <li>
+                        <a href="#!" class="text-white">Link 3</a>
+                     </li>
+                     <li>
+                        <a href="#!" class="text-white">Link 4</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+                  <h5 class="text-uppercase text-center">Attributes</h5>
+
+                  <ul class="list-unstyled mb-0 text-center">
+                     <li>
+                        <a href="#!" class="text-white">Link 1</a>
+                     </li>
+                     <li>
+                        <a href="#!" class="text-white">Link 2</a>
+                     </li>
+                     <li>
+                        <a href="#!" class="text-white">Link 3</a>
+                     </li>
+                     <li>
+                        <a href="#!" class="text-white">Link 4</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <hr class="mb-4 mt-5" />
+
+            <section class="mb-4 text-center">
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-facebook fa-1x"></i
+               ></a>
+
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-twitter"></i
+               ></a>
+
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-google"></i
+               ></a>
+
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+               ></a>
+
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-linkedin-in"></i
+               ></a>
+
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-github"></i
+               ></a>
+            </section>
+
+            <hr class="mb-4 mt-4" />
+
+            <div class="text-center p-3">
+               <a class="text-white" href="https://mdbootstrap.com/"
+                  >cheater.com</a
+               >
+               © 2022
+            </div>
+         </div>
+      </footer>
+      <!-- Footer -->
+
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://kit.fontawesome.com/656d817613.js"
+         crossorigin="anonymous"
+      ></script>
+
+      <script src="script.js"></script>
+   </body>
+</html>

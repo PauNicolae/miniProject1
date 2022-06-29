@@ -152,10 +152,6 @@
    padding-bottom: 3rem;
 }
 
-
-tr{
-    height:3rem;
-}
 /* div.scroll {
    width: auto;
    height: 50vh;
@@ -164,16 +160,15 @@ tr{
    text-align: center;
    padding: 20px;
  } */
-
-/* .sticky {
-   position: relative;
-   height: 100vh;
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    padding-top: 20px;
+/* 
+.sticky {
+   position: -webkit-sticky;
+   top: 30px;
+  max-height: 100vh;
+   padding-top: 1rem;
+   overflow-x: hidden;
+   overflow-y: auto; 
  } */
-
 
  /* .sidebar .active {
    border-radius: 5px;
@@ -191,7 +186,7 @@ tr{
 }
 
 
-.videoHtml, .html-editor-gif{
+.imgStyle, .imgAttribute, .imgSrc .imgHref{
    max-width: 100%;
 }
 
@@ -231,7 +226,6 @@ aside{
    font-size: 12px;
    color:#ccc
 }
-
 
 
 

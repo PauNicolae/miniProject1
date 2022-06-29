@@ -316,7 +316,7 @@
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
                            <h2>HTML Styles</h2>
-                           <p>
+                           <p class="mt-3">
                               HTML is quite limited when it comes to the
                               presentation of a web page. It was originally
                               designed as a simple way of presenting
@@ -335,7 +335,7 @@
                               and lots of other styling properties.
                            </p>
 
-                           <h3>Adding Styles to HTML Elements</h3>
+                           <h3 class="mt-5">Adding Styles to HTML Elements</h3>
                            <p>
                               Style information can either be attached as a
                               separate document or embedded in the HTML document
@@ -343,7 +343,7 @@
                               implementing styling information to an HTML
                               document.
                            </p>
-                           <p>
+                           <ul>
                               <li>
                                  Inline styles — Using the style attribute in
                                  the HTML start tag.
@@ -357,7 +357,7 @@
                                  <link /> element, pointing to an external CSS
                                  files.
                               </li>
-                           </p>
+                           </ul>
                            <p class="text-warning">
                               Note: The inline styles have the highest priority,
                               and the external style sheets have the lowest. It
@@ -366,8 +366,7 @@
                               conflicting style rules in the embedded style
                               sheet would override the external style sheet.
                            </p>
-                           <h3>Inline Styles</h3>
-                           <br />
+                           <h3 class="mt-5">Inline Styles</h3>
                            <p>
                               Inline styles are used to apply the unique style
                               rules to an element, by putting the CSS rules
@@ -382,13 +381,12 @@
                               sheet. But it needs to be all in one line i.e. no
                               line break after the semicolon.
                            </p>
-                           <br />
                            <p>
                               The following example demonstrates how to set the
                               color and font-size of the text:
                            </p>
                            <p><strong>Example:</strong></p>
-                           <p class="bg-dark">
+                           <p class="bg-dark p-4">
                               &lt;h1 style="color:red; font-size:30px;"&gt; This
                               is a heading&lt;/h1&gt;
                            
@@ -402,7 +400,7 @@
                               &lt;div style="color:green; font-size:18px;"&gt;
                               This is some text.&lt;/div&gt;
                            </p>
-                           <div class="tryItButton">
+                           <div class="tryItButton mt-4">
                             <a
                                href="https://www.tutorialrepublic.com/codelab.php?topic=html&file=inline-styles"
                                class="btn-tryIt"
@@ -426,7 +424,7 @@
                               style sheet is the preferred way to add style
                               information to an HTML document.
                            </p>
-                           <h3>Embedded Style Sheets</h3>
+                           <h3 class="mt-5">Embedded Style Sheets</h3>
                            <p>
                               Embedded or internal style sheets only affect the
                               document they are embedded in.
@@ -438,9 +436,8 @@
                               &lt;style&gt; elements inside the &lt;head&gt;
                               section.
                            </p>
-                           <br />
                            <p><strong>Example:</strong></p>
-                           <p class="bg-dark">
+                           <p class="bg-dark p-4">
                               &lt;head&gt;
                               <br />
                               &lt;style&gt;
@@ -451,7 +448,7 @@
                               <br />
                               p { color: red; } &lt;/style&gt; &lt;/head&gt;
                            </p>
-                           <div class="tryItButton">
+                           <div class="tryItButton mt-4">
                             <a
                                href="https://www.tutorialrepublic.com/codelab.php?topic=html&file=embedded-style-sheet"
                                class="btn-tryIt"
@@ -482,14 +479,14 @@
                               document using the &lt;link&gt; tag.
                            </p>
                            <p><strong>Example:</strong></p>
-                           <p class="bg-dark">
+                           <p class="bg-dark p-4">
                               &lt;head&gt;
                               <br />
                               &lt;link rel="stylesheet" href="css/style.css"&gt;
                               <br />
                               &lt;/head&gt;
                            </p>
-                           <div class="tryItButton">
+                           <div class="tryItButton mt-4">
                             <a
                                href="https://www.tutorialrepublic.com/codelab.php?topic=html&file=linking-external-style-sheet"
                                class="btn-tryIt"
@@ -512,7 +509,7 @@
                               element.
                            </p>
                            <p><strong>Example:</strong></p>
-                           <p class="bg-dark">
+                           <p class="bg-dark p-4">
                               &lt;style&gt;
                               <br />
                               @import url("css/style.css");
@@ -527,7 +524,7 @@
                               <br />
                               &lt;/style&gt;
                            </p>
-                           <div class="tryItButton">
+                           <div class="tryItButton mt-4">
                             <a
                                href="https://www.tutorialrepublic.com/codelab.php?topic=html&file=importing-external-style-sheet"
                                class="btn-tryIt"
@@ -540,7 +537,7 @@
                               a style sheet within another style sheet.
                            </p>
                            <p><strong>Example:</strong></p>
-                           <p class="bg-dark">
+                           <p class="bg-dark p-4">
                               @import url("css/layout.css");
                               <br />
                               @import url("css/color.css");
@@ -553,7 +550,7 @@
                               <br />
                               }
                            </p>
-                           <div class="tryItButton">
+                           <div class="tryItButton mt-4">
                             <a
                                href="https://www.tutorialrepublic.com/codelab.php?topic=html&file=css-import-rule"
                                class="btn-tryIt"

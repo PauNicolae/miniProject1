@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="htmlLinks.css" />
+      <link rel="stylesheet" href="all.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +24,15 @@
          type="image/x-icon"
       />
 
-      <title>HTML Links</title>
+      <title>HTML URL Encode</title>
+
+      <style>
+         td, th {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  padding: 8px;
+}
+      </style>
    </head>
    <body id="body">
       <!-- Navbar -->
@@ -305,286 +313,96 @@
                   <section class="sec1">
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
-                           <h2>HTML Links</h2>
-                           <p class="mt-3">
-                              Links are found in nearly all web pages. Links
-                              allow users to click their way from page to page.
-                           </p>
-
-                           <h3 class="mt-5">HTML Links - Hyperlinks</h3>
-                           <p>HTML links are hyperlinks.</p>
+                           <h2>HTML URL Encode</h2>
+                           <h3 class="mt-4">What is URL?</h3>
                            <p>
-                              You can click on a link and jump to another
-                              document.
+                            URL stands for Uniform Resource Locator. It is actually a web address. A URL can contain words i.e. (javatpoint.com) or an Internet Protocol (IP) address i.e.195.201.68.81. But most of the user use URL in the form of words because it is easy to remember than numbers.
                            </p>
-                           <p>
-                              When you move the mouse over a link, the mouse
-                              arrow will turn into a little hand.
-                           </p>
-                           <p class="text-warning">
-                              Note: A link does not have to be text. A link can
-                              be an image or any other HTML element!
-                           </p>
-                           <h3 class="mt-5">HTML Links - Syntax</h3>
-                           <p>
-                              The HTML &lt;a&gt; tag defines a hyperlink. It has
-                              the following syntax:
-                           </p>
-                           <p class="text-info">&lt;a href="url"&gt;link text&lt;/a&gt;</p>
-                           <p>
-                              The most important attribute of the &lt;a&gt;
-                              element is the href attribute, which indicates the
-                              link's destination.
-                           </p>
-                           <p>
-                              The link text is the part that will be visible to
-                              the reader.
-                           </p>
-                           <p>
-                              Clicking on the link text, will send the reader to
-                              the specified URL address.
-                           </p>
-                           <p><strong>Example:</strong></p>
-                           <p>
-                              This example shows how to create a link to
-                              W3Schools.com:
-                           </p>
-                           <p class="bg-dark p-4">
-                              &lt;a href="https://www.w3schools.com/"&gt;Visit
-                              W3Schools.com!&lt;/a&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-
-                           <p class="mt-5">
-                              By default, links will appear as follows in all
-                              browsers:
-                           </p>
-                           <ul>
-                              <li>An unvisited link is underlined and blue</li>
-                              <li>A visited link is underlined and purple</li>
-                              <li>An active link is underlined and red</li>
-                           </ul>
+                           <p><strong>Syntax of a URL:</strong></p>
                            <p class="text-info">
-                              Tip: Links can of course be styled with CSS, to
-                              get another look!
+                            scheme://prefix.domain:port/path/filename  
                            </p>
-
-                           <h3 class="mt-5">HTML Links - The target Attribute</h3>
-                           <p>
-                              By default, the linked page will be displayed in
-                              the current browser window. To change this, you
-                              must specify another target for the link.
-                           </p>
-                           <p>
-                              The target attribute specifies where to open the
-                              linked document.
-                           </p>
-                           <p>
-                              The target attribute can have one of the following
-                              values:
-                           </p>
+                           <p>Here,</p>
                            <ul>
-                              <li>
-                                 _self - Default. Opens the document in the same
-                                 window/tab as it was clicked
-                              </li>
-                              <li>
-                                 _blank - Opens the document in a new window or
-                                 tab
-                              </li>
-                              <li>
-                                 _parent - Opens the document in the parent
-                                 frame
-                              </li>
-                              <li>
-                                 _top - Opens the document in the full body of
-                                 the window
-                              </li>
+                            <li>scheme is used to define the type of Internet service (most common is http or https).</li>
+                            <li>prefix is used to define a domain prefix (default for http is www).</li>
+                            <li>domain is used to define the Internet domain name (like javaTpoint.com).</li>
+                            <li>port is used to define the port number at the host (default for http is 80).</li>
+                            <li>path is used to define a path at the server (If omitted: the root directory of the site).</li>
+                            <li>filename is used to define the name of a document or resource.</li>
                            </ul>
-                           <p><strong>Example:</strong></p>
-                           <p>
-                              Use target="_blank" to open the linked document in
-                              a new browser window or tab:
-                           </p>
-                           <p class="bg-dark p-4">
-                              &lt;a href="https://www.w3schools.com/"
-                              target="_blank"&gt;Visit W3Schools!&lt;/a&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <h3 class="mt-5">Absolute URLs vs. Relative URLs</h3>
-                           <p>
-                              Both examples above are using an absolute URL (a
-                              full web address) in the href attribute.
-                           </p>
-                           <p>
-                              A local link (a link to a page within the same
-                              website) is specified with a relative URL (without
-                              the "https://www" part):
-                           </p>
-                           <p><strong>Example:</strong></p>
-                           <p class="bg-dark p-4">
-                              &lt;h2&gt;Absolute URLs&lt;/h2&gt; &lt;p&gt;&lt;a
-                              href="https://www.w3.org/"&gt;W3C&lt;/a&gt;&lt;/p&gt;
-                              &lt;p&gt;&lt;a
-                              href="https://www.google.com/"&gt;Google&lt;/a&gt;&lt;/p&gt;
-                              &lt;h2&gt;Relative URLs&lt;/h2&gt; &lt;p&gt;&lt;a
-                              href="html_images.asp"&gt;HTML
-                              Images&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;a
-                              href="/css/default.asp"&gt;CSS
-                              Tutorial&lt;/a&gt;&lt;/p&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <h3 class="mt-5">
-                              HTML Links - Use an Image as a Link
-                           </h3>
-                           <p>
-                              To use an image as a link, just put the
-                              &lt;img&gt; tag inside the &lt;a&gt; tag:
-                           </p>
-                           <p><strong>Example:</strong></p>
-                           <p class="bg-dark p-4">
-                              &lt;a href="default.asp"&gt; &lt;img
-                              src="smiley.gif" alt="HTML tutorial"
-                              style="width:42px;height:42px;"&gt; &lt;/a&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <h3 class="mt-5">Link to an Email Address</h3>
-                           <p>
-                              Use mailto: inside the href attribute to create a
-                              link that opens the user's email program (to let
-                              them send a new email):
-                           </p>
-                           <p><strong>Example:</strong></p>
-                           <p class="bg-dark p-4">
-                              &lt;a href="mailto:someone@example.com"&gt;Send
-                              email&lt;/a&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_email"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <h3 class="mt-5">Button as a Link</h3>
-                           <p>
-                              To use an HTML button as a link, you have to add
-                              some JavaScript code.
-                           </p>
-                           <p>
-                              JavaScript allows you to specify what happens at
-                              certain events, such as a click of a button:
-                           </p>
-                           <p><strong>Example:</strong></p>
-                           <p class="bg-dark p-4">
-                              &lt;button
-                              onclick="document.location='default.asp'"&gt;HTML
-                              Tutorial&lt;/button&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_button_element"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <p class="mt-5 text-info">
-                              Tip: Learn more about JavaScript in our JavaScript
-                              Tutorial.
-                           </p>
-                           <h3 class="mt-5">Link Titles</h3>
-                           <p>
-                              The title attribute specifies extra information
-                              about an element. The information is most often
-                              shown as a tooltip text when the mouse moves over
-                              the element.
-                           </p>
-                           <p><strong>Example</strong></p>
-                           <p class="bg-dark p-4">
-                              &lt;a href="https://www.w3schools.com/html/"
-                              title="Go to W3Schools HTML section"&gt;Visit our
-                              HTML Tutorial&lt;/a&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                            <a
-                               href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_title"
-                               class="btn-tryIt"
-                               id="aHtmlButtons"
-                               >Try It!</a
-                            >
-                         </div>
-                         <h3 class="mt-5">More on Absolute URLs and Relative URLs</h3>
-                         <p><strong>Example:</strong></p>
-                         <p>Use a full URL to link to a web page: </p>
-                         <p class="bg-dark p-4">
-                            &lt;a href="https://www.w3schools.com/html/default.asp"&gt;HTML tutorial&lt;/a&gt;
-                         </p>
-                         <div class="tryItButton mt-4">
-                            <a
-                               href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_url"
-                               class="btn-tryIt"
-                               id="aHtmlButtons"
-                               >Try It!</a
-                            >
-                         </div>
-                         <p class="mt-5"><strong>Example:</strong></p>
-                         <p>
-                            Link to a page located in the html folder on the current web site: 
-                         </p>
-                         <p class="bg-dark p-4">
-                            &lt;a href="/html/default.asp"&gt;HTML tutorial&lt;/a&gt;
-                         </p>
-                         <div class="tryItButton mt-4">
-                            <a
-                               href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_relative"
-                               class="btn-tryIt"
-                               id="aHtmlButtons"
-                               >Try It!</a
-                            >
-                         </div>
-                         <p class="mt-5"><strong>Example:</strong></p>
-                         <p>Link to a page located in the same folder as the current page: </p>
-                         <p class="bg-dark p-4">
-                            &lt;a href="default.asp"&gt;HTML tutorial&lt;/a&gt;
-                         </p>
-                         <div class="tryItButton mt-4">
-                            <a
-                               href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external"
-                               class="btn-tryIt"
-                               id="aHtmlButtons"
-                               >Try It!</a
-                            >
-                         </div>
+                           <p><strong>Following is a list of some common types of schemes used in URL:</strong></p>
+                          <ul>
+                            <li>http(HyperText Transfer Protocol):Common web pages. Not encrypted.</li>
+                            <li>https (Secure HyperText Transfer Protocol):Secure web pages. Encrypted.</li>
+                            <li>ftp(File Transfer Protocol): Downloading or uploading files.</li>
+                            <li>file: A file on your computer.</li>
+                          </ul>
+                          <h3 class="mt-5">URL Encoding</h3>
+                          <p>URL encoding is used to convert non-ASCII characters into a format that can be used over the Internet because a URL is sent over the Internet by using the ASCII character-set only. If a URL contains characters outside the ASCII set, the URL has to be converted.</p>
+                          <p>In URL encoding, the non-ASCII characters are replaced with a "%" followed by hexadecimal digits.</p>
+                          <p>URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20.</p>
+                          <p class="mt-5"><strong>Following is a list of some character sets which are encoded by browser after submitting the text.</strong></p>
+                          <table style="width: 100%">
+                            <tbody>
+                                <tr>
+                                    <th><strong>Character</strong></th>
+                                    <th><strong>From Windows-1252</strong></th>
+                                    <th><strong>From UTF-8</strong></th>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>€</td>
+                                    <td>%80</td>
+                                    <td>%E2%82%AC</td>
+                                </tr>
+                                <tr>
+                                    <td>£</td>
+                                    <td>%A3</td>
+                                    <td>%C2%A3</td>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>©</td>
+                                    <td>%A9</td>
+                                    <td>%C2%A9</td>
+                                </tr>
+                                <tr>
+                                    <td>®</td>
+                                    <td>%AE</td>
+                                    <td>%C2%AE</td>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>À</td>
+                                    <td>%C0</td>
+                                    <td>%C3%80</td>
+                                </tr>
+                                <tr>
+                                    <td>Á</td>
+                                    <td>%C1</td>
+                                    <td>%C3%81</td>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>Â</td>
+                                    <td>%C2</td>
+                                    <td>%C3%82</td>
+                                </tr>
+                                <tr>
+                                    <td>Ã</td>
+                                    <td>%C3</td>
+                                    <td>%C3%83</td>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>Ä</td>
+                                    <td>%C4</td>
+                                    <td>%C3%84</td>
+                                </tr>
+                                <tr>
+                                    <td>Å</td>
+                                    <td>%C5</td>
+                                    <td>%C3%85</td>
+                                </tr>
+                            </tbody>
+                          </table>
+
 
                         </div>
                      </div>

@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="htmlBuildingBlocks.css" />
+      <link rel="stylesheet" href="htmlImages.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +24,7 @@
          type="image/x-icon"
       />
 
-      <title>HTML Building Blocks</title>
+      <title>HTML Images</title>
    </head>
    <body id="body">
       <!-- Navbar -->
@@ -133,21 +133,11 @@
                         <a href="htmlTagList.html" class="dropdown-item"
                            >HTML Tag List</a
                         >
-                        <a href="htmlAttributes.html" class="dropdown-item"
-                           >HTML Attributes</a
-                        >
-                        <a href="htmlColors.html" class="dropdown-item"
-                           >HTML Colors</a
-                        >
-                        <a href="htmlAudioVideo.html" class="dropdown-item"
-                           >HTML Audio/Video</a
-                        >
-                        <a href="htmlUrlEncode.html" class="dropdown-item"
-                           >HTML URL Encode</a
-                        >
-                        <a href="htmlLinks.html" class="dropdown-item"
-                           >HTML Links</a
-                        >
+                        <a href="#" class="dropdown-item">HTML Attributes</a>
+                        <a href="#" class="dropdown-item">HTML Colors</a>
+                        <a href="#" class="dropdown-item">HTML Audio/Video</a>
+                        <a href="#" class="dropdown-item">HTML URL Encode</a>
+                        <a href="#" class="dropdown-item">HTML Links</a>
                      </div>
                   </li>
                   <li class="nav-item">
@@ -315,85 +305,176 @@
                   <section class="sec1">
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
-                           <h2>Building blocks of HTML</h2>
+                           <h2>HTML Image</h2>
                            <p>
-                              An HTML document consist of its basic building
-                              blocks which are:
+                              HTML img tag is used to display image on the web
+                              page. HTML img tag is an empty tag that contains
+                              attributes only, closing tags are not used in HTML
+                              image element.
                            </p>
-
-                           <p>
-                              <strong>Tags:</strong> An HTML tag surrounds the
-                              content and apply meaning to it. It is written
-                              between < and > brackets.
-                           </p>
-
-                           <p>
-                              <strong>Attribute:</strong> An attribute in HTML
-                              provides extra information about the element, and
-                              it is applied within the start tag. An HTML
-                              attribute contains two fields: name & value.
-                           </p>
-                           <h3>Syntax</h3>
-                           <p class="bg-dark">
-                              <strong>&lt;tag</strong> name
-                              attribute_name="attr_value"&gt;content<strong
-                                 >&lt;/tag</strong
-                              >
-                              name&gt;
-                           </p>
-
-                           <p>
-                              <strong>Elements:</strong> An HTML element is an
-                              individual component of an HTML file. In an HTML
-                              file, everything written within tags are termed as
-                              HTML elements.
-                           </p>
-                           <br>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlBuildingBlocks/html-building-blocks.png"
-                                 alt=""
-                                 class="imgHtmlBuildingBlock"
-                              />
-                           </div>
-                           <br />
                            <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;!DOCTYPE html&gt;
+                              &lt;h2&gt;HTML Image Example&lt;/h2&gt;
                               <br />
-                              &lt;html&gt;
-                              <br />
-                              &lt;head&gt;
-                              <br />
-                              &lt;title&gt; The basic building blocks of
-                              HTML&lt;/title&gt;
-                              <br />
-                              &lt;/head&gt;
-                              <br />
-                              &lt;body&gt;
-                              <br />
-                              &lt;h2&gt;The building blocks&lt;/h2&gt;
-                              <br />
-                              &lt;p&gt;This is a paragraph tag&lt;/p&gt;
-                              <br />
-                              &lt;p style="color:red"&gt;The style is attribute
-                              of paragraph tag&lt;/p&gt;
-                              <br />
-                              &lt;span&gt;The element contains tag, attribute
-                              and content&lt;/span&gt;
-                              <br />
-                              &lt;/body&gt;
-                              <br />
-                              &lt;/html&gt;
+                              &lt;img src="good_morning.jpg" alt="Good Morning
+                              Friends"/&gt; Test it Now
                            </p>
                            <div class="tryItButton">
                               <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlBuildingblocks"
+                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlimage1"
                                  class="btn-tryIt"
                                  id="aHtmlButtons"
                                  >Try It!</a
                               >
                            </div>
+                           <p class="mt-5"><strong>Output:</strong></p>
+                           <div class="box1">
+                              <img
+                                 src="./photos/htmlImages/good-morning.jpg"
+                                 alt="" class="imgGoodMorning"
+                              />
+                           </div>
+
+                           <h3 class="mt-5">Attributes of HTML img tag</h3>
+                           <p>
+                              The src and alt are important attributes of HTML
+                              img tag. All attributes of HTML image tag are
+                              given below.
+                           </p>
+                           <h4>1) src</h4>
+                           <p>
+                              It is a necessary attribute that describes the
+                              source or path of the image. It instructs the
+                              browser where to look for the image on the server.
+                           </p>
+                           <p>
+                              The location of image may be on the same directory
+                              or another server.
+                           </p>
+                           <h4>2) alt</h4>
+                           <p>
+                              The alt attribute defines an alternate text for
+                              the image, if it can't be displayed. The value of
+                              the alt attribute describe the image in words. The
+                              alt attribute is considered good for SEO
+                              prospective.
+                           </p>
+                           <h4>3) width</h4>
+                           <p>
+                              It is an optional attribute which is used to
+                              specify the width to display the image. It is not
+                              recommended now. You should apply CSS in place of
+                              width attribute.
+                           </p>
+                           <h4>4) height</h4>
+                           <p>
+                              It h3 the height of the image. The HTML height
+                              attribute also supports iframe, image and object
+                              elements. It is not recommended now. You should
+                              apply CSS in place of height attribute.
+                           </p>
+                           <h3>
+                              Use of height and width attribute with img tag
+                           </h3>
+                           <p>
+                              You have learnt about how to insert an image in
+                              your web page, now if we want to give some height
+                              and width to display image according to our
+                              requirement, then we can set it with height and
+                              width attributes of image.
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              &lt;img src="animal.jpg" height="180" width="300"
+                              alt="animal image"&gt;
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlimage2"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+                           <p class="mt-5"><strong>Output:</strong></p>
+                           <div class="box1">
+                              <img
+                                 src="./photos/htmlImages/html-image.png"
+                                 alt="" class="imgDeer"
+                              />
+                           </div>
+                           <p class="mt-5 text-warning">
+                              Note: Always try to insert the image with height
+                              and width, else it may flicker while displaying on
+                              webpage.
+                           </p>
+                           <h3>Use of alt attribute</h3>
+                           <p>
+                              We can use alt attribute with tag. It will display
+                              an alternative text in case if image cannot be
+                              displayed on browser. Following is the example for
+                              alt attribute:
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              &lt;img src="animal.png" height="180" width="300"
+                              alt="animal image"&gt;
+                           </p>
+                           <p class="mt-5"><strong>Output:</strong></p>
+                           <div class="box1">
+                              <img
+                                 src="./photos/htmlImages/html-image2.png"
+                                 alt="" class="imgNone"
+                              />
+                           </div>
+                           <h3 class="mt-5">
+                              How to get image from another directory/folder?
+                           </h3>
+                           <p>
+                              To insert an image in your web, that image must be
+                              present in your same folder where you have put the
+                              HTML file. But if in some case image is available
+                              in some other directory then you can access the
+                              image like this:
+                           </p>
+                           <p>
+                              &lt;img src="E:/images/animal.png" height="180"
+                              width="300" alt="animal image"&gt;
+                           </p>
+                           <p>
+                              In above statement we have put image in local disk
+                              E------&gt;images folder------>&gt;animal.png.
+                           </p>
+                           <p class="text-warning">
+                              Note: If src URL will be incorrect or misspell
+                              then it will not display your image on web page,
+                              so try to put correct URL.
+                           </p>
+                           <h3>Use &lt;img&gt; tag as a link</h3>
+                           <p>We can also link an image with other page or we can use an image as a link. To do this, put &lt;img&gt; tag inside the &lt;a&gt; tag.</p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                            &lt;a href="https://www.javatpoint.com/what-is-robotics"&gt;&lt;img src="robot.jpg" height="100" width="100"&gt;&lt;/a&gt;  
+                           </p>
+                           <div class="tryItButton">
+                            <a
+                               href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlimage3"
+                               class="btn-tryIt"
+                               id="aHtmlButtons"
+                               >Try It!</a
+                            >
+                         </div>
+                         <p class="mt-5"><strong>Output:</strong></p>
+                           <div class="box1">
+                              <img
+                                 src="./photos/htmlImages/robot.jpg"
+                                 alt="" class="imgRobot"
+                              />
+                           </div>
+
+
+
+
                         </div>
                      </div>
                   </section>

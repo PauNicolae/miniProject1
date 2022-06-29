@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="htmlBuildingBlocks.css" />
+      <link rel="stylesheet" href="all.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +24,7 @@
          type="image/x-icon"
       />
 
-      <title>HTML Building Blocks</title>
+      <title>HTML File Paths</title>
    </head>
    <body id="body">
       <!-- Navbar -->
@@ -133,21 +133,11 @@
                         <a href="htmlTagList.html" class="dropdown-item"
                            >HTML Tag List</a
                         >
-                        <a href="htmlAttributes.html" class="dropdown-item"
-                           >HTML Attributes</a
-                        >
-                        <a href="htmlColors.html" class="dropdown-item"
-                           >HTML Colors</a
-                        >
-                        <a href="htmlAudioVideo.html" class="dropdown-item"
-                           >HTML Audio/Video</a
-                        >
-                        <a href="htmlUrlEncode.html" class="dropdown-item"
-                           >HTML URL Encode</a
-                        >
-                        <a href="htmlLinks.html" class="dropdown-item"
-                           >HTML Links</a
-                        >
+                        <a href="#" class="dropdown-item">HTML Attributes</a>
+                        <a href="#" class="dropdown-item">HTML Colors</a>
+                        <a href="#" class="dropdown-item">HTML Audio/Video</a>
+                        <a href="#" class="dropdown-item">HTML URL Encode</a>
+                        <a href="#" class="dropdown-item">HTML Links</a>
                      </div>
                   </li>
                   <li class="nav-item">
@@ -315,85 +305,97 @@
                   <section class="sec1">
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
-                           <h2>Building blocks of HTML</h2>
+                           <h2>HTML File Paths</h2>
                            <p>
-                              An HTML document consist of its basic building
-                              blocks which are:
+                            An HTML file path is used to describe the location of a file in a website folder. File paths are like an address of file for a web browser. We can link any external resource to add in our HTML file with the help of file paths such as images, file, CSS file, JS file, video, etc.
                            </p>
-
+                           <p>The src or href attribute requires an attribute to link any external source to HTML file.</p>
+                           <p>Following are the different types to specify file paths:</p>
                            <p>
-                              <strong>Tags:</strong> An HTML tag surrounds the
-                              content and apply meaning to it. It is written
-                              between < and > brackets.
+                            <ol>
+                                <li>&lt;img src="picture.jpg"&gt; It specifies that picture.jpg is located in the same folder as the current page.</li>
+                                <li>&lt;img src="images/picture.jpg"&gt; It specifies that picture.jpg is located in the images folder in the current folder.</li>
+                                <li>&lt;img src="/images/picture.jpg"&gt; It specifies that picture.jpg is located in the images folder at the root of the current web.</li>
+                                <li>&lt;img src="../picture.jpg"&gt; It specifies that picture.jpg is located in the folder one level up from the current folder.</li>
+                            </ol>
                            </p>
-
+                              <h3>HTML File Paths</h3>
+                           <p>A file path describes the location of a file in a web site's folder structure.</p>
+                           <p>File paths are used when linking to external files, like:</p>
+                              <ul>
+                                 <li>Web pages</li>
+                                 <li>Images</li>
+                                 <li>Style sheets</li>
+                                 <li>JavaScripts</li>
+                              </ul>
+                           
+                           <h3>Absolute File Paths</h3>
                            <p>
-                              <strong>Attribute:</strong> An attribute in HTML
-                              provides extra information about the element, and
-                              it is applied within the start tag. An HTML
-                              attribute contains two fields: name & value.
+                            An absolute file path is the full URL to a file:
                            </p>
-                           <h3>Syntax</h3>
-                           <p class="bg-dark">
-                              <strong>&lt;tag</strong> name
-                              attribute_name="attr_value"&gt;content<strong
-                                 >&lt;/tag</strong
-                              >
-                              name&gt;
-                           </p>
-
-                           <p>
-                              <strong>Elements:</strong> An HTML element is an
-                              individual component of an HTML file. In an HTML
-                              file, everything written within tags are termed as
-                              HTML elements.
-                           </p>
-                           <br>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlBuildingBlocks/html-building-blocks.png"
-                                 alt=""
-                                 class="imgHtmlBuildingBlock"
-                              />
-                           </div>
-                           <br />
                            <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;!DOCTYPE html&gt;
-                              <br />
-                              &lt;html&gt;
-                              <br />
-                              &lt;head&gt;
-                              <br />
-                              &lt;title&gt; The basic building blocks of
-                              HTML&lt;/title&gt;
-                              <br />
-                              &lt;/head&gt;
-                              <br />
-                              &lt;body&gt;
-                              <br />
-                              &lt;h2&gt;The building blocks&lt;/h2&gt;
-                              <br />
-                              &lt;p&gt;This is a paragraph tag&lt;/p&gt;
-                              <br />
-                              &lt;p style="color:red"&gt;The style is attribute
-                              of paragraph tag&lt;/p&gt;
-                              <br />
-                              &lt;span&gt;The element contains tag, attribute
-                              and content&lt;/span&gt;
-                              <br />
-                              &lt;/body&gt;
-                              <br />
-                              &lt;/html&gt;
+                            &lt;img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"&gt;
                            </p>
                            <div class="tryItButton">
                               <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlBuildingblocks"
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_absoulute"
                                  class="btn-tryIt"
                                  id="aHtmlButtons"
                                  >Try It!</a
                               >
                            </div>
+                           <p class="mt-5">
+                            The &lt;img&gt; tag is explained in the chapter: HTML Images.
+                           </p>
+                           <h3>Relative File Paths</h3>
+                           <p>A relative file path points to a file relative to the current page.</p>
+                           <p>In the following example, the file path points to a file in the images folder located at the root of the current web:</p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                            &lt;img src="/images/picture.jpg" alt="Mountain"&gt;
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_relative"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+                           <p class="mt-5">In the following example, the file path points to a file in the images folder located in the current folder:</p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                            &lt;img src="images/picture.jpg" alt="Mountain"&gt;
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_relative_1"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+                           <p class="mt-5">In the following example, the file path points to a file in the images folder located in the folder one level up from the current folder:</p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                            &lt;img src="../images/picture.jpg" alt="Mountain"&gt;
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_relative_2"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+                           <h3 class="mt-5 text-info">Best Practice</h3>
+                           <p>It is best practice to use relative file paths (if possible).</p>
+                           <p>When using relative file paths, your web pages will not be bound to your current base URL. All links will work on your own computer (localhost) as well as on your current public domain and your future public domains.
+
+                        </p>
+                           
+
                         </div>
                      </div>
                   </section>

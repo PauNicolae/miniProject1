@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="htmlBuildingBlocks.css" />
+      <link rel="stylesheet" href="htmlTables.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +24,7 @@
          type="image/x-icon"
       />
 
-      <title>HTML Building Blocks</title>
+      <title>HTML Tables</title>
    </head>
    <body id="body">
       <!-- Navbar -->
@@ -133,21 +133,11 @@
                         <a href="htmlTagList.html" class="dropdown-item"
                            >HTML Tag List</a
                         >
-                        <a href="htmlAttributes.html" class="dropdown-item"
-                           >HTML Attributes</a
-                        >
-                        <a href="htmlColors.html" class="dropdown-item"
-                           >HTML Colors</a
-                        >
-                        <a href="htmlAudioVideo.html" class="dropdown-item"
-                           >HTML Audio/Video</a
-                        >
-                        <a href="htmlUrlEncode.html" class="dropdown-item"
-                           >HTML URL Encode</a
-                        >
-                        <a href="htmlLinks.html" class="dropdown-item"
-                           >HTML Links</a
-                        >
+                        <a href="#" class="dropdown-item">HTML Attributes</a>
+                        <a href="#" class="dropdown-item">HTML Colors</a>
+                        <a href="#" class="dropdown-item">HTML Audio/Video</a>
+                        <a href="#" class="dropdown-item">HTML URL Encode</a>
+                        <a href="#" class="dropdown-item">HTML Links</a>
                      </div>
                   </li>
                   <li class="nav-item">
@@ -315,85 +305,123 @@
                   <section class="sec1">
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
-                           <h2>Building blocks of HTML</h2>
-                           <p>
-                              An HTML document consist of its basic building
-                              blocks which are:
-                           </p>
-
-                           <p>
-                              <strong>Tags:</strong> An HTML tag surrounds the
-                              content and apply meaning to it. It is written
-                              between < and > brackets.
-                           </p>
-
-                           <p>
-                              <strong>Attribute:</strong> An attribute in HTML
-                              provides extra information about the element, and
-                              it is applied within the start tag. An HTML
-                              attribute contains two fields: name & value.
-                           </p>
-                           <h3>Syntax</h3>
-                           <p class="bg-dark">
-                              <strong>&lt;tag</strong> name
-                              attribute_name="attr_value"&gt;content<strong
-                                 >&lt;/tag</strong
-                              >
-                              name&gt;
-                           </p>
-
-                           <p>
-                              <strong>Elements:</strong> An HTML element is an
-                              individual component of an HTML file. In an HTML
-                              file, everything written within tags are termed as
-                              HTML elements.
-                           </p>
-                           <br>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlBuildingBlocks/html-building-blocks.png"
-                                 alt=""
-                                 class="imgHtmlBuildingBlock"
-                              />
-                           </div>
-                           <br />
+                           <h2>HTML Table</h2>
+                           <p>HTML tables allow web developers to arrange data into rows and columns.
+                        </p>
+                           <p>A table in HTML consists of table cells inside rows and columns</p>
                            <p><strong>Example:</strong></p>
-                           <p class="bg-dark">
-                              &lt;!DOCTYPE html&gt;
-                              <br />
-                              &lt;html&gt;
-                              <br />
-                              &lt;head&gt;
-                              <br />
-                              &lt;title&gt; The basic building blocks of
-                              HTML&lt;/title&gt;
-                              <br />
-                              &lt;/head&gt;
-                              <br />
-                              &lt;body&gt;
-                              <br />
-                              &lt;h2&gt;The building blocks&lt;/h2&gt;
-                              <br />
-                              &lt;p&gt;This is a paragraph tag&lt;/p&gt;
-                              <br />
-                              &lt;p style="color:red"&gt;The style is attribute
-                              of paragraph tag&lt;/p&gt;
-                              <br />
-                              &lt;span&gt;The element contains tag, attribute
-                              and content&lt;/span&gt;
-                              <br />
-                              &lt;/body&gt;
-                              <br />
-                              &lt;/html&gt;
-                           </p>
+                           <table>
+                              <tr>
+                                 <th>Company</th>
+                                 <th>Contact</th>
+                                 <th>Country</th>
+                              </tr>
+                              <tr>
+                                 <td>Alfreds Futterkiste</td>
+                                 <td>Maria Anders</td>
+                                 <td>Germany</td>
+                              </tr>
+                              <tr>
+                                 <td>Centro comercial Moctezuma</td>
+                                 <td>Francisco Chang</td>
+                                 <td>Mexico</td>
+                              </tr>
+                              <tr>
+                                 <td>Ernst Handel</td>
+                                 <td>Roland Mendel</td>
+                                 <td>Austria</td>
+                              </tr>
+                              <tr>
+                                 <td>Island Trading</td>
+                                 <td>Helen Bennett</td>
+                                 <td>UK</td>
+                              </tr>
+                              <tr>
+                                 <td>Laughing Bacchus Winecellars</td>
+                                 <td>Yoshi Tannamuri</td>
+                                 <td>Canada</td>
+                              </tr>
+                              <tr>
+                                 <td>Magazzini Alimentari Riuniti</td>
+                                 <td>Giovanni Rovelli</td>
+                                 <td>Italy</td>
+                              </tr>
+                           </table>
                            <div class="tryItButton">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlBuildingblocks"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
+                            <a
+                               href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro"
+                               class="btn-tryIt"
+                               id="aHtmlButtons"
+                               >Try It!</a
+                            >
+                         </div>
+                         <h3 class="mt-5">Table Cells</h3>
+                         <p>Each table cell is defined by a &lt;td&gt; and a &lt;/td&gt; tag.</p>
+                         <p class="text-info">td stands for table data.</p>
+                         <p>Everything between &lt;td&lg; and &lt;/td&gt; are the content of the table cell.</p>
+                         <p><strong>Example:</strong></p>
+                         <p class="bg-dark">
+                            &lt;table&gt;
+                            <br>
+                                &lt;tr&gt;
+                                <br>
+                                  &lt;td&gt;Emil&lt;/td&gt;
+                                  <br>
+                                  &lt;td&gt;Tobias&lt;/td&gt;
+                                  <br>
+                                  &lt;td&gt;Linus&lt;/td&gt;
+                                  <br>
+                                &lt;/tr&gt;
+                                <br>
+                              &lt;/table&gt;
+                         </p>
+                         <div class="tryItButton">
+                            <a
+                               href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table4"
+                               class="btn-tryIt"
+                               id="aHtmlButtons"
+                               >Try It!</a
+                            >
+                         </div>
+                         <p class="text-warning mt-5">Note: table data elements are the data containers of the table.
+                            They can contain all sorts of HTML elements; text, images, lists, other tables, etc.</p>
+                            <h3>Table Rows</h3>
+                            <p>Each table row starts with a &lt;tr&gt; and end with a &lt;/tr&gt; tag.</p>
+                            <p class="text-info">tr stands for table row.</p>
+                            <p><strong>Example:</strong></p>
+                            <p class="bg-dark">
+                               &lt;table&gt;
+                               <br>
+                                   &lt;tr&gt;
+                                   <br>
+                                     &lt;td&gt;Emil&lt;/td&gt;
+                                     <br>
+                                     &lt;td&gt;Tobias&lt;/td&gt;
+                                     <br>
+                                     &lt;td&gt;Linus&lt;/td&gt;
+                                     <br>
+                                   &lt;/tr&gt;
+                                   <br>
+                                   &lt;tr&gt;
+                                   <br>
+                                     &lt;td&gt;16&lt;/td&gt;
+                                     <br>
+                                     &lt;td&gt;14&lt;/td&gt;
+                                     <br>
+                                     &lt;td&gt;10&lt;/td&gt;
+                                     <br>
+                                 &lt;/table&gt;
+                            </p>
+                            <div class="tryItButton">
+                                <a
+                                   href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table5"
+                                   class="btn-tryIt"
+                                   id="aHtmlButtons"
+                                   >Try It!</a
+                                >
+                             </div>
+                             <p class="mt-5">By default, the text in &lt;th&gt; elements are bold and centered, but you can change that with CSS.</p>
+
                         </div>
                      </div>
                   </section>

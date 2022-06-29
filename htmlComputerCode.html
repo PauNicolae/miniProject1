@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="htmlBuildingBlocks.css" />
+      <link rel="stylesheet" href="all.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +24,7 @@
          type="image/x-icon"
       />
 
-      <title>HTML Building Blocks</title>
+      <title>HTML Computercode</title>
    </head>
    <body id="body">
       <!-- Navbar -->
@@ -133,21 +133,11 @@
                         <a href="htmlTagList.html" class="dropdown-item"
                            >HTML Tag List</a
                         >
-                        <a href="htmlAttributes.html" class="dropdown-item"
-                           >HTML Attributes</a
-                        >
-                        <a href="htmlColors.html" class="dropdown-item"
-                           >HTML Colors</a
-                        >
-                        <a href="htmlAudioVideo.html" class="dropdown-item"
-                           >HTML Audio/Video</a
-                        >
-                        <a href="htmlUrlEncode.html" class="dropdown-item"
-                           >HTML URL Encode</a
-                        >
-                        <a href="htmlLinks.html" class="dropdown-item"
-                           >HTML Links</a
-                        >
+                        <a href="#" class="dropdown-item">HTML Attributes</a>
+                        <a href="#" class="dropdown-item">HTML Colors</a>
+                        <a href="#" class="dropdown-item">HTML Audio/Video</a>
+                        <a href="#" class="dropdown-item">HTML URL Encode</a>
+                        <a href="#" class="dropdown-item">HTML Links</a>
                      </div>
                   </li>
                   <li class="nav-item">
@@ -315,85 +305,224 @@
                   <section class="sec1">
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
-                           <h2>Building blocks of HTML</h2>
+                           <h2>HTML File Paths</h2>
                            <p>
-                              An HTML document consist of its basic building
-                              blocks which are:
+                              HTML contains several elements for defining user
+                              input and computer code.
                            </p>
 
-                           <p>
-                              <strong>Tags:</strong> An HTML tag surrounds the
-                              content and apply meaning to it. It is written
-                              between < and > brackets.
-                           </p>
-
-                           <p>
-                              <strong>Attribute:</strong> An attribute in HTML
-                              provides extra information about the element, and
-                              it is applied within the start tag. An HTML
-                              attribute contains two fields: name & value.
-                           </p>
-                           <h3>Syntax</h3>
-                           <p class="bg-dark">
-                              <strong>&lt;tag</strong> name
-                              attribute_name="attr_value"&gt;content<strong
-                                 >&lt;/tag</strong
-                              >
-                              name&gt;
-                           </p>
-
-                           <p>
-                              <strong>Elements:</strong> An HTML element is an
-                              individual component of an HTML file. In an HTML
-                              file, everything written within tags are termed as
-                              HTML elements.
-                           </p>
-                           <br>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlBuildingBlocks/html-building-blocks.png"
-                                 alt=""
-                                 class="imgHtmlBuildingBlock"
-                              />
-                           </div>
-                           <br />
                            <p><strong>Example:</strong></p>
                            <p class="bg-dark">
-                              &lt;!DOCTYPE html&gt;
+                              &lt;code&gt;
                               <br />
-                              &lt;html&gt;
+                              x = 5;
                               <br />
-                              &lt;head&gt;
+                              y = 6;
                               <br />
-                              &lt;title&gt; The basic building blocks of
-                              HTML&lt;/title&gt;
+                              z = x + y;
                               <br />
-                              &lt;/head&gt;
-                              <br />
-                              &lt;body&gt;
-                              <br />
-                              &lt;h2&gt;The building blocks&lt;/h2&gt;
-                              <br />
-                              &lt;p&gt;This is a paragraph tag&lt;/p&gt;
-                              <br />
-                              &lt;p style="color:red"&gt;The style is attribute
-                              of paragraph tag&lt;/p&gt;
-                              <br />
-                              &lt;span&gt;The element contains tag, attribute
-                              and content&lt;/span&gt;
-                              <br />
-                              &lt;/body&gt;
-                              <br />
-                              &lt;/html&gt;
+                              &lt;/code&gt;
                            </p>
                            <div class="tryItButton">
                               <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlBuildingblocks"
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_intro3"
                                  class="btn-tryIt"
                                  id="aHtmlButtons"
                                  >Try It!</a
                               >
                            </div>
+                           <h3 class="mt-5">
+                              HTML &lt;kbd&gt; For Keyboard Input
+                           </h3>
+                           <p>
+                              The HTML &lt;kbd&gt; element is used to define
+                              keyboard input. The content inside is displayed in
+                              the browser's default monospace font.
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p>
+                              Define some text as keyboard input in a document:
+                           </p>
+                           <p class="bg-dark">
+                              &lt;p&gt; Save the document by pressing
+                              &lt;kbd&gt;Ctrl + S&lt;/kbd&gt; &lt;/p&gt;
+                           </p>
+                           <p><strong>Result:</strong></p>
+                           <p>
+                              Save the document by pressing <kbd>Ctrl + S</kbd>
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_kbd"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+                           <h3 class="mt-5">
+                              HTML &lt;samp&gt; For Program Output
+                           </h3>
+                           <p>
+                              The HTML &lt;samp&gt; element is used to define
+                              sample output from a computer program. The content
+                              inside is displayed in the browser's default
+                              monospace font.
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p>
+                              Define some text as sample output from a computer
+                              program in a document:
+                           </p>
+                           <p class="bg-dark">
+                              &lt;p&gt; Message from my computer:&lt;/p&gt;
+                              <br />
+                              &lt;p&gt;&lt;kbd&gt;File not found.&lt;br&gt;Press
+                              F1 to continue&lt;/kbd&gt;&lt;/p&gt;
+                           </p>
+                           <p><strong>Result:</strong></p>
+                           <p>
+                              The samp element is used to define sample output
+                              from a computer program.
+                           </p>
+
+                           <p>Message from my computer:</p>
+                           <p>
+                              <samp
+                                 >File not found.<br />Press F1 to
+                                 continue</samp
+                              >
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_samp"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+
+                           <h3 class="mt-5">
+                              HTML &lt;code&gt; For Computer Code
+                           </h3>
+                           <p>
+                              The HTML &lt;code&gt; element is used to define a
+                              piece of computer code. The content inside is
+                              displayed in the browser's default monospace font.
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p>
+                              Define some text as computer code in a document:
+                           </p>
+                           <p class="bg-dark">
+                              &lt;code&gt;
+                              <br />
+                              x = 5;
+                              <br />
+                              y = 6;
+                              <br />
+                              z = x + y;
+                              <br />
+                              &lt;/code&gt;
+                           </p>
+                           <p><strong>Result:</strong></p>
+                           <p><code> x = 5; y = 6; z = x + y; </code></p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_samp"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+                           <p class="mt-5">
+                              Notice that the &lt;code&gt; element does not
+                              preserve extra whitespace and line-breaks.
+                           </p>
+                           <p>
+                              To fix this, you can put the &lt;code&gt; element
+                              inside a &lt;pre&gt; element:
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p class="bg-dark">
+                              &lt;pre&gt; &lt;code&gt;
+                              <br />
+                              x = 5;
+                              <br />
+                              y = 6;
+                              <br />
+                              z = x + y;
+                              <br />
+                              &lt;/code&gt; &lt;/pre&gt;
+                           </p>
+                           <p><strong>Result:</strong></p>
+                           <pre>
+                            <code>
+                            x = 5;
+                            y = 6;
+                            z = x + y;
+                            </code>
+                            </pre>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_codepre"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+                           <h3 class="mt-5">HTML &lt;var&gt; For Variables</h3>
+                           <p>
+                              The HTML &lt;var&gt; element is used to define a
+                              variable in programming or in a mathematical
+                              expression. The content inside is typically
+                              displayed in italic.
+                           </p>
+                           <p><strong>Example:</strong></p>
+                           <p>Define some text as variables in a document:</p>
+                           <p class="bg-dark">
+                              &lt;p&gt;The area of a triangle is: 1/2 x
+                              &lt;var&gt;b&lt;/var&gt; x
+                              &lt;var&gt;h*lt;/var&gt;, where
+                              &lt;var&gt;b&lt;/var&gt; is the base, and
+                              &lt;var&gt;h&lt;/var&gt; is the vertical
+                              height.&lt;/p&gt;
+                           </p>
+                           <p><strong>Result:</strong></p>
+                           <p>
+                              The area of a triangle is: 1/2 x <var>b</var> x
+                              <var>h</var>, where <var>b</var> is the base, and
+                              <var>h</var> is the vertical height.
+                           </p>
+                           <div class="tryItButton">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_var"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+                           <h3 class="mt-5 text-info">Chapter Summary</h3>
+                           <ul>
+                              <li>
+                                 The &lt;kbd&gt; element defines keyboard input
+                              </li>
+                              <li>
+                                 The &lt;samp&gt; element defines sample output
+                                 from a computer program
+                              </li>
+                              <li>
+                                 The &lt;code&gt; element defines a piece of
+                                 computer code
+                              </li>
+                              <li>
+                                 The &lt;var&gt; element defines a variable in
+                                 programming or in a mathematical expression
+                              </li>
+                              <li>
+                                 The &lt;pre&gt; element defines preformatted
+                                 text
+                              </li>
+                           </ul>
                         </div>
                      </div>
                   </section>

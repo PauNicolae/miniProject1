@@ -150,7 +150,6 @@
    padding-left: 2rem;
    padding-right: 2rem;
    padding-bottom: 3rem;
-   
 }
 
 /* div.scroll {
@@ -161,16 +160,15 @@
    text-align: center;
    padding: 20px;
  } */
-
-/* .sticky {
-   position: relative;
-   height: 100vh;
-    width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-top: 20px;
+/* 
+.sticky {
+   position: -webkit-sticky;
+   top: 30px;
+  max-height: 100vh;
+   padding-top: 1rem;
+   overflow-x: hidden;
+   overflow-y: auto; 
  } */
-
 
  /* .sidebar .active {
    border-radius: 5px;
@@ -188,8 +186,8 @@
 }
 
 
-.imgHtmlBuildingBlock{
-   max-width: 90%;
+.imgGoodMorning, .imgDeer, .imgNone, .imgRobot{
+   max-width: 100%;
 }
 
 .box1{

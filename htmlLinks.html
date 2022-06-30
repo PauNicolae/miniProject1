@@ -130,15 +130,33 @@
                         >References</a
                      >
                      <div class="dropdown-menu bg-dark">
-                        <a href="htmlTagList.html" class="dropdown-item"
+                        <a href="refTagList.html" class="dropdown-item"
                            >HTML Tag List</a
                         >
-                        <a href="#" class="dropdown-item">HTML Attributes</a>
-                        <a href="#" class="dropdown-item">HTML Colors</a>
-                        <a href="#" class="dropdown-item">HTML Audio/Video</a>
-                        <a href="#" class="dropdown-item">HTML URL Encode</a>
-                        <a href="#" class="dropdown-item">HTML Links</a>
+                        <a href="refAttributes.html" class="dropdown-item"
+                           >HTML Attributes</a
+                        >
+                        <a href="refColors.html" class="dropdown-item"
+                           >HTML Colors</a
+                        >
+                        <a href="hrefAudioVideo.html" class="dropdown-item"
+                           >HTML Audio/Video</a
+                        >
+                        <a href="refUrlEncode.html" class="dropdown-item"
+                           >HTML URL Encode</a
+                        >
+                        <a href="refLinks.html" class="dropdown-item"
+                           >HTML Links</a
+                        >
                      </div>
+                  </li>
+                  <li class="nav-item">
+                     <a
+                        href="exercises.html
+                    "
+                        class="nav-link"
+                        >Exercises</a
+                     >
                   </li>
                   <li class="nav-item">
                      <a
@@ -252,7 +270,7 @@
                               class="list-group-item list-group-item-action py-2 ripple"
                               id="list-group-item"
                            >
-                              <span>HTML links</span>
+                              <span>HTML Links</span>
                            </a>
                            <a
                               href="htmlImages.html"
@@ -299,6 +317,51 @@
                               ><span>HTML URL Encode</span></a
                            >
                         </div>
+                        <h4 class="text-center text-light mt-2 pt-5">
+                           HTML REFERENCES
+                        </h4>
+                        <div class="list-group list-group-flush mx-3 mt-4">
+                           <a
+                              href="refTagList.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                              aria-current="true"
+                           >
+                              <span>HTML Tag List</span>
+                           </a>
+                           <a
+                              href="refAttributes.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                           >
+                              <span>HTML Attributes</span>
+                           </a>
+                           <a
+                              href="refColors.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                              ><span>HTML Colors</span></a
+                           >
+                           <a
+                              href="refAudioVideo.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                              ><span>HTML Audio/Video</span></a
+                           >
+                           <a
+                              href="refUrlEncode.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                              ><span>HTML Url Encode</span></a
+                           >
+                           <a
+                              href="refLinks.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                           >
+                              <span>HTML Links</span>
+                           </a>
+                        </div>
                      </div>
                   </nav>
 
@@ -330,7 +393,9 @@
                               The HTML &lt;a&gt; tag defines a hyperlink. It has
                               the following syntax:
                            </p>
-                           <p class="text-info">&lt;a href="url"&gt;link text&lt;/a&gt;</p>
+                           <p class="text-info">
+                              &lt;a href="url"&gt;link text&lt;/a&gt;
+                           </p>
                            <p>
                               The most important attribute of the &lt;a&gt;
                               element is the href attribute, which indicates the
@@ -376,7 +441,9 @@
                               get another look!
                            </p>
 
-                           <h3 class="mt-5">HTML Links - The target Attribute</h3>
+                           <h3 class="mt-5">
+                              HTML Links - The target Attribute
+                           </h3>
                            <p>
                               By default, the linked page will be displayed in
                               the current browser window. To change this, you
@@ -536,56 +603,65 @@
                               HTML Tutorial&lt;/a&gt;
                            </p>
                            <div class="tryItButton mt-4">
-                            <a
-                               href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_title"
-                               class="btn-tryIt"
-                               id="aHtmlButtons"
-                               >Try It!</a
-                            >
-                         </div>
-                         <h3 class="mt-5">More on Absolute URLs and Relative URLs</h3>
-                         <p><strong>Example:</strong></p>
-                         <p>Use a full URL to link to a web page: </p>
-                         <p class="bg-dark p-4">
-                            &lt;a href="https://www.w3schools.com/html/default.asp"&gt;HTML tutorial&lt;/a&gt;
-                         </p>
-                         <div class="tryItButton mt-4">
-                            <a
-                               href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_url"
-                               class="btn-tryIt"
-                               id="aHtmlButtons"
-                               >Try It!</a
-                            >
-                         </div>
-                         <p class="mt-5"><strong>Example:</strong></p>
-                         <p>
-                            Link to a page located in the html folder on the current web site: 
-                         </p>
-                         <p class="bg-dark p-4">
-                            &lt;a href="/html/default.asp"&gt;HTML tutorial&lt;/a&gt;
-                         </p>
-                         <div class="tryItButton mt-4">
-                            <a
-                               href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_relative"
-                               class="btn-tryIt"
-                               id="aHtmlButtons"
-                               >Try It!</a
-                            >
-                         </div>
-                         <p class="mt-5"><strong>Example:</strong></p>
-                         <p>Link to a page located in the same folder as the current page: </p>
-                         <p class="bg-dark p-4">
-                            &lt;a href="default.asp"&gt;HTML tutorial&lt;/a&gt;
-                         </p>
-                         <div class="tryItButton mt-4">
-                            <a
-                               href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external"
-                               class="btn-tryIt"
-                               id="aHtmlButtons"
-                               >Try It!</a
-                            >
-                         </div>
-
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_title"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+                           <h3 class="mt-5">
+                              More on Absolute URLs and Relative URLs
+                           </h3>
+                           <p><strong>Example:</strong></p>
+                           <p>Use a full URL to link to a web page:</p>
+                           <p class="bg-dark p-4">
+                              &lt;a
+                              href="https://www.w3schools.com/html/default.asp"&gt;HTML
+                              tutorial&lt;/a&gt;
+                           </p>
+                           <div class="tryItButton mt-4">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_url"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+                           <p class="mt-5"><strong>Example:</strong></p>
+                           <p>
+                              Link to a page located in the html folder on the
+                              current web site:
+                           </p>
+                           <p class="bg-dark p-4">
+                              &lt;a href="/html/default.asp"&gt;HTML
+                              tutorial&lt;/a&gt;
+                           </p>
+                           <div class="tryItButton mt-4">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_relative"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
+                           <p class="mt-5"><strong>Example:</strong></p>
+                           <p>
+                              Link to a page located in the same folder as the
+                              current page:
+                           </p>
+                           <p class="bg-dark p-4">
+                              &lt;a href="default.asp"&gt;HTML
+                              tutorial&lt;/a&gt;
+                           </p>
+                           <div class="tryItButton mt-4">
+                              <a
+                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external"
+                                 class="btn-tryIt"
+                                 id="aHtmlButtons"
+                                 >Try It!</a
+                              >
+                           </div>
                         </div>
                      </div>
                   </section>

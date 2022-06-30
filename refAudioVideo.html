@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="htmlIntroduction.css" />
+      <link rel="stylesheet" href="all.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +24,19 @@
          type="image/x-icon"
       />
 
-      <title>HTML Introduction</title>
+      <title>HTML Audio/Video</title>
+
+      <style>
+         td,
+         th {
+            text-align: left;
+            padding: 8px;
+         }
+
+         tr:nth-child(even) {
+            background-color: #2d2d2d;
+         }
+      </style>
    </head>
    <body id="body">
       <!-- Navbar -->
@@ -198,6 +210,52 @@
                   >
                      <div class="sticky">
                         <h4 class="text-center text-light mt-2 pt-5">
+                           HTML REFERENCES
+                        </h4>
+                        <div class="list-group list-group-flush mx-3 mt-4">
+                           <a
+                              href="refTagList.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                              aria-current="true"
+                           >
+                              <span>HTML Tag List</span>
+                           </a>
+                           <a
+                              href="refAttributes.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                           >
+                              <span>HTML Attributes</span>
+                           </a>
+                           <a
+                              href="refColors.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                              ><span>HTML Colors</span></a
+                           >
+                           <a
+                              href="refAudioVideo.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                              ><span>HTML Audio/Video</span></a
+                           >
+                           <a
+                              href="refUrlEncode.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                              ><span>HTML Url Encode</span></a
+                           >
+                           <a
+                              href="refLinks.html"
+                              class="list-group-item list-group-item-action py-2 ripple"
+                              id="list-group-item"
+                           >
+                              <span>HTML Links</span>
+                           </a>
+                        </div>
+                        
+                        <h4 class="text-center text-light mt-2 pt-5">
                            HTML TUTORIAL
                         </h4>
                         <div class="list-group list-group-flush mx-3 mt-4">
@@ -317,205 +375,272 @@
                               ><span>HTML URL Encode</span></a
                            >
                         </div>
-                        <h4 class="text-center text-light mt-2 pt-5">
-                           HTML REFERENCES
-                        </h4>
-                        <div class="list-group list-group-flush mx-3 mt-4">
-                           <a
-                              href="refTagList.html"
-                              class="list-group-item list-group-item-action py-2 ripple"
-                              id="list-group-item"
-                              aria-current="true"
-                           >
-                              <span>HTML Tag List</span>
-                           </a>
-                           <a
-                              href="refAttributes.html"
-                              class="list-group-item list-group-item-action py-2 ripple"
-                              id="list-group-item"
-                           >
-                              <span>HTML Attributes</span>
-                           </a>
-                           <a
-                              href="refColors.html"
-                              class="list-group-item list-group-item-action py-2 ripple"
-                              id="list-group-item"
-                              ><span>HTML Colors</span></a
-                           >
-                           <a
-                              href="refAudioVideo.html"
-                              class="list-group-item list-group-item-action py-2 ripple"
-                              id="list-group-item"
-                              ><span>HTML Audio/Video</span></a
-                           >
-                           <a
-                              href="refUrlEncode.html"
-                              class="list-group-item list-group-item-action py-2 ripple"
-                              id="list-group-item"
-                              ><span>HTML Url Encode</span></a
-                           >
-                           <a
-                              href="refLinks.html"
-                              class="list-group-item list-group-item-action py-2 ripple"
-                              id="list-group-item"
-                           >
-                              <span>HTML Links</span>
-                           </a>
-                        </div>
-                        
                      </div>
                   </nav>
 
                   <section class="sec1">
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
-                           <h2>HTML Introduction</h2>
-                           <p class="mt-3">
-                              While many guides on the internet attempt to teach
-                              HTML using a lot of mind-boggling theory, this
-                              tutorial will instead focus on giving you the
-                              practical skills to build your first site.
-                           </p>
-
-                           <p>
-                              The aim is to show you ‘how’ to create your first
-                              web page without spending the entire tutorial
-                              focusing too much on the “why.”
-                           </p>
-
-                           <p>
-                              By the end of this tutorial, you will have the
-                              know-how to create a basic website and we hope
-                              that this will inspire you to delve further into
-                              the world of HTML using our follow-on guides.
-                           </p>
-                           <h3 class="mt-5">What is HTML?</h3>
-                           <p>
-                              Okay, so this is the only bit of mandatory theory.
-                              In order to begin to write HTML, it helps if you
-                              know what you are writing.
-                           </p>
-
-                           <p>
-                              HTML is the language in which most websites are
-                              written. HTML is used to create pages and make
-                              them functional.
-                           </p>
-                           <p>
-                              Hypertext is text displayed on a computer or other
-                              electronic device with references to other text
-                              that the user can immediately access, usually by a
-                              mouse click or key press.
-                           </p>
-                           <p>
-                              Apart from text, hypertext may contain tables,
-                              lists, forms, images, and other presentational
-                              elements. It is an easy-to-use and flexible format
-                              to share information over the Internet.
-                           </p>
-                           <p>
-                              Markup languages use sets of markup tags to
-                              characterize text elements within a document,
-                              which gives instructions to the web browsers on
-                              how the document should appear.
-                           </p>
-                           <p>
-                              HTML was originally developed by Tim Berners-Lee
-                              in 1990. He is also known as the father of the
-                              web. In 1996, the World Wide Web Consortium (W3C)
-                              became the authority to maintain the HTML
-                              specifications. HTML also became an international
-                              standard (ISO) in 2000. HTML5 is the latest
-                              version of HTML. HTML5 provides a faster and more
-                              robust approach to web development.
-                           </p>
-                           <p class="text-info">
-                              Tip: Our HTML tutorial will help you to learn the
-                              fundamentals of the latest HTML5 language, from
-                              the basic to advanced topics step-by-step. If
-                              you're a beginner, start with the basic section
-                              and gradually move forward by learning a little
-                              bit every day.
-                           </p>
-                           <h3 class="mt-5">What You Can Do with HTML</h3>
-                           <p>
-                              There are lot more things you can do with HTML.
-                           </p>
-                           <ul>
-                              <li>
-                                 You can publish documents online with text,
-                                 images, lists, tables, etc.
-                              </li>
-                              <li>
-                                 You can access web resources such as images,
-                                 videos or other HTML document via hyperlinks.
-                              </li>
-                              <li>
-                                 You can create forms to collect user inputs
-                                 like name, e-mail address, comments, etc.
-                              </li>
-                              <li>
-                                 You can include images, videos, sound clips,
-                                 flash movies, applications and other HTML
-                                 documents directly inside an HTML document.
-                              </li>
-                              <li>
-                                 You can create offline version of your website
-                                 that work without internet.
-                              </li>
-                              <li>
-                                 You can store data in the user's web browser
-                                 and access later on.
-                              </li>
-                              <li>
-                                 You can find the current location of your
-                                 website's visitor.
-                              </li>
-                           </ul>
-                           <p class="mt-5">The list does not end here, there are many other interesting things that you can do with HTML. You will learn about all of them in detail in upcoming chapters.</p>
-                           <p class="text-warning">Note: HTML as described earlier is a markup language not a programming language, like Java, Ruby, PHP, etc. You need a web browser to view the HTML pages. The web browsers do not display the HTML tags, but uses the tags to interpret the content of the web pages.</p>
-
-                           <h3 class="mt-5">HTML Video Tutorial Introduction</h3>
-                           <div class="box1 mb-5">
-                              <iframe
-                                 width="730"
-                                 height="411"
-                                 src="https://www.youtube.com/embed/ewZ_YWbIWXI"
-                                 title="W3Schools HTML Video Tutorial Introduction"
-                                 frameborder="0"
-                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                 allowfullscreen
-                                 class="videoHtml"
-                              ></iframe>
-                           </div>
-                           <hr>
+                           <h2>HTML Audio/Video</h2>
                            <h3 class="mt-5">
-                              Easy Learning with HTML "Try it Yourself"
+                              HTML Audio and Video DOM Reference
                            </h3>
                            <p>
-                              With our "Try it Yourself" editor, you can edit
-                              the HTML code and view the result:
+                              The HTML5 DOM has methods, properties, and events
+                              for the &lt;audio&gt; and &lt;video&gt; elements.
                            </p>
-
-                           <div class="box1">
-                              <a
-                                 href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello"
-                                 ><img
-                                    src="./gif/gifHtmlEditor.gif"
-                                    alt=""
-                                    height="400px"
-                                    class="html-editor-gif"
-                              /></a>
-                           </div>
-                           <br />
-                           <div class="tryItButton">
-                              <a
-                                 href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try it!</a
-                              >
-                           </div>
+                           <h3 class="mt-5">HTML Audio/Video Methods</h3>
+                           <table style="width: 100%">
+                              <tbody>
+                                 <tr>
+                                    <th><strong>Method</strong></th>
+                                    <th><strong>Description</strong></th>
+                                 </tr>
+                                 <tr class="bg-dark">
+                                    <td>addTextTrack()</td>
+                                    <td>
+                                       Adds a new text track to the audio/video
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>canPlayType()</td>
+                                    <td>
+                                       Checks if the browser can play the
+                                       specified audio/video type
+                                    </td>
+                                 </tr>
+                                 <tr class="bg-dark">
+                                    <td>load()</td>
+                                    <td>Re-loads the audio/video element</td>
+                                 </tr>
+                                 <tr>
+                                    <td>play()</td>
+                                    <td>Starts playing the audio/video</td>
+                                 </tr>
+                                 <tr class="bg-dark">
+                                    <td>pause()</td>
+                                    <td>
+                                       Pauses the currently playing audio/video
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <h3 class="mt-5">HTML Audio/Video Properties</h3>
+                           <table style="width: 100%">
+                              <tbody>
+                                 <tr>
+                                    <th><strong>Property</strong></th>
+                                    <th><strong>Description</strong></th>
+                                 </tr>
+                                 <tr>
+                                    <td>audioTracks</td>
+                                    <td>
+                                       Returns an AudioTrackList object
+                                       representing available audio tracks
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>autoplay</td>
+                                    <td>
+                                       Sets or returns whether the audio/video
+                                       should start playing as soon as it is
+                                       loaded
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>buffered</td>
+                                    <td>
+                                       Returns a TimeRanges object representing
+                                       the buffered parts of the audio/video
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>controller</td>
+                                    <td>
+                                       Returns the MediaController object
+                                       representing the current media controller
+                                       of the audio/video
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>controls</td>
+                                    <td>
+                                       Sets or returns whether the audio/video
+                                       should display controls (like play/pause
+                                       etc.)
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>crossOrigin</td>
+                                    <td>
+                                       Sets or returns the CORS settings of the
+                                       audio/video
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>currentSrc</td>
+                                    <td>
+                                       Returns the URL of the current
+                                       audio/video
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>currentTime</td>
+                                    <td>
+                                       Sets or returns the current playback
+                                       position in the audio/video (in seconds)
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>defaultMuted</td>
+                                    <td>
+                                       Sets or returns whether the audio/video
+                                       should be muted by default
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>defaultPlaybackRate</td>
+                                    <td>
+                                       Sets or returns the default speed of the
+                                       audio/video playback
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>duration</td>
+                                    <td>
+                                       Returns the length of the current
+                                       audio/video (in seconds)
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>ended</td>
+                                    <td>
+                                       Returns whether the playback of the
+                                       audio/video has ended or not
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>error</td>
+                                    <td>
+                                       Returns a MediaError object representing
+                                       the error state of the audio/video
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>loop</td>
+                                    <td>
+                                       Sets or returns whether the audio/video
+                                       should start over again when finished
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>mediaGroup</td>
+                                    <td>
+                                       Sets or returns the group the audio/video
+                                       belongs to (used to link multiple
+                                       audio/video elements)
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>muted</td>
+                                    <td>
+                                       Sets or returns whether the audio/video
+                                       is muted or not
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>networkState</td>
+                                    <td>
+                                       Returns the current network state of the
+                                       audio/video
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>paused</td>
+                                    <td>
+                                       Returns whether the audio/video is paused
+                                       or not
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>playbackRate</td>
+                                    <td>
+                                       Sets or returns the speed of the
+                                       audio/video playback
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>played</td>
+                                    <td>
+                                       Returns a TimeRanges object representing
+                                       the played parts of the audio/video
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>preload</td>
+                                    <td>
+                                       Sets or returns whether the audio/video
+                                       should be loaded when the page loads
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>readyState</td>
+                                    <td>
+                                       Returns the current ready state of the
+                                       audio/video
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>seekable</td>
+                                    <td>
+                                       Returns a TimeRanges object representing
+                                       the seekable parts of the audio/video
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>seeking</td>
+                                    <td>
+                                       Returns whether the user is currently
+                                       seeking in the audio/video
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>src</td>
+                                    <td>
+                                       Sets or returns the current source of the
+                                       audio/video element
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>startDate</td>
+                                    <td>
+                                       Returns a Date object representing the
+                                       current time offset
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>textTracks</td>
+                                    <td>
+                                       Returns a TextTrackList object
+                                       representing the available text tracks
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>videoTracks</td>
+                                    <td>
+                                       Returns a VideoTrackList object
+                                       representing the available video tracks
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>volume</td>
+                                    <td>
+                                       Sets or returns the volume of the
+                                       audio/video
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
                         </div>
                      </div>
                   </section>

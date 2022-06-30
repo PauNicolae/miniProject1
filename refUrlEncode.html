@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="htmlAttributes.css" />
+      <link rel="stylesheet" href="all.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,19 +24,14 @@
          type="image/x-icon"
       />
 
-      <title>HTML Attributes</title>
+      <title>HTML URL Encode</title>
 
       <style>
-         td,
-         th {
-            /* border: 1px solid #dddddd; */
-            text-align: left;
-            padding: 8px;
-         }
-
-         tr:nth-child(even) {
-            background-color: #2d2d2d;
-         }
+         td, th {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  padding: 8px;
+}
       </style>
    </head>
    <body id="body">
@@ -143,25 +138,23 @@
                         >References</a
                      >
                      <div class="dropdown-menu bg-dark">
-                        <a href="htmlTagList.html" class="dropdown-item"
+                        <a href="refTagList.html" class="dropdown-item"
                            >HTML Tag List</a
                         >
-                        <a href="htmlAttributes.html" class="dropdown-item"
-                           >HTML Attributes</a
-                        >
-                        <a href="htmlColors.html" class="dropdown-item"
-                           >HTML Colors</a
-                        >
-                        <a href="htmlAudioVideo.html" class="dropdown-item"
-                           >HTML Audio/Video</a
-                        >
-                        <a href="htmlUrlEncode.html" class="dropdown-item"
-                           >HTML URL Encode</a
-                        >
-                        <a href="htmlLinks.html" class="dropdown-item"
-                           >HTML Links</a
-                        >
+                        <a href="refAttributes.html" class="dropdown-item">HTML Attributes</a>
+                        <a href="refColors.html" class="dropdown-item">HTML Colors</a>
+                        <a href="refAudioVideo.html" class="dropdown-item">HTML Audio/Video</a>
+                        <a href="refUrlEncode.html" class="dropdown-item">HTML URL Encode</a>
+                        <a href="refLinks.html" class="dropdown-item">HTML Links</a>
                      </div>
+                  </li>
+                  <li class="nav-item">
+                     <a
+                        href="exercises.html
+                    "
+                        class="nav-link"
+                        >Exercises</a
+                     >
                   </li>
                   <li class="nav-item">
                      <a
@@ -207,7 +200,7 @@
                         </h4>
                         <div class="list-group list-group-flush mx-3 mt-4">
                            <a
-                              href="htmlTagList.html"
+                              href="refTagList.html"
                               class="list-group-item list-group-item-action py-2 ripple"
                               id="list-group-item"
                               aria-current="true"
@@ -215,32 +208,32 @@
                               <span>HTML Tag List</span>
                            </a>
                            <a
-                              href="htmlAttributes.html"
+                              href="refAttributes.html"
                               class="list-group-item list-group-item-action py-2 ripple"
                               id="list-group-item"
                            >
                               <span>HTML Attributes</span>
                            </a>
                            <a
-                              href="htmlColors.html"
+                              href="refColors.html"
                               class="list-group-item list-group-item-action py-2 ripple"
                               id="list-group-item"
                               ><span>HTML Colors</span></a
                            >
                            <a
-                              href="htmlAudioVideo.html"
+                              href="refAudioVideo.html"
                               class="list-group-item list-group-item-action py-2 ripple"
                               id="list-group-item"
                               ><span>HTML Audio/Video</span></a
                            >
                            <a
-                              href="htmlUrlEncode.html"
+                              href="refUrlEncode.html"
                               class="list-group-item list-group-item-action py-2 ripple"
                               id="list-group-item"
                               ><span>HTML Url Encode</span></a
                            >
                            <a
-                              href="htmlLinks.html"
+                              href="refLinks.html"
                               class="list-group-item list-group-item-action py-2 ripple"
                               id="list-group-item"
                            >
@@ -373,308 +366,95 @@
                   <section class="sec1">
                      <div class="container">
                         <div class="col-xs col-sm col-lg col-xl">
-                           <h2>HTML Attribute</h2>
-                           <ul class="mt-3">
-                              <li>
-                                 HTML attributes are special words which provide
-                                 additional information about the elements or
-                                 attributes are the modifier of the HTML
-                                 element.
-                              </li>
-                              <li>
-                                 Each element or tag can have attributes, which
-                                 defines the behaviour of that element.
-                              </li>
-                              <li>
-                                 Attributes should always be applied with start
-                                 tag.
-                              </li>
-                              <li>
-                                 The Attribute should always be applied with its
-                                 name and value pair.
-                              </li>
-                              <li>
-                                 The Attributes name and values are case
-                                 sensitive, and it is recommended by W3C that it
-                                 should be written in Lowercase only.
-                              </li>
-                              <li>
-                                 You can add multiple attributes in one HTML
-                                 element, but need to give space between two
-                                 attributes.
-                              </li>
-                           </ul>
-                           <h3 class="mt-5">Syntax</h3>
+                           <h2>HTML URL Encode</h2>
+                           <h3 class="mt-4">What is URL?</h3>
+                           <p>
+                            URL stands for Uniform Resource Locator. It is actually a web address. A URL can contain words i.e. (javatpoint.com) or an Internet Protocol (IP) address i.e.195.201.68.81. But most of the user use URL in the form of words because it is easy to remember than numbers.
+                           </p>
+                           <p><strong>Syntax of a URL:</strong></p>
                            <p class="text-info">
-                              &lt;element
-                              attribute_name="value"&gt;content&lt;/element&gt;
+                            scheme://prefix.domain:port/path/filename  
                            </p>
-                           <p><strong>Example:</strong></p>
-                           <p class="bg-dark p-4">
-                              &lt;!DOCTYPE html&gt;
-                              <br />
-                              &lt;html&gt;
-                              <br />
-                              &lt;head&gt;
-                              <br />
-                              &lt;/head&gt;
-                              <br />
-                              &lt;body&gt;
-                              <br />
-                              &lt;h1&gt; This is Style attribute&lt;/h1&gt;
-                              <br />
-                              &lt;p style="height: 50px; color: blue">It will
-                              add style property in element&lt;/p&gt;
-                              <br />
-                              &lt;p style="color: red"&gt;It will change the
-                              color of content&lt;/p&gt; &lt;/body&gt;
-                              &lt;/html&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlattributes"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <p class="mt-5"><strong>Output</strong></p>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlAttribute/html-attribute.png"
-                                 alt=""
-                                 class="imgStyle"
-                              />
-                           </div>
-
-                           <p class="mt-5">
-                              <strong>Explanation of above example:</strong>
-                           </p>
-                           <p class="bg-dark p-4">
-                              &lt;p style="height: 50px; color: blue"&gt;It will
-                              add style property in element&lt;/p&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlattributes1"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <p class="mt-5">
-                              In the above statement, we have used paragraph
-                              tags in which we have applied style attribute.
-                              This attribute is used for applying CSS property
-                              on any HTML element. It provides height to
-                              paragraph element of 50px and turns it colour to
-                              blue.
-                           </p>
-                           <p class="bg-dark p-4">
-                              &lt;p style="color: red"&gt;It will change the
-                              color of content&lt;/p&gt;
-                           </p>
-                           <p>
-                              In the above statement we have again used style
-                              attribute in paragraph tag, which turns its colour
-                              red.
-                           </p>
-                           <p class="text-warning">
-                              Note: There are some commonly used attributes are
-                              given below, and the complete list and explanation
-                              of all attributes are given in HTML attributes
-                              List.
-                           </p>
-                           <h3 class="mt-5">The title attribute in HTML</h3>
-                           <p>
-                              Description: The title attribute is used as text
-                              tooltip in most of the browsers. It display its
-                              text when user move the cursor over a link or any
-                              text. You can use it with any text or link to show
-                              the description about that link or text. In our
-                              example, we are taking this with paragraph tag and
-                              heading tag.
-                           </p>
-                           <p><strong>Example:</strong></p>
-                           <p>With &lt;h1&gt; tag:</p>
-                           <p class="bg-dark p-4">
-                              &lt;h1 title="This is heading tag"&gt;Example of
-                              title attribute&lt;/h1&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlattributes2"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <p class="mt-5">With &lt;p&gt; tag:</p>
-                           <p class="bg-dark p-4">
-                              &lt;p title="This is paragraph tag"&gt;Move the
-                              cursor over the heading and paragraph, and you
-                              will see a description as a tooltip&lt;/p&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlattributes3"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <p class="mt-5"><strong>Code:</strong></p>
-                           <p class="bg-dark p-4">
-                              <!DOCTYPE html>
-                              &lt;html&gt;
-                              <br />&lt;head&gt; <br />&lt;/head&gt;
-                              <br />
-                              &lt;body&gt;
-                              <br />&lt;h1 title="This is heading
-                              tag"&gt;Example of title attribute&lt;/h1&gt;
-                              <br />
-                              &lt;p title="This is paragraph tag"&gt;Move the
-                              cursor over the heading and paragraph, and you
-                              will see a description as a tooltip&lt;/p&gt;
-                              <br />
-                              &lt;/body&gt;
-                              <br />&lt;/html&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlattributes4"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <p class="mt-5"><strong>Output:</strong></p>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlAttribute/html-title-attribute.png"
-                                 alt=""
-                                 class="imgAttribute"
-                              />
-                           </div>
-                           <h3 class="mt-5">The href attribute in HTML</h3>
-                           <p>
-                              Description: The href attribute is the main
-                              attribute of &lt;a&gt; anchor tag. This attribute
-                              gives the link address which is specified in that
-                              link. The href attribute provides the hyperlink,
-                              and if it is blank, then it will remain in same
-                              page.
-                           </p>
-                           <p><strong>Example:</strong></p>
-                           <p>With link address:</p>
-                           <p class="bg-dark p-4">
-                              &lt;a
-                              href="https://www.javatpoint.com/html-anchor"&gt;This
-                              is a link&lt;/a&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlattributes5"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <p class="mt-5">Without link address:</p>
-                           <p class="bg-dark p-4">
-                              &lt;a href=""&gt;This is a link&lt;/a&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlattributes6"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <div class="box1 mt-5">
-                              <img
-                                 src="./photos/htmlAttribute/html-href-attribute.png"
-                                 alt=""
-                                 class="imgHref"
-                              />
-                           </div>
-                           <h3 class="mt-5">The src Attribute</h3>
-                           <p>
-                              The src attribute is one of the important and
-                              required attribute of &lt;img&gt; element. It is
-                              source for the image which is required to display
-                              on browser. This attribute can contain image in
-                              same directory or another directory. The image
-                              name or source should be correct else browser will
-                              not display the image.
-                           </p>
-                           <p><strong>Example:</strong></p>
-                           <p class="bg-dark p-4">
-                              &lt;img src="whitepeacock.jpg" height="400"
-                              width="600"&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                              <a
-                                 href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlattributes8"
-                                 class="btn-tryIt"
-                                 id="aHtmlButtons"
-                                 >Try It!</a
-                              >
-                           </div>
-                           <p class="text-warning mt-5">
-                              Note: The above example also have height and width
-                              attribute, which define the height and width of
-                              image on web page.
-                           </p>
-                           <p><strong>Output:</strong></p>
-                           <div class="box1">
-                              <img
-                                 src="./photos/htmlAttribute/html-src-attribute.png"
-                                 alt=""
-                                 class="imgSrc"
-                              />
-                           </div>
-                           <h3 class="mt-5">
-                              Quotes: single quotes or double quotes?
-                           </h3>
-                           <p>
-                              In this chapter you have seen that, we have used
-                              attribute with double quotes, but some people
-                              might use single quotes in HTML. So use of single
-                              quotes with HTML attribute, is also allowed. The
-                              following both statements are absolutely fine.
-                           </p>
-                           <p class="bg-dark p-4">
-                              &lt;a href="https://www.javatpoint.com"&gt;A link
-                              to HTML.&lt;/a&gt;
-                              <br />
-                              &lt;a href='https://www.javatpoint.com'>A link to
-                              HTML.&lt;/a&gt;
-                           </p>
-                           <div class="tryItButton mt-4">
-                            <a
-                               href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlattributes10"
-                               class="btn-tryIt"
-                               id="aHtmlButtons"
-                               >Try It!</a
-                            >
-                         </div>
-                         <p class="mt-5">
-                            IN HTML5, you can also omit use of quotes around attribute values.
-                         </p>
-                         <p class="bg-dark p-4">
-                            &lt;a href=https://www.javatpoint.com&gt;A link to HTML.&lt;/a&gt;  
-                         </p>
-                         <div class="tryItButton mt-4">
-                            <a
-                               href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlattributes11"
-                               class="btn-tryIt"
-                               id="aHtmlButtons"
-                               >Try It!</a
-                            >
-                         </div>
-
+                           <p>Here,</p>
+                           <ul>
+                            <li>scheme is used to define the type of Internet service (most common is http or https).</li>
+                            <li>prefix is used to define a domain prefix (default for http is www).</li>
+                            <li>domain is used to define the Internet domain name (like javaTpoint.com).</li>
+                            <li>port is used to define the port number at the host (default for http is 80).</li>
+                            <li>path is used to define a path at the server (If omitted: the root directory of the site).</li>
+                            <li>filename is used to define the name of a document or resource.</li>
+                           </ul>
+                           <p><strong>Following is a list of some common types of schemes used in URL:</strong></p>
+                          <ul>
+                            <li>http(HyperText Transfer Protocol):Common web pages. Not encrypted.</li>
+                            <li>https (Secure HyperText Transfer Protocol):Secure web pages. Encrypted.</li>
+                            <li>ftp(File Transfer Protocol): Downloading or uploading files.</li>
+                            <li>file: A file on your computer.</li>
+                          </ul>
+                          <h3 class="mt-5">URL Encoding</h3>
+                          <p>URL encoding is used to convert non-ASCII characters into a format that can be used over the Internet because a URL is sent over the Internet by using the ASCII character-set only. If a URL contains characters outside the ASCII set, the URL has to be converted.</p>
+                          <p>In URL encoding, the non-ASCII characters are replaced with a "%" followed by hexadecimal digits.</p>
+                          <p>URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20.</p>
+                          <p class="mt-5"><strong>Following is a list of some character sets which are encoded by browser after submitting the text.</strong></p>
+                          <table style="width: 100%">
+                            <tbody>
+                                <tr>
+                                    <th><strong>Character</strong></th>
+                                    <th><strong>From Windows-1252</strong></th>
+                                    <th><strong>From UTF-8</strong></th>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>€</td>
+                                    <td>%80</td>
+                                    <td>%E2%82%AC</td>
+                                </tr>
+                                <tr>
+                                    <td>£</td>
+                                    <td>%A3</td>
+                                    <td>%C2%A3</td>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>©</td>
+                                    <td>%A9</td>
+                                    <td>%C2%A9</td>
+                                </tr>
+                                <tr>
+                                    <td>®</td>
+                                    <td>%AE</td>
+                                    <td>%C2%AE</td>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>À</td>
+                                    <td>%C0</td>
+                                    <td>%C3%80</td>
+                                </tr>
+                                <tr>
+                                    <td>Á</td>
+                                    <td>%C1</td>
+                                    <td>%C3%81</td>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>Â</td>
+                                    <td>%C2</td>
+                                    <td>%C3%82</td>
+                                </tr>
+                                <tr>
+                                    <td>Ã</td>
+                                    <td>%C3</td>
+                                    <td>%C3%83</td>
+                                </tr>
+                                <tr class="bg-dark">
+                                    <td>Ä</td>
+                                    <td>%C4</td>
+                                    <td>%C3%84</td>
+                                </tr>
+                                <tr>
+                                    <td>Å</td>
+                                    <td>%C5</td>
+                                    <td>%C3%85</td>
+                                </tr>
+                            </tbody>
+                          </table>
 
 
                         </div>

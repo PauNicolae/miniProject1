@@ -229,7 +229,14 @@ aside{
    color:#ccc
 }
 
+/* footer */
+#footerLinks{
+   color: white;
+ }
 
+ #footerLinks:hover{
+   color: orange;
+ }
 
 
 /* end of grid-container */

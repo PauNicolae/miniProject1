@@ -312,6 +312,15 @@ filter: brightness(85%);
 }
 
 
+/* footer */
+#footerLinks{
+  color: white;
+}
+#footerLinks:hover{
+  color: orange;
+}
+
+
 
 /* media query */
 @media screen and (max-width: 480px){

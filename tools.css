@@ -164,6 +164,14 @@ div.card {
 	transform: scale(1.3);
 } */
 
+/* footer */
+#footerLinks{
+   color: white;
+ }
+
+ #footerLinks:hover{
+   color: orange;
+ }
 
 
 

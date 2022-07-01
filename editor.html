@@ -9,7 +9,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="exercises.css" />
+      <link rel="stylesheet" href="editor.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,7 +24,7 @@
          type="image/x-icon"
       />
 
-      <title>HTML Exercises</title>
+      <title>HTML Editor</title>
    </head>
    <body id="body">
       <!-- Navbar -->
@@ -121,33 +121,43 @@
                         >HTML URL Encode</a
                      >
                   </div>
-                 </li>
-                 <li class="nav-item dropdown">
-                  <a
-                     href="#"
-                     class="nav-link dropdown-toggle text-light"
-                     data-bs-toggle="dropdown"
-                     >References</a
-                  >
-                  <div class="dropdown-menu bg-dark">
-                     <a href="refTagList.html" class="dropdown-item"
-                        >HTML Tag List</a
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a
+                        href="#"
+                        class="nav-link dropdown-toggle text-light"
+                        data-bs-toggle="dropdown"
+                        >References</a
                      >
-                     <a href="refAttributes.html" class="dropdown-item">HTML Attributes</a>
-                     <a href="refColors.html" class="dropdown-item">HTML Colors</a>
-                     <a href="refAudioVideo.html" class="dropdown-item">HTML Audio/Video</a>
-                     <a href="refUrlEncode.html" class="dropdown-item">HTML URL Encode</a>
-                     <a href="refLinks.html" class="dropdown-item">HTML Links</a>
-                  </div>
-               </li>
-               <li class="nav-item">
-                  <a
-                     href="exercises.html
+                     <div class="dropdown-menu bg-dark">
+                        <a href="refTagList.html" class="dropdown-item"
+                           >HTML Tag List</a
+                        >
+                        <a href="refAttributes.html" class="dropdown-item"
+                           >HTML Attributes</a
+                        >
+                        <a href="refColors.html" class="dropdown-item"
+                           >HTML Colors</a
+                        >
+                        <a href="refAudioVideo.html" class="dropdown-item"
+                           >HTML Audio/Video</a
+                        >
+                        <a href="refUrlEncode.html" class="dropdown-item"
+                           >HTML URL Encode</a
+                        >
+                        <a href="refLinks.html" class="dropdown-item"
+                           >HTML Links</a
+                        >
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a
+                        href="exercises.html
                  "
-                     class="nav-link"
-                     >Exercises</a
-                  >
-               </li>
+                        class="nav-link"
+                        >Exercises</a
+                     >
+                  </li>
                   <li class="nav-item">
                      <a
                         href="tools.html
@@ -176,34 +186,30 @@
          </div>
       </nav>
       <!-- end of nav -->
+      <section>
 
-      <section class="tools">
-         <h1 class="text-center text-light mb-5">Exercises</h1>
-         <div class="container" id="box">
-            <div class="row">
-                 
-
-               <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl">
-                  <div class="card">
-                    <a href="https://www.w3docs.com/exercise/html/33"><img src="./photos/exercises/html.png" height="150px" alt="" id="img"></a>
-                        <a href="https://www.w3docs.com/exercise/html/33"><button
-                           id="btn"
-                           class="btn mt-4"
-                        >
-                           Start
-                        </button>
-                     </a>
-                  </div>
-               </div>
-
-              
-
-
+            
+       
+         <div class="container" id="container">
+            <h1 class="text-center text-light">HTML Code Editor</h1>
+            <div class="main-editor">
+               <div class="first" contenteditable>&lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;body&gt;
+                
+                &lt;h1 style="background-color: red;"&gt;Hello Cheaters!&lt;/h1&gt;
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                
+                &lt;/body&gt;
+                &lt;/html&gt;</div>
+               <iframe class="second"> </iframe>
             </div>
          </div>
       </section>
 
-      <!-- Footer -->
+
+
+       <!-- Footer -->
       <footer
          class="text-center text-lg-start text-white"
          style="background-color: #141414"
@@ -364,7 +370,6 @@
          </div>
       </footer>
       <!-- Footer -->
-
       <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -376,5 +381,6 @@
       ></script>
       <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
       <script src="script.js"></script>
+      <script src="editor.js"></script>
    </body>
 </html>

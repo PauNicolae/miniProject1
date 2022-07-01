@@ -325,6 +325,20 @@ aside{
 }
 
 }
+
+
+
+
+/* footer */
+#footerLinks{
+   color: white;
+ }
+
+ #footerLinks:hover{
+   color: orange;
+ }
+
+ 
  @media screen and (min-width: 481px) and (max-width:575px){
       
    .grid-container {

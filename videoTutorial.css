@@ -141,51 +141,27 @@ div.card {
    justify-content: center;
    align-items: center;
    text-align: center;
-   width: 17.5rem;
-   height: 20rem;
+   width: auto;
    color: white;
    border-radius: 20px;
    margin: .25rem;
-   /* margin-top: .8rem; */
- 
-   /* -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out; */
-}
-/* 
-div.card:hover{
-    -webkit-transform: scale(1.3);
-	transform: scale(1.3);
-} */
-
-#img:hover{
-   filter: brightness(85%);
 }
 
 
-#btn{
-    color: white;
-    background-color: #df4759;
-    border-radius: 20px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-}
 
-#btn:hover{
-    filter: brightness(85%);
-}
 
 /* footer */
-#footerLinks{
-   color: white;
- }
 
- #footerLinks:hover{
-   color: orange;
- }
+
+#footerLinks{
+    color: white;
+  }
+
+  #footerLinks:hover{
+    color: orange;
+  }
+
+
 
 @media screen and (max-width: 480px){
     .searchTab {

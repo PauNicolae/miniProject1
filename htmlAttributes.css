@@ -186,7 +186,7 @@
 }
 
 
-.imgStyle, .imgAttribute, .imgSrc .imgHref{
+.imgStyle, .imgAttribute, .imgSrc, .imgHref{
    max-width: 100%;
 }
 
@@ -229,7 +229,14 @@ aside{
 
 
 
+/* footer */
+#footerLinks{
+   color: white;
+ }
 
+ #footerLinks:hover{
+   color: orange;
+ }
 /* end of grid-container */
 
 

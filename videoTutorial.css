@@ -24,7 +24,7 @@
 }
 
 .icon {
-   margin-left: 10px;
+   /* margin-left: 10px; */
 }
 
 #magnifyingGlass {
@@ -66,7 +66,6 @@
 }
 
 .nav-item {
-   margin-left: 10px;
    color: white;
 }
 
@@ -114,12 +113,14 @@
 }
 
 .tools {
-   background-color: #232222;
-   padding: 10rem 5rem;
+   /* background-color: #232222;
+   padding: 10rem 5rem; */
+   color: white;
+   padding: 5rem 5rem;
+   background-color: #1c1c1c;
 }
 
-#box {
-   /* padding: 3rem 3rem; */
+/* #box {
    border-radius: 20px;
    margin: auto;
    display: flex;
@@ -127,27 +128,46 @@
    align-items: center;
    align-content: center;
 
+} */
+.iframe{
+   max-width: 100%;
 }
 
-
-
-
-div.card {
-   background-color: #1c1c1c;
-   box-shadow: none;
-   border: none;
-   /* padding: 5rem; */
+.video{
    display: flex;
    justify-content: center;
+   align-content: center;
    align-items: center;
-   text-align: center;
-   width: auto;
-   color: white;
+}
+
+#btn-signIn-page {
+   background-color: #df4759;
+   padding-left: 1em;
+   padding-right: 1rem;
+   padding-top: 0.6rem;
+   padding-bottom: 0.6rem;
+   border: none;
    border-radius: 20px;
-   margin: .25rem;
+   color: white;
+   margin-top: 1.8px;
+   margin-left: 10px;
+   text-transform: initial;
+   width: 100%;
+   font-size: 16px;
+}
+
+#btn-signIn-page:hover {
+   filter: brightness(85%);
 }
 
 
+
+.list{
+   overflow: scroll;
+   overflow-x: hidden;
+   width: 20rem;
+   height: 10rem;
+}
 
 
 /* footer */
@@ -224,17 +244,36 @@ div.card {
     #btn-signIn {
        margin: 0;
     } 
+
+    .iframe{
+      width: 500px;
+      height: 500px;
+   }
+
+   .title{
+      font-size: 1.8rem;
+     }
+  
+     .subtitle{
+      font-size: 1.2rem;
+     }
+  
+  
+     .subs{
+      font-size: 1rem;
+     }
+  
+  
+    li{
+      font-size: 13px;
+    }
   }
   
   
   
   
   @media screen and (min-width: 768px) and (max-width: 991px){
-    .searchTab {
-       border-radius: 5px;
-       border-color: #2f2f41;
-       width: 35%;
-    }
+ 
   
     .navbar-toggler-icon {
        color: white;
@@ -249,25 +288,25 @@ div.card {
     } 
   }
 
-  @media screen and (min-width: 992px) and (max-width:1279px){
-   
-   div.card{
-      width: 14rem;
-      height: 18rem;
+  @media screen and (min-width: 992px) and (max-width:1199px){
+
+   .searchTab {
+      border-radius: 5px;
+      border-color: #2f2f41;
+      width: 8rem;
    }
+
 
    #img{
       height: 130px;
    }
 
+ 
   }
 
+
   @media screen and (min-width: 1280px) and (max-width:1799px){
-
-
-   div.card{
-      width: 16.5rem;
-   }
+ 
 
   }
 

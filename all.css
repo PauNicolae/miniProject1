@@ -66,7 +66,6 @@
 }
 
 .nav-item {
-   margin-left: 10px;
    color: white;
 }
 
@@ -227,7 +226,14 @@ aside{
    color:#ccc
 }
 
+/* footer */
+#footerLinks{
+   color: white;
+ }
 
+ #footerLinks:hover{
+   color: orange;
+ }
 
 
 /* end of grid-container */
@@ -235,6 +241,14 @@ aside{
 
 
 /* start media query */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+   .searchTab {
+     border-radius: 5px;
+     border-color: #2f2f41;
+     width: 8rem;
+  }
+ }
+
 @media screen and (min-width: 768px) and (max-width: 991px){
 
    .grid-container {
@@ -329,14 +343,7 @@ aside{
 
 
 
-/* footer */
-#footerLinks{
-   color: white;
- }
 
- #footerLinks:hover{
-   color: orange;
- }
 
  
  @media screen and (min-width: 481px) and (max-width:575px){

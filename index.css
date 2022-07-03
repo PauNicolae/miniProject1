@@ -60,7 +60,6 @@
 }
 
 .nav-item{
-  margin-left: 10px;
   color: white;
 }
 
@@ -616,6 +615,9 @@ padding-bottom: 9rem;
 }
  }
 
+
+
+
  @media screen and (min-width: 992px) and (max-width:1279px){
 
   #hero-banner{
@@ -642,6 +644,17 @@ padding-bottom: 9rem;
   padding-bottom: 9rem;
 }
  }
+
+
+ @media screen and (min-width: 992px) and (max-width: 1199px){
+  .searchTab {
+    border-radius: 5px;
+    border-color: #2f2f41;
+    width: 8rem;
+ }
+}
+
+
 
  @media screen and (min-width: 1280px) and (max-width:1799px){
 

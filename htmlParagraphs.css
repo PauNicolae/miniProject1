@@ -66,7 +66,6 @@
 }
 
 .nav-item {
-   margin-left: 10px;
    color: white;
 }
 
@@ -113,7 +112,14 @@
 
 /* end */
 
+/* footer */
+#footerLinks{
+   color: white;
+ }
 
+ #footerLinks:hover{
+   color: orange;
+ }
 
 
 /* grid-container */

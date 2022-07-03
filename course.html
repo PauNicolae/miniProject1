@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="course.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
+         rel="stylesheet"
+      />
+      <link
+         rel="shortcut icon"
+         href="./photos/favicon (2).ico"
+         type="image/x-icon"
+      />
+
+      <title>HTML Course</title>
+   </head>
+   <body id="body">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top shadow-none" id="navbar">
+         <div class="container">
+            <a href="index.html" class="navbar-brand text-danger"
+               ><h4 class="mt-2">cheater</h4></a
+            >
+
+            <input
+               type="text"
+               placeholder="Search.."
+               class="searchTab border-light"
+            />
+            <button
+               class="btn border-none shadow-none"
+               type="button"
+               id="magnifyingGlass"
+            >
+               <i class="fa fa-search"></i>
+            </button>
+
+            <button
+               class="navbar-toggler text-light"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navmenu"
+            >
+               <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item dropdown">
+                     <a
+                        href="#"
+                        class="nav-link dropdown-toggle text-light"
+                        data-bs-toggle="dropdown"
+                        >Tutorials</a
+                     >
+                     <div class="dropdown-menu bg-dark" id="dropdown-menu">
+                        <a href="htmlIntroduction.html" class="dropdown-item"
+                           >HTML Introduction</a
+                        >
+                        <a href="htmlEditors.html" class="dropdown-item"
+                           >HTML Editors</a
+                        >
+                        <a href="htmlBuildingBlocks.html" class="dropdown-item"
+                           >HTML Building Blocks</a
+                        >
+                        <a href="htmlElements.html" class="dropdown-item"
+                           >HTML Elements</a
+                        >
+                        <a href="htmlHeadings.html" class="dropdown-item"
+                           >HTML Headings</a
+                        >
+                        <a href="htmlParagraphs.html" class="dropdown-item"
+                           >HTML Paragraphs</a
+                        >
+                        <a href="htmlStyles.html" class="dropdown-item"
+                           >HTML Styles</a
+                        >
+                        <a href="htmlFormatting.html" class="dropdown-item"
+                           >HTML Formatting</a
+                        >
+                        <a href="htmlComments.html" class="dropdown-item"
+                           >HTML Comments</a
+                        >
+                        <a href="htmlColors.html" class="dropdown-item"
+                           >HTML Colors</a
+                        >
+                        <a href="htmlLinks.html" class="dropdown-item"
+                           >HTML Links</a
+                        >
+                        <a href="htmlImages.html" class="dropdown-item"
+                           >HTML Images</a
+                        >
+                        <a href="htmlTables.html" class="dropdown-item"
+                           >HTML Tables</a
+                        >
+                        <a href="htmlList.html" class="dropdown-item"
+                           >HTML List</a
+                        >
+                        <a href="htmlFilePaths.html" class="dropdown-item"
+                           >HTML File Paths</a
+                        >
+                        <a href="htmlComputercode.html" class="dropdown-item"
+                           >HTML Computercode</a
+                        >
+                        <a href="htmlCharset.html" class="dropdown-item"
+                           >HTML Charset</a
+                        >
+                        <a href="htmlUrlEncode.html" class="dropdown-item"
+                           >HTML URL Encode</a
+                        >
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a
+                        href="#"
+                        class="nav-link dropdown-toggle text-light"
+                        data-bs-toggle="dropdown"
+                        >References</a
+                     >
+                     <div class="dropdown-menu bg-dark">
+                        <a href="refTagList.html" class="dropdown-item"
+                           >HTML Tag List</a
+                        >
+                        <a href="refAttributes.html" class="dropdown-item"
+                           >HTML Attributes</a
+                        >
+                        <a href="refColors.html" class="dropdown-item"
+                           >HTML Colors</a
+                        >
+                        <a href="refAudioVideo.html" class="dropdown-item"
+                           >HTML Audio/Video</a
+                        >
+                        <a href="refUrlEncode.html" class="dropdown-item"
+                           >HTML URL Encode</a
+                        >
+                        <a href="refLinks.html" class="dropdown-item"
+                           >HTML Links</a
+                        >
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a
+                        href="exercises.html
+                 "
+                        class="nav-link"
+                        >Exercises</a
+                     >
+                  </li>
+                  <li class="nav-item">
+                     <a
+                        href="tools.html
+                    "
+                        class="nav-link"
+                        >Tools</a
+                     >
+                  </li>
+                  <li class="nav-item">
+                     <a
+                        href="aboutUs.html
+                    "
+                        class="nav-link"
+                        >About us</a
+                     >
+                  </li>
+                  <li class="nav-item">
+                     <a href="signIn.html" id="signIn-a"
+                        ><button id="btn-signIn" class="btn-signIn">
+                           Sign in
+                        </button></a
+                     >
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- end of nav -->
+
+      <div class="container">
+         <div class="row">
+            <div class="col-sm col-md col-xl col-xxl">
+               <section class="course">
+                  <div class="container mt-5 pt-5">
+                     <div class="row">
+                        <div
+                           class="img col-xs col-sm col-md col-lg-6 col-xl-6 col-xxl-6 mb-5"
+                        >
+                           <img
+                              src="./photos/course/course2.png"
+                              alt=""
+                              height="400px" width="500px" class="imgCheater"
+                           />
+                        </div>
+                        <div
+                           class="content col-xs col-sm col-md col-lg-6 col-xl-6 offset- col-xxl-6"
+                        >
+                           <h1 class="mt-1">Cheater full access</h1>
+                           <h4>Self-paced</h4>
+                           <div class="mt-5 col-xs col-sm col-md-6 col-lg-4 col-xl-3">
+                              <button
+                                 id="btn-signIn-page"
+                                 class="btn"
+                              >
+                                 Enroll 
+                              </button>
+                           </div>
+                           <div class="list">
+                              <h4>Package:</h4>
+                              <ul>
+                                 <li>Free Video Tutorial</li>
+                                 <li>Learn Basic HTML and HTML5</li>
+                                 <li>
+                                    1 month program with a Senior Software
+                                    Engineer
+                                 </li>
+                                 <li>Get free module and sample test.</li>
+                                 <li>Get Certified!</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="mt-5">
+                        <h6>CHEATER Full Access is a lifelong access to all W3Schools courses and certifications! Including new courses that we will add to the program.</h6>
+
+                           <h6>Cheater is the world's largest web developer learning site. Get the certifications trusted by top companies and institutions worldwide.</h6>
+                           
+                           <h6>Upgrade your CV by documenting your knowledge with the Cheater certification program.</h6>
+                           
+                           <h6>Join +50,000 certified developers that trusted Cheater certificates to jumpstart their careers!</h6>
+
+                           <h3 class="mt-5">Program overview</h3>
+                           <p>Enrollment fee: $695 (one time purchase)</p>
+                           <p>Includes: All current and future courses and certifications</p>
+                           <p>Language: English</p>
+                           <p>Type: Self-paced</p>
+                           <p>Attempts to pass each exam: Three</p>
+                           <p>Deadline: None</p>
+                           <p>Expiration of certificates: None</p>
+                           <p>Format: Online, multiple choice</p>
+                           <h3 class="mt-5">How does it work?</h3>
+                           <p>Step 1: Course enrollment
+                              Enroll by paying the enrollment fee and gain access to the course and final exam. There is no deadline to take the exam.
+                              
+                              All questions in the exam are based on W3Schools content.</p>
+                              <p>Step 2: Complete the course learning modules
+                                 The courses are self-paced with text based modules, practical interactive examples and exercises to check your understanding as you progress.
+                                 
+                                 Complete the learning modules to unlock the final exam.</p>
+                                 <p>Learning module example preview:
+
+                                 </p>
+                                 <div class="box1">
+                                    <img src="./photos/course/download1.png" alt="" height="400px" width="510px" class="imgModule1">
+                                 </div>
+                                 <div class="box1 mt-5">
+                                    <img src="./photos/course/download2.png" alt="" height="400px" width="510px" class="imgModule2">
+                                 </div>
+                                 <p class="mt-5">
+                                    Step 3: Take the exam
+                                 </p>
+                                 <p>The exams are taken at the end of each course after finishing the course learning modules.</p>
+                                 <p>Immediately after completing the exam, you will be informed of your score and of your pass/fail status.</p>
+                                 <p>If you fail, or want to improve your score, you can take the exam one more time. The best result of the two attempts will count.</p>
+                                 <p>The certification exams all have 3 attempts to complete.</p>
+                                 <p class="mt-5">
+                                    Exam example preview:
+                                 </p>
+                                 <div class="box1">
+                                    <img src="./photos/course/download3.png" alt="" height="400px" width="510px" class="imgExam1">
+                                 </div>
+                                 <div class="box1 mt-5">
+                                    <img src="./photos/course/download4.png" alt="" height="400px" width="510px" class="imgExam2">
+                                 </div>
+                                 <p class="mt-5">Step 4: Become certified</p>
+                                 <p>Pass the exams and get your certifications and your Certified Developer titles!</p>
+                                 <p>Each certificate gets a unique link that can be shared with others.</p>
+                                 <p>Validate your certification with the link or QR code.</p>
+                                 <p class="mt-5">Certificate of completion preview:</p>
+                                 <div class="box1">
+                                    <img src="./photos/course/Futuristic Green and Blue Gradient Certificate.png" alt="" height="400px" width="510px" class="certificate">
+                                 </div>
+                                 <p class="mt-5">Step 5: Share your achievement</p>
+                                 <p>Upgrade your CV as well as your LinkedIn profile and share your achievement with the world. With W3schools is as easy as a, b, c.</p>
+                                 <p>Just go to 'My certificates' in your personal area and you would be able to add as well as share your certificate in LinkedIn with just one click!
+
+                                 </p>
+                                 <p class="mt-5"><span class="iconify" data-icon="logos:linkedin"></span></p>
+                                 <p>Share your certificate on LinkedIn in the Certifications section in just one click.</p>
+                                 
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+
+      <!-- Footer -->
+      <footer
+         class="text-center text-lg-start text-white"
+         style="background-color: #141414"
+      >
+         <div class="container p-4 pb-0">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+                  <h5 class="text-uppercase">cheater</h5>
+
+                  <p>
+                     is optimized for learning, and training. Examples are
+                     simplified to improve reading and basic understanding.
+                     Contents are constantly reviewed to avoid errors. While
+                     using this site, you agree to have read and accepted our
+                     terms of use, and privacy policy.
+                  </p>
+               </div>
+
+               <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+                  <h5 class="text-uppercase text-center">Tutorials</h5>
+
+                  <ul class="list-unstyled mb-0 text-center">
+                     <li>
+                        <a href="htmlIntroduction.html" id="footerLinks"
+                           >HTM Introduction</a
+                        >
+                     </li>
+                     <li>
+                        <a href="htmlEditors.html" id="footerLinks"
+                           >HTML Editors</a
+                        >
+                     </li>
+                     <li>
+                        <a href="htmlBuildingBlocks.html" id="footerLinks"
+                           >HTML Building Blocks</a
+                        >
+                     </li>
+                     <li>
+                        <a href="htmlElements.html" id="footerLinks"
+                           >HTML Elements</a
+                        >
+                     </li>
+                     <li>
+                        <a href="htmlIntroduction.html" id="footerLinks"
+                           >HTM Headings</a
+                        >
+                     </li>
+                     <li>
+                        <a href="htmlEditors.html" id="footerLinks"
+                           >HTML Paragraphs</a
+                        >
+                     </li>
+                     <li>
+                        <a href="htmlStyles.html" id="footerLinks"
+                           >HTML Styles</a
+                        >
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+                  <h5 class="text-uppercase text-center">References</h5>
+
+                  <ul class="list-unstyled mb-0 text-center">
+                     <li>
+                        <a href="refTagList.html" id="footerLinks"
+                           >HTML Tag List</a
+                        >
+                     </li>
+                     <li>
+                        <a href="refAttributes.html" id="footerLinks"
+                           >HTML Attributes</a
+                        >
+                     </li>
+                     <li>
+                        <a href="refColors.html" id="footerLinks"
+                           >HTML Colors</a
+                        >
+                     </li>
+                     <li>
+                        <a href="refAudioVideo.html" id="footerLinks"
+                           >HTML Audio/Video</a
+                        >
+                     </li>
+                     <li>
+                        <a href="refUrlEncode.html" id="footerLinks"
+                           >HTML URL Encode</a
+                        >
+                     </li>
+                     <li>
+                        <a href="refLinks.html" id="footerLinks">HTML Links</a>
+                     </li>
+                     <li>
+                        <a href="htmlCharset.html" id="footerLinks"
+                           >HTML Charset</a
+                        >
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+                  <h5 class="text-uppercase text-center">TOOLS</h5>
+
+                  <ul class="list-unstyled mb-0 text-center">
+                     <li>
+                        <a href="editor.html" id="footerLinks">Code Editor</a>
+                     </li>
+                     <li>
+                        <a
+                           href="https://www.tutorialspoint.com/online_image_optimizer.htm"
+                           id="footerLinks"
+                           >Image Optimizer</a
+                        >
+                     </li>
+                     <li>
+                        <a
+                           href="https://www.tutorialspoint.com/whiteboard.htm"
+                           id="footerLinks"
+                           >White Board</a
+                        >
+                     </li>
+                     <li>
+                        <a
+                           href="https://www.w3docs.com/keyboard"
+                           id="footerLinks"
+                           >Keyboard Test</a
+                        >
+                     </li>
+                     <li>
+                        <a href="videoTutorial.html" id="footerLinks">Videos</a>
+                     </li>
+                     <li>
+                        <a
+                           href="https://idp.smu.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s2"
+                           id="footerLinks"
+                           >Canvas</a
+                        >
+                     </li>
+                     <li>
+                        <a href="exercises.html" id="footerLinks">Exercises</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <hr class="mb-4 mt-5" />
+
+            <section class="mb-4 text-center">
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  id="footerLinks"
+                  ><i class="fab fa-facebook fa-1x"></i
+               ></a>
+
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  id="footerLinks"
+                  ><i class="fab fa-twitter"></i
+               ></a>
+
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  id="footerLinks"
+                  ><i class="fab fa-google"></i
+               ></a>
+
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  id="footerLinks"
+                  ><i class="fab fa-instagram"></i
+               ></a>
+
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  id="footerLinks"
+                  ><i class="fab fa-linkedin-in"></i
+               ></a>
+
+               <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                  id="footerLinks"
+                  ><i class="fab fa-github"></i
+               ></a>
+            </section>
+
+            <hr class="mb-4 mt-4" />
+
+            <div class="text-center p-3">
+               <a class="text-white" href="https://mdbootstrap.com/"
+                  >cheater.com</a
+               >
+               © 2022
+            </div>
+         </div>
+      </footer>
+      <!-- Footer -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://kit.fontawesome.com/656d817613.js"
+         crossorigin="anonymous"
+      ></script>
+      <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>

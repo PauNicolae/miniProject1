@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100&family=Poppins:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100&family=Nunito:wght@200;300&family=Poppins:wght@100;200;300&display=swap');
 
-
-*{
-  margin: 0;
-  padding: 0;
+* {
+   margin: 0;
+   padding: 0;
 }
 
-  #body{
-    background-color:  #232222;
-  }
+#body {
+   background-color: #232222;
+   font-family: 'Nunito', sans-serif;
+
+}
   
   #navbar{
     background-color:  rgba(0, 0, 0, 0.1);
@@ -211,7 +212,7 @@
   .terms{
     color:white;
     font-size: 12px;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
 
   .a-terms{

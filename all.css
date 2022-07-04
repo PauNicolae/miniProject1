@@ -228,6 +228,31 @@ aside{
    color:#ccc
 }
 
+/* previous-next buttons */
+.previous {
+   background-color: #df4759;
+   color: white;
+   padding: .8rem 2rem;
+   border-radius: 20px;
+ }
+ 
+ .next {
+   background-color: #df4759;
+   color: white;
+   padding: .8rem 2.9rem;
+   border-radius: 20px;
+ }
+
+ .previous:hover{
+   filter: brightness(85%);
+   color: white;
+ }
+ .next:hover{
+   filter: brightness(85%);
+   color: white;
+ }
+
+
 /* footer */
 #footerLinks{
    color: white;

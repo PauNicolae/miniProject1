@@ -326,21 +326,6 @@
     margin-bottom: 10rem;
 }
 
-  /* #btn {
-     padding: 0.4rem;
-    width: 4rem;
-    font-size: 1rem;
-    outline:none;
-    cursor:pointer;
-     background-color: #df4759;
-     color: #ffffff;
-     display: flex;
-  }
-
-  #btn:hover{
-     color:white;
-     background: blue;
-  } */
   
   
   .main-editor {
@@ -350,7 +335,7 @@
     padding: 1rem;
      justify-content: center;
       align-items: center;
-    border: 7px solid #36383f;
+    /* border: 7px solid #36383f; */
     border-radius: 20px;
   }
   

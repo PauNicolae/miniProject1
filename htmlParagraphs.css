@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100&family=Poppins:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100&family=Nunito:wght@200;300&family=Poppins:wght@100;200;300&display=swap');
 
 * {
    margin: 0;
@@ -7,6 +7,8 @@
 
 #body {
    background-color: #232222;
+   font-family: 'Nunito', sans-serif;
+
 }
 
 #navbar {
@@ -111,6 +113,31 @@
 }
 
 /* end */
+
+/* previous-next buttons */
+.previous {
+   background-color: #df4759;
+   color: white;
+   padding: .8rem 2rem;
+   border-radius: 20px;
+ }
+ 
+ .next {
+   background-color: #df4759;
+   color: white;
+   padding: .8rem 2.9rem;
+   border-radius: 20px;
+ }
+
+ .previous:hover{
+   filter: brightness(85%);
+   color: white;
+ }
+ .next:hover{
+   filter: brightness(85%);
+   color: white;
+ }
+
 
 /* footer */
 #footerLinks{

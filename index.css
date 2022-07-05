@@ -234,10 +234,10 @@
   border: none;
   border-radius: 20px;
   color: white;
-  margin-top: 1.8px;
+  margin-top: 1px;
   margin-left: 10px;
   width: 100%;
-  padding: .9rem 3.5rem;
+  padding: .7rem 3.4rem;
 }
 
 .btn-linksVideoTutorial{
@@ -245,10 +245,10 @@
   border: none;
   border-radius: 20px;
   color: white;
-  margin-top: 1.8px;
+  margin-top: 1px;
   margin-left: 10px;
   width: 100%;
-  padding: .9rem 2.9rem;
+  padding: .7rem 2.9rem;
 }
 
 .btn-linksReferences{
@@ -256,10 +256,10 @@
   border: none;
   border-radius: 20px;
   color: white;
-  margin-top: 1.8px;
+  margin-top: 1px;
   margin-left: 10px;
   width: 100%;
-  padding: .9rem 3.4rem;
+  padding: .7rem 3.4rem;
 }
 
 #aHtmlButtons{
@@ -307,7 +307,7 @@ filter: brightness(85%);
   margin-top: 1.8px;
   margin-left: 10px;
   width: 100%;
-  padding: .9rem 5rem;
+  padding: .7rem 4.7rem;
 }
 .btn-tryIt:hover{
   /* color: orange;
